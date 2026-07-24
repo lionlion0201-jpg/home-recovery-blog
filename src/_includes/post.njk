@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article>
+  <p class="post-meta">Published {{ date | readableDate }}</p>
+  <h1>{{ title }}</h1>
+  <div class="affiliate-note">This post contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</div>
+  {{ content | safe }}
+</article>
