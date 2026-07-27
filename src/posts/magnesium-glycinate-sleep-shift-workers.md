@@ -50,7 +50,7 @@ Shift schedules change. Look for subscriptions that let you skip or pause shipme
 
 <div class="cta-box">
 <strong>Good starting point:</strong> A capsule-based magnesium glycinate subscription with flexible delivery timing and no-fee cancellation.
-<br><a class="button" href="https://www.amazon.com/s?k=magnesium+glycinate+subscription&tag=YOURTAG-20" rel="nofollow sponsored">Check current magnesium glycinate subscription options →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=magnesium+glycinate+subscription&tag=quietrecover-22" rel="nofollow sponsored">Check current magnesium glycinate subscription options →</a>
 </div>
 
 ## A Quick Checklist Before You Subscribe
@@ -63,7 +63,7 @@ Shift schedules change. Look for subscriptions that let you skip or pause shipme
 
 <div class="cta-box">
 <strong>Ready to compare options directly?</strong> Look for capsule or powder subscriptions with transparent per-dose magnesium content and flexible cancellation.
-<br><a class="button" href="https://www.amazon.com/s?k=magnesium+glycinate+sleep&tag=YOURTAG-20" rel="nofollow sponsored">Browse magnesium glycinate for sleep →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=magnesium+glycinate+sleep&tag=quietrecover-22" rel="nofollow sponsored">Browse magnesium glycinate for sleep →</a>
 </div>
 
 ## Who Should Not Take Magnesium Supplements Without Talking to a Doctor First
@@ -76,8 +76,8 @@ Magnesium tends to work best as one part of a broader routine rather than a stan
 
 ## Finding the Right Magnesium Subscription for Your Shift
 
-For most shift workers, the practical differences between capsule, powder, and gummy subscriptions come down to convenience and flexibility rather than one format being definitively "better." A <a href="https://www.amazon.com/s?k=magnesium+glycinate+capsules&tag=YOURTAG-20" rel="nofollow sponsored">capsule-based option</a> with an easy pause policy is a reasonable starting point for an unpredictable schedule.
+For most shift workers, the practical differences between capsule, powder, and gummy subscriptions come down to convenience and flexibility rather than one format being definitively "better." A <a href="https://www.amazon.com/s?k=magnesium+glycinate+capsules&tag=quietrecover-22" rel="nofollow sponsored">capsule-based option</a> with an easy pause policy is a reasonable starting point for an unpredictable schedule.
 
 This article is for informational purposes only and is not medical advice. Always consult a healthcare professional before starting a new supplement, especially if you are pregnant, nursing, have a kidney condition, or take other medications.
 
-*(Replace the `YOURTAG-20` placeholder link with your own Amazon Associates ID — see the setup guide.)*
+*(Replace the `quietrecover-22` placeholder link with your own Amazon Associates ID — see the setup guide.)*

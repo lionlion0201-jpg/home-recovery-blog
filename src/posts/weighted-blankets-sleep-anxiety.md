@@ -33,7 +33,7 @@ Couples sharing a bed usually either size for the lighter partner or buy two ind
 
 <div class="cta-box">
 <strong>Good starting point:</strong> A cotton-weave weighted blanket at ~10% of your body weight, with a removable/washable cover.
-<br><a class="button" href="https://www.amazon.com/s?k=weighted+blanket+cooling&tag=YOURTAG-20" rel="nofollow sponsored">Check current weighted blanket options →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=weighted+blanket+cooling&tag=quietrecover-22" rel="nofollow sponsored">Check current weighted blanket options →</a>
 </div>
 
 ## Who this helps most — and who it won't
@@ -42,4 +42,4 @@ Weighted blankets tend to help most with general restlessness, racing thoughts a
 
 If you're a hot sleeper, get the cooling-weave version or you'll likely stop using it within a month — that's the single most common reason people abandon weighted blankets, more than the weight itself.
 
-*(Replace the `YOURTAG-20` placeholder link with your own Amazon Associates ID — see the setup guide.)*
+*(Replace the `quietrecover-22` placeholder link with your own Amazon Associates ID — see the setup guide.)*

@@ -1,0 +1,61 @@
+Saved pin image: docs/cycles/_generated_pin_0.png
+Saved pin image: docs/cycles/_generated_pin_1.png
+Saved pin image: docs/cycles/_generated_pin_2.png
+Saved pin image: docs/cycles/_generated_pin_3.png
+Saved pin image: docs/cycles/_generated_pin_4.png
+{
+  "pins": [
+    {
+      "title": "Oura Ring vs Whoop: Which Sleep Tracker Actually Wins?",
+      "status": "skipped_no_credentials",
+      "note": "Pinterest credentials not set in .env -- image generated but not posted. See docs/social_api_setup.md",
+      "image_path": "docs/cycles/_generated_pin_0.png"
+    },
+    {
+      "title": "The Real Cost of Oura Ring vs Whoop (It's Not Just the Price Tag)",
+      "status": "skipped_no_credentials",
+      "note": "Pinterest credentials not set in .env -- image generated but not posted. See docs/social_api_setup.md",
+      "image_path": "docs/cycles/_generated_pin_1.png"
+    },
+    {
+      "title": "Best Sleep Tracker for Shift Workers: Oura or Whoop?",
+      "status": "skipped_no_credentials",
+      "note": "Pinterest credentials not set in .env -- image generated but not posted. See docs/social_api_setup.md",
+      "image_path": "docs/cycles/_generated_pin_2.png"
+    },
+    {
+      "title": "Oura Ring or Whoop? Use This Checklist Before You Buy",
+      "status": "skipped_no_credentials",
+      "note": "Pinterest credentials not set in .env -- image generated but not posted. See docs/social_api_setup.md",
+      "image_path": "docs/cycles/_generated_pin_3.png"
+    },
+    {
+      "title": "Building a Sleep Recovery Routine? Start With the Right Tracker",
+      "status": "skipped_no_credentials",
+      "note": "Pinterest credentials not set in .env -- image generated but not posted. See docs/social_api_setup.md",
+      "image_path": "docs/cycles/_generated_pin_4.png"
+    }
+  ],
+  "tweets": [
+    {
+      "text": "Oura Ring vs Whoop: which one actually fits your sleep and recovery goals — not just your budget?",
+      "status": "skipped_no_credentials",
+      "note": "X credentials not set in .env. See docs/social_api_setup.md"
+    },
+    {
+      "text": "Oura Ring vs Whoop, by the numbers:\n💍 Device: Oura ~$299–349 | Whoop $0 or lump-sum\n💳 Monthly fee: Oura ~$5.99–8.99 | Whoop ~$19.99–29.99\n🔋 Battery: Oura 4–7 days | Whoop 4–5 days\n✋ Wear: ring vs strap\nWhich one wins over 12 months? Full cost breakdown here: https://example.com/posts/oura-ring-vs-whoop-sleep-tracking/",
+      "status": "skipped_no_credentials",
+      "note": "X credentials not set in .env. See docs/social_api_setup.md"
+    },
+    {
+      "text": "❌ Buying whichever sleep tracker has the best ads\n✅ Comparing 12-month cost, battery life, and how it handles irregular shifts before you buy\nWe break down Oura Ring vs Whoop so you choose based on your actual sleep, not marketing: https://example.com/posts/oura-ring-vs-whoop-sleep-tracking/",
+      "status": "skipped_no_credentials",
+      "note": "X credentials not set in .env. See docs/social_api_setup.md"
+    },
+    {
+      "text": "Comparing Oura Ring vs Whoop for sleep tracking? See how each device measures sleep, what the subscription really costs, and which fits shift workers or irregular schedules best. Read the full comparison: https://example.com/posts/oura-ring-vs-whoop-sleep-tracking/ #SleepTracker #OuraRing #Whoop",
+      "status": "skipped_no_credentials",
+      "note": "X credentials not set in .env. See docs/social_api_setup.md"
+    }
+  ]
+}

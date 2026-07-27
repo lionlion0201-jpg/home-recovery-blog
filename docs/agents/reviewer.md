@@ -12,7 +12,7 @@
 - 健康・医療効果は断定しない("may help" "some research suggests" 等)
 - 各セクション末に自然な形でCTAボックス(`<div class="cta-box">...</div>`)を設計図の指示通りに配置
 - Amazonリンクには `rel="nofollow sponsored"` を付与
-- 記事末尾に `YOURTAG-20` 等のプレースホルダー置き換え注記を残す
+- Associate ID(トラッキングID)は `quietrecover-22` を使う(承認済み・本番稼働中。プレースホルダーは不要)
 - 既存記事(`src/posts/*.md`)と同じMarkdown+フロントマター形式で出力する
 
 ## 出力フォーマット
