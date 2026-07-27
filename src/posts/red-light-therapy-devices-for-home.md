@@ -41,7 +41,7 @@ If this is your first red light device, or you're treating one specific issue (a
 
 <div class="cta-box">
 <strong>Budget pick:</strong> A well-reviewed handheld panel in the $60–100 range is a reasonable low-commitment starting point.
-<br><a class="button" href="https://www.amazon.com/s?k=handheld+red+light+therapy+device&tag=quietrecover-22" rel="nofollow sponsored">Check current handheld options →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=handheld+red+light+therapy+device&tag=quietrecover-20" rel="nofollow sponsored">Check current handheld options →</a>
 </div>
 
 ## Who should go straight to a mid-size or full-body panel
@@ -50,11 +50,11 @@ If you already have a consistent routine in mind — post-workout recovery, a mo
 
 <div class="cta-box">
 <strong>Mid-range pick:</strong> Look for a panel in the $200–350 range with published irradiance data and a warranty of at least 2 years.
-<br><a class="button" href="https://www.amazon.com/s?k=mid+size+red+light+therapy+panel&tag=quietrecover-22" rel="nofollow sponsored">Check current mid-size panels →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=mid+size+red+light+therapy+panel&tag=quietrecover-20" rel="nofollow sponsored">Check current mid-size panels →</a>
 </div>
 
 ## The bottom line
 
 Start smaller than you think you need to. The biggest failure mode in this category isn't buying the wrong device — it's buying an expensive full-body panel, using it for two weeks, and letting it collect dust. Match the device to a routine you're actually confident you'll keep.
 
-*(Replace the `quietrecover-22` links above with your own Amazon Associates tracking ID once your account is approved — see the setup guide for details.)*
+*(Replace the `quietrecover-20` links above with your own Amazon Associates tracking ID once your account is approved — see the setup guide for details.)*

@@ -28,7 +28,7 @@ The tradeoff: because you're lying down and zipped in, it's a more passive exper
 
 <div class="cta-box">
 <strong>Good starting point:</strong> A mid-range sauna blanket with adjustable temperature zones and a washable liner.
-<br><a class="button" href="https://www.amazon.com/s?k=infrared+sauna+blanket&tag=quietrecover-22" rel="nofollow sponsored">Check current sauna blanket options →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=infrared+sauna+blanket&tag=quietrecover-20" rel="nofollow sponsored">Check current sauna blanket options →</a>
 </div>
 
 ## When a standalone sauna is worth the jump
@@ -44,4 +44,4 @@ If you have the space and you know you'll use it multiple times a week for the l
 
 Ask yourself two questions: do you have a permanent 3x3 ft space you're willing to dedicate to this, and would you rather sit upright than lie down for a session? Two "yes" answers point toward a standalone sauna. Otherwise, start with a blanket — it's the lower-risk way to find out if a regular sweat routine actually sticks for you before spending ten times as much.
 
-*(Replace the `quietrecover-22` placeholder links with your own Amazon Associates ID — see the setup guide.)*
+*(Replace the `quietrecover-20` placeholder links with your own Amazon Associates ID — see the setup guide.)*

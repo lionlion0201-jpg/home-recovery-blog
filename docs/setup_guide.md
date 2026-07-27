@@ -62,7 +62,7 @@ git push -u origin main
 ### Amazon Associates(最優先・無料)
 1. https://affiliate-program.amazon.com (US向けならこちら。日本のAmazonアソシエイトとは別プログラム)
 2. サイトURL(GitHub Pagesで公開したURL)を登録
-3. **登録完了・Associate ID取得済み**: `quietrecover-22`。全記事のプレースホルダーは置き換え済み(以降レビュワーはこのIDを直接使う)
+3. **登録完了・Associate ID取得済み**: `quietrecover-20`。全記事のプレースホルダーは置き換え済み(以降レビュワーはこのIDを直接使う)
 4. 審査には「180日以内に一定数の適格販売」が必要な場合がある点に注意(Amazon側の規約は変更されることがあるので登録時に必ず最新の条件を確認)
 
 ### 個別ブランドの高単価プログラム(収益が育ってきたら)
