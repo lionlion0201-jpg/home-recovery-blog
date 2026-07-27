@@ -14,22 +14,30 @@
 4. **Recovery Room Inspiration**(汎用・画像中心、SEO記事に紐付かなくてもOK。世界観作り用)
 5. **Budget Wellness Finds**(価格帯別のまとめピン。複数記事を横断)
 
-## ピンテンプレート(記事ごとに3〜5種類のフレッシュピンを作る)
+## ピン3型フレームワーク(記事ごとに必ずA/B/C揃える)
 
-各記事につき、切り口を変えた複数デザインを作ると露出が増える。
+同じ記事から作るピンは、切り口を変えた3タイプを基本セットにする(詳細は`agents/promoter.md`)。
+
+- **A. 悩み解決型** — 悩みをそのまま言葉にする
+- **B. 比較型** — 選択肢を並べて記事で答えを知りたくなる入口を作る
+- **C. 使用場面型** — 商品名でなく使用後の場面・状態を見せる
 
 **記事1: Red Light Therapy**
-- 「Best Red Light Therapy Devices for Home Use (By Budget)」
-- 「Handheld vs Full-Body Red Light Panel: Which Do You Need?」
-- 「5 Things to Check Before Buying a Red Light Therapy Panel」
+- [A]「Best Red Light Therapy Devices for Home Use (By Budget)」
+- [B]「Handheld vs Full-Body Red Light Panel: Which Do You Need?」
+- [C]「5 Things to Check Before Buying a Red Light Therapy Panel」
 
 **記事2: Sauna Blanket vs Home Sauna**
-- 「Sauna Blanket vs Home Sauna: Which Fits a Small Apartment?」
-- 「Budget-Friendly Way to Get Sauna Benefits at Home」
+- [A]「Sauna Blanket vs Home Sauna: Which Fits a Small Apartment?」
+- [B]「Budget-Friendly Way to Get Sauna Benefits at Home」
+- [C]「A Weeknight Sweat Routine for a Small Apartment」
 
 **記事3: Weighted Blankets**
-- 「Do Weighted Blankets Actually Work? What Research Says」
-- 「How to Pick the Right Weighted Blanket Weight (Chart Inside)」
+- [A]「Do Weighted Blankets Actually Work? What Research Says」
+- [B]「How to Pick the Right Weighted Blanket Weight (Chart Inside)」
+- [C]「A Calmer Bedtime Routine, One Blanket at a Time」
+
+画像内テキストは2行以内・アクセントカラー1色を目安に、`scripts/generate_pin_image.py`で生成する(Canva等の手作業ツールは使わず、自動生成で統一する)。
 
 ## ピン説明文の型
 
@@ -48,9 +56,8 @@ Read the full guide → [link]
 
 ## 運用ペース(週5時間未満で回す場合)
 
-- 新規ピン画像は週5〜10枚を目安(毎日ログインして数枚は非現実的なので、月初にまとめて作成し予約投稿ツール(Tailwind等)で分散させるのが現実的)
-- Canvaでピン画像テンプレートを1つ作り、テキストだけ差し替えて量産する
-- 新記事を書いたら、その記事から最低3種類のピンを作る
+- 新規ピン画像は週5〜10枚を目安。週次の自動パイプライン(`run_promotion.py`)がA/B/C3枚を毎サイクル生成・投稿するので、手動でのテンプレート作業は基本不要
+- 新記事を書いたら、その記事から最低3種類(A/B/C)のピンを作る
 
 ## SNS(X / Instagram)への転用テンプレート
 
