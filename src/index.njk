@@ -4,15 +4,33 @@ title: Home Recovery & Sleep Wellness Guides
 description: Research-based reviews and guides on red light therapy, recovery tech, and sleep wellness gear for home use.
 permalink: /
 ---
-<h1>Recover better. Sleep better. Spend smarter.</h1>
-<p>{{ site.description }}</p>
+<div class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Recovery &amp; Sleep, Considered</p>
+    <h1>Recover better. Sleep better. Spend smarter.</h1>
+    <p class="lede">{{ site.description }}</p>
+    <div class="hero-badges">
+      <span>Independently researched</span>
+      <span>No sponsored placements</span>
+      <span>Updated regularly</span>
+    </div>
+  </div>
+</div>
 
 <ul class="post-list">
 {% for post in collections.posts %}
-  <li>
+  <li class="post-card">
+    <div class="post-card-meta">
+      {% if post.data.category %}<span class="category-pill">{{ post.data.category }}</span>{% endif %}
+      <span class="post-meta">{{ post.date | readableDate }} · {{ post.templateContent | readingTime }}</span>
+    </div>
     <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
-    <p class="post-meta">{{ post.date | readableDate }}</p>
     <p>{{ post.data.description }}</p>
   </li>
 {% endfor %}
 </ul>
+
+<div class="trust-strip">
+  <span><strong>Evidence-first</strong> We link to studies where they exist and say plainly when they don't.</span>
+  <span><strong>Independent</strong> Reviews aren't for sale — brands don't see or approve copy before publishing.</span>
+</div>

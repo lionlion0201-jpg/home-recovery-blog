@@ -4,6 +4,7 @@ title: "Magnesium Glycinate for Sleep: A Shift Worker's Subscription Comparison 
 description: "We compare top magnesium glycinate subscriptions built for shift workers' irregular sleep schedules — format, flavor, cost per month, and cancellation policy — plus who should check with a doctor first. Not medical advice."
 date: 2026-08-22
 tags: post
+category: Sleep
 ---
 
 If you work rotating shifts or nights, you've probably already tried the obvious fixes — blackout curtains, a light therapy device timed to your shift, maybe a weighted blanket for the days your brain won't switch off. When none of that fully closes the gap, it's natural to start looking at something you actually take, rather than another gadget to set up. Magnesium glycinate shows up constantly in those searches. It's worth being upfront about what it is and isn't: magnesium doesn't "fix" a disrupted circadian rhythm, but it's one of the lower-risk, better-tolerated options some shift workers add alongside the environmental changes they're already making.

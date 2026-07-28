@@ -11,21 +11,27 @@
 <meta property="og:description" content="{{ description or site.description }}">
 <meta property="og:url" content="{{ site.domain }}{{ page.url | url }}">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/style.css' | url }}">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="{{ '/' | url }}">{{ site.name }}</a>
-  <nav>
-    <a href="{{ '/' | url }}">Home</a>
-    <a href="{{ '/about/' | url }}">About</a>
-    <a href="{{ '/affiliate-disclosure/' | url }}">Disclosure</a>
-  </nav>
+  <div class="site-header-inner">
+    <a class="brand" href="{{ '/' | url }}">{{ site.name }}</a>
+    <nav>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/about/' | url }}">About</a>
+      <a href="{{ '/affiliate-disclosure/' | url }}">Disclosure</a>
+    </nav>
+  </div>
 </header>
 <main>
 {{ content | safe }}
 </main>
 <footer class="site-footer">
+  <p class="tagline">Recover better. Sleep better. Spend smarter.</p>
   <p>&copy; {{ currentYear }} {{ site.name }}. All rights reserved.</p>
   <p><a href="{{ '/affiliate-disclosure/' | url }}">Affiliate Disclosure</a> · <a href="{{ '/privacy-policy/' | url }}">Privacy Policy</a></p>
 </footer>

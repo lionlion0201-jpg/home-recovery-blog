@@ -4,6 +4,7 @@ title: "Best Red Light Therapy Devices for Home Use: A Buyer's Guide by Budget"
 description: "A practical, no-hype guide to choosing a red light therapy panel for home use, from budget handheld units to full-body panels."
 date: 2026-08-01
 tags: post
+category: Recovery
 ---
 
 Red light therapy (also called photobiomodulation) has moved from sports-medicine clinics into home wellness routines over the last few years. Search interest has grown steadily rather than spiking and crashing like a fad, which is part of why it's a good category to write about honestly: the audience is genuinely trying to make a buying decision, not chasing a trend that will be gone in six months.

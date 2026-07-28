@@ -4,6 +4,7 @@ title: "Do Weighted Blankets Actually Help With Sleep and Anxiety?"
 description: "What the research says about weighted blankets, how to pick the right weight, and where they realistically help most."
 date: 2026-08-15
 tags: post
+category: Sleep
 ---
 
 Weighted blankets are one of the few sleep-wellness products that graduated from "trendy" to "normal household item" without fading out — a good sign for a product's staying power, and for anyone writing about it long-term.

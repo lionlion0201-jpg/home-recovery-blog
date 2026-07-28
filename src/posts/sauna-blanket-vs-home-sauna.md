@@ -4,6 +4,7 @@ title: "Infrared Sauna Blanket vs. Home Sauna: Which Is Worth It in a Small Spac
 description: "Comparing infrared sauna blankets and standalone home saunas on cost, space, heat quality, and who each option actually fits."
 date: 2026-08-08
 tags: post
+category: Recovery
 ---
 
 Sweat-based recovery has quietly become one of the more consistent categories in home wellness — not as loud as cold plunge, but with steadier long-term demand. If you're deciding between an infrared sauna blanket and a standalone home sauna, the right choice mostly comes down to space, budget, and how you'll actually use it.

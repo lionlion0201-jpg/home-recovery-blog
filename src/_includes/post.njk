@@ -2,8 +2,11 @@
 layout: base.njk
 ---
 <article>
-  <p class="post-meta">Published {{ date | readableDate }}</p>
+  <div class="post-card-meta">
+    {% if category %}<span class="category-pill">{{ category }}</span>{% endif %}
+    <span class="post-meta">Published {{ date | readableDate }} · {{ content | readingTime }}</span>
+  </div>
   <h1>{{ title }}</h1>
-  <div class="affiliate-note">This post contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</div>
+  <div class="affiliate-note">This post contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you. See our <a href="{{ '/affiliate-disclosure/' | url }}">affiliate disclosure</a>.</div>
   {{ content | safe }}
 </article>

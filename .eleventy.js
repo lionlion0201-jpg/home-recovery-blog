@@ -17,6 +17,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  eleventyConfig.addFilter("readingTime", (content) => {
+    const text = String(content || "").replace(/<[^>]*>/g, " ");
+    const words = text.split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.round(words / 200));
+    return `${minutes} min read`;
+  });
+
   return {
     pathPrefix: "/home-recovery-blog/",
     dir: {
