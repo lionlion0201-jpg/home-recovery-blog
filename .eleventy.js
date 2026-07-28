@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/home-recovery-blog/",
     dir: {
       input: "src",
       output: "_site",
