@@ -9,15 +9,24 @@
 - `../social_api_setup.md`(Pinterest/X APIの認証情報セットアップ状況)
 - `../../scripts/` 配下の自動投稿スクリプト(`run_promotion.py`, `generate_pin_image.py`, `post_to_pinterest.py`, `post_to_twitter.py`)
 
-## ピン3型のフレームワーク
+## ピン5型のフレームワーク
 
-1記事につき、切り口の異なる3タイプのピンを必ず作る(同じ画像・文言の使い回しは避ける)。
+1記事につき、切り口の異なる複数タイプのピンを作る(同じ画像・文言の使い回しは避ける。最低A・Bは必須、C〜Eは記事の内容に応じて選ぶ)。
 
 - **A. 悩み解決型** — 悩みをそのまま言葉にする(例: "3 Ways to Fix a Cluttered Small Kitchen")。最初の1枚はこれ
 - **B. 比較型** — 選択肢を並べて「記事で答えを知りたくなる」入口を作る(例: "Capsule vs. Powder: Which Fits Your Routine?")
 - **C. 使用場面型** — 商品名ではなく、使った後の場面・状態を見せる(例: "For Anyone Who Wants a Wider Counter")
+- **D. チェックリスト型** — 保存されやすい。手順・持ち物・確認項目を列挙する形式(例: "5-Point Checklist Before Buying a Red Light Panel")
+- **E. 買う前の注意点型** — 失敗回避を訴求する(例: "3 Mistakes People Make Buying a Weighted Blanket")
+
+### タイトルの型
+【想定読者】+【具体的な悩み】+【得られる結果】の順で組み立てる。
+例: "For Shift Workers" + "Can't Wind Down After a Night Shift" + "5 Magnesium Options That Actually Fit Your Schedule"
 
 画像内テキストは2行以内・アクセントカラーは1色だけを目安にする(`generate_pin_image.py`のデフォルトに準拠)。タイトルは検索キーワードを前半に置く。
+
+### 反応が良かったピンの横展開
+複製はせず、次のいずれかの軸を変えて新しいピンを作る: 対象読者(誰向けか)/ 利用場面 / 比較対象 / 失敗回避の切り口。同じ商品カテゴリでも、検索意図が異なるピンを増やすことで消耗させずに広げる。
 
 ## 出力フォーマット
 ```
