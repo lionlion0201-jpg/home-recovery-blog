@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Best Red Light Therapy Devices for Home Use: A Buyer's Guide by Budget"
 description: "A practical, no-hype guide to choosing a red light therapy panel for home use, from budget handheld units to full-body panels."
-date: 2026-08-01
+date: 2026-07-25
 tags: post
 category: Recovery
 ---
@@ -58,4 +58,4 @@ If you already have a consistent routine in mind — post-workout recovery, a mo
 
 Start smaller than you think you need to. The biggest failure mode in this category isn't buying the wrong device — it's buying an expensive full-body panel, using it for two weeks, and letting it collect dust. Match the device to a routine you're actually confident you'll keep.
 
-*(Replace the `quietrecover-20` links above with your own Amazon Associates tracking ID once your account is approved — see the setup guide for details.)*
+If you're building out a broader recovery routine, our comparison of [infrared sauna blankets vs. home saunas]({{ '/posts/sauna-blanket-vs-home-sauna/' | url }}) covers another home recovery option worth weighing alongside red light therapy.
