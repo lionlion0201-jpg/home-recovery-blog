@@ -48,19 +48,20 @@
 - 週5〜10枚の新規ピン、SNSは記事1本につき3〜4投稿を目安にする
 - Xは投稿1件ごとに従量課金(リンクあり$0.20/リンクなし$0.015)が発生するため、SNS投稿案は本当に価値のある3〜4件に絞る(`.env`の`MAX_POSTS_PER_RUN`が上限のセーフティネットとして機能する)
 
-## 実際の投稿手順(認証情報が`.env`に設定済みの場合)
+## リンクURLの記法(重要・事故防止)
+manifest内の`link`フィールドは、必ず実際のサイトURL(`https://lionlion0201-jpg.github.io/home-recovery-blog/posts/xxx/`)を使うこと。`scripts/manifest.example.json`はテンプレートなので、コピーする際に`example.com`のまま残さないよう必ず実URLに置き換える。過去に実際にexample.comのまま本番のmanifestに残っていた事故があった。
 
-1. 上記フォーマットで作成したピン案・SNS投稿案を、`scripts/manifest.example.json` と同じ形式のJSON(`cycle_manifest.json`等)にまとめる
-2. まずドライランで確認する:
+## manifestの作成とcommit(実際の投稿はここではなくGitHub Actionsが行う)
+
+**重要**: このCowork環境(サンドボックス)からは `api.twitter.com` / `api.pinterest.com` へのネットワークアクセスがブロックされているため、`run_promotion.py`をこの環境で直接実行しても投稿は成立しない(2026年8月時点で確認済み)。実際の投稿は`.github/workflows/run-promotion.yml`が別途GitHub Actions上で行う。
+
+1. 上記フォーマットで作成したピン案・SNS投稿案を、`scripts/manifest.example.json` と同じ形式のJSON(`docs/cycles/cycle_manifest_YYYY-MM-DD.json`)にまとめる。`link`は必ず実URLにする
+2. ドライランで内容を確認する(ネットワーク不要、投稿はしない):
    ```
    cd scripts
-   python3 run_promotion.py --manifest cycle_manifest.json --dry-run
+   python3 run_promotion.py --manifest ../docs/cycles/cycle_manifest_YYYY-MM-DD.json --dry-run
    ```
-3. 問題なければ本番実行する:
-   ```
-   python3 run_promotion.py --manifest cycle_manifest.json
-   ```
-4. `run_promotion.py`はPinterest/Xいずれかの認証情報が`.env`に未設定の場合、自動的に「画像生成のみ行い投稿はスキップ」という安全側の挙動になる(エラーで落ちない)。この場合は結果に`skipped_no_credentials`と出るので、その旨をユーザーに報告し、`../social_api_setup.md`のセットアップを促すこと
+3. 問題なければ、記事本体・生成したピン画像・manifestをまとめて `git add` → `git commit` → `git push` する(**このタスク自体はこれで完了**。実際のPinterest/X投稿はここではなく、pushをきっかけにGitHub Actions側で自動的に行われる)
 
 ## 実行プロンプト(Agent tool用テンプレート)
 ```
