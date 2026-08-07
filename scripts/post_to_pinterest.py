@@ -16,6 +16,7 @@ Usage:
 import argparse
 import base64
 import os
+import re
 import sys
 import mimetypes
 import requests
@@ -25,10 +26,37 @@ load_dotenv()
 
 API_BASE = "https://api.pinterest.com/v5"
 
+# Pinterest board IDs are always numeric strings. Manifests sometimes carry a
+# human-readable board *name* (from the original 5-board plan in
+# docs/pinterest_sns_plan.md) instead of the board's real numeric ID -- this
+# happens for boards that haven't actually been created on Pinterest yet.
+# Map known board names to their real IDs here as boards get created; any
+# name not listed (or any non-numeric value) falls back to the default board
+# instead of failing the whole pin.
+BOARD_NAME_TO_ID = {
+    "Red Light Therapy at Home": "904449606356442643",
+}
+
+
+def _resolve_board_id(board_id):
+    default_id = os.environ.get("PINTEREST_DEFAULT_BOARD_ID")
+    if not board_id:
+        return default_id
+    if re.fullmatch(r"\d+", str(board_id)):
+        return board_id
+    if board_id in BOARD_NAME_TO_ID:
+        return BOARD_NAME_TO_ID[board_id]
+    print(
+        f"Warning: board '{board_id}' is not a known numeric Pinterest board ID "
+        f"(not yet created / not in BOARD_NAME_TO_ID) -- falling back to default board.",
+        file=sys.stderr,
+    )
+    return default_id
+
 
 def create_pin(title, description, link, image_path, board_id, dry_run=False):
     token = os.environ.get("PINTEREST_ACCESS_TOKEN")
-    board_id = board_id or os.environ.get("PINTEREST_DEFAULT_BOARD_ID")
+    board_id = _resolve_board_id(board_id)
 
     if not board_id and not dry_run:
         raise RuntimeError("No board_id provided and PINTEREST_DEFAULT_BOARD_ID not set in .env")
