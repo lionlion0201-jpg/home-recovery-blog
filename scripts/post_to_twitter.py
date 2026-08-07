@@ -12,6 +12,7 @@ Usage:
 import argparse
 import os
 import sys
+from datetime import date
 import tweepy
 from dotenv import load_dotenv
 
@@ -21,16 +22,30 @@ STATE_FILE = os.path.join(os.path.dirname(__file__), ".post_count_state")
 
 
 def _posts_made_today():
+    """Returns today's post count. State file format is "YYYY-MM-DD:count";
+    if the stored date isn't today, the count is treated as 0 (daily reset).
+    This fixes a bug where the counter previously persisted forever across
+    runs (via git commit), permanently blocking all future posts once the
+    cap was reached a single time."""
     if not os.path.exists(STATE_FILE):
         return 0
     with open(STATE_FILE) as f:
-        return int(f.read().strip() or 0)
+        raw = f.read().strip()
+    if not raw:
+        return 0
+    if ":" in raw:
+        stored_date, count = raw.split(":", 1)
+        if stored_date != str(date.today()):
+            return 0
+        return int(count or 0)
+    # Legacy format (no date prefix) -- treat as stale, reset to 0.
+    return 0
 
 
 def _record_post():
     count = _posts_made_today() + 1
     with open(STATE_FILE, "w") as f:
-        f.write(str(count))
+        f.write(f"{date.today()}:{count}")
     return count
 
 
@@ -38,9 +53,9 @@ def post_tweet(text, dry_run=False):
     max_per_run = int(os.environ.get("MAX_POSTS_PER_RUN", "6"))
     current = _posts_made_today()
     if current >= max_per_run:
-        raise SystemExit(
-            f"Refusing to post: MAX_POSTS_PER_RUN ({max_per_run}) already reached this run cycle. "
-            f"Reset scripts/.post_count_state to override."
+        raise RuntimeError(
+            f"Refusing to post: MAX_POSTS_PER_RUN ({max_per_run}) already reached today. "
+            f"Resets automatically tomorrow, or edit scripts/.post_count_state to override."
         )
 
     if dry_run:
@@ -53,7 +68,7 @@ def post_tweet(text, dry_run=False):
     access_token = os.environ.get("X_ACCESS_TOKEN")
     access_secret = os.environ.get("X_ACCESS_TOKEN_SECRET")
     if not all([api_key, api_secret, access_token, access_secret]):
-        raise SystemExit("X API credentials missing in .env (X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET)")
+        raise RuntimeError("X API credentials missing in .env (X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET)")
 
     client = tweepy.Client(
         consumer_key=api_key,

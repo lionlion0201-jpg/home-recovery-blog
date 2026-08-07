@@ -31,7 +31,7 @@ def create_pin(title, description, link, image_path, board_id, dry_run=False):
     board_id = board_id or os.environ.get("PINTEREST_DEFAULT_BOARD_ID")
 
     if not board_id and not dry_run:
-        raise SystemExit("No board_id provided and PINTEREST_DEFAULT_BOARD_ID not set in .env")
+        raise RuntimeError("No board_id provided and PINTEREST_DEFAULT_BOARD_ID not set in .env")
 
     with open(image_path, "rb") as f:
         image_bytes = f.read()
@@ -59,7 +59,7 @@ def create_pin(title, description, link, image_path, board_id, dry_run=False):
         return {"dry_run": True}
 
     if not token:
-        raise SystemExit("PINTEREST_ACCESS_TOKEN not set in .env")
+        raise RuntimeError("PINTEREST_ACCESS_TOKEN not set in .env")
 
     resp = requests.post(
         f"{API_BASE}/pins",
