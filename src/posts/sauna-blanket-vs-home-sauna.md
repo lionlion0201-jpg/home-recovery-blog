@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Infrared Sauna Blanket vs. Home Sauna: Which Is Worth It in a Small Space?"
 description: "Comparing infrared sauna blankets and standalone home saunas on cost, space, heat quality, and who each option actually fits."
-date: 2026-08-08
+date: 2026-07-25
 tags: post
 category: Recovery
 ---
@@ -45,4 +45,4 @@ If you have the space and you know you'll use it multiple times a week for the l
 
 Ask yourself two questions: do you have a permanent 3x3 ft space you're willing to dedicate to this, and would you rather sit upright than lie down for a session? Two "yes" answers point toward a standalone sauna. Otherwise, start with a blanket — it's the lower-risk way to find out if a regular sweat routine actually sticks for you before spending ten times as much.
 
-*(Replace the `quietrecover-20` placeholder links with your own Amazon Associates ID — see the setup guide.)*
+Heat isn't the only recovery tool worth considering — see our guide to [red light therapy devices for home use]({{ '/posts/red-light-therapy-devices-for-home/' | url }}) for a lower-maintenance option that pairs well with a sauna routine.

@@ -1,0 +1,51 @@
+{
+  "pins": [
+    {
+      "title": "Quiet Bedroom Humidifier for Dry Throat Nights: Sleep Without Waking Up Parched",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.pinterest.com', port=443): Max retries exceeded with url: /v5/pins (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "title": "Quiet Bedroom Humidifier Comparison: LEVOIT 300S vs LV600HH vs Everlasting Comfort",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.pinterest.com', port=443): Max retries exceeded with url: /v5/pins (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "title": "Cozy Fall Bedroom Setup: A Silent Humidifier Running While You Sleep Soundly",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.pinterest.com', port=443): Max retries exceeded with url: /v5/pins (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "title": "Quiet Humidifier Buying Checklist: 5 Things to Check Before Fall Dry Season",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.pinterest.com', port=443): Max retries exceeded with url: /v5/pins (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "title": "Before You Buy a Bedroom Humidifier: Who Should Skip It This Fall",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.pinterest.com', port=443): Max retries exceeded with url: /v5/pins (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    }
+  ],
+  "tweets": [
+    {
+      "text": "Waking up at 3am with a throat so dry it feels like sandpaper? That's not just fall allergies -- it's your bedroom air.",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /2/tweets (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "text": "3 quiet bedroom humidifiers, compared on what actually matters: 1) LEVOIT Classic 300S -- quietest overall, best all-around pick. 2) LEVOIT LV600HH -- warm/cool mist, best for severe dryness. 3) Everlasting Comfort -- best budget pick. Noise level, tank size & cleanup all compared.",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /2/tweets (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "text": "Common fall sleep problem: waking up 2-3x a night with a burning throat, reaching for water. Common fix: a bedroom humidifier actually sized and quiet enough for sleep -- not just any humidifier from the garage.",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /2/tweets (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "text": "Dry fall air disrupting your sleep? We compared the quietest bedroom humidifiers -- noise level, tank size, easy cleanup -- so you don't have to guess. Full breakdown + our top pick: https://lionlion0201-jpg.github.io/home-recovery-blog/posts/best-quiet-bedroom-humidifiers-for-fall/",
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /2/tweets (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    }
+  ]
+}

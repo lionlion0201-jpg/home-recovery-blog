@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Magnesium Glycinate for Sleep: A Shift Worker's Subscription Comparison Guide"
 description: "We compare top magnesium glycinate subscriptions built for shift workers' irregular sleep schedules — format, flavor, cost per month, and cancellation policy — plus who should check with a doctor first. Not medical advice."
-date: 2026-08-22
+date: 2026-07-25
 tags: post
 category: Sleep
 ---
@@ -73,12 +73,10 @@ Magnesium supplements aren't appropriate for everyone to start without medical g
 
 ## How This Fits With Other Sleep Tools We've Covered
 
-Magnesium tends to work best as one part of a broader routine rather than a standalone fix. If you've already looked into light-based tools for shift work, see our guide on [red light therapy devices for home use](/posts/red-light-therapy-devices-for-home/) for how timed light exposure fits into a rotating schedule. And if racing thoughts or restlessness are part of what's keeping you up between shifts, [Do Weighted Blankets Actually Help With Sleep and Anxiety?](/posts/weighted-blankets-sleep-anxiety/) covers a non-ingestible option worth pairing with any supplement approach.
+Magnesium tends to work best as one part of a broader routine rather than a standalone fix. If you've already looked into light-based tools for shift work, see our guide on [red light therapy devices for home use]({{ '/posts/red-light-therapy-devices-for-home/' | url }}) for how timed light exposure fits into a rotating schedule. And if racing thoughts or restlessness are part of what's keeping you up between shifts, [Do Weighted Blankets Actually Help With Sleep and Anxiety?]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) covers a non-ingestible option worth pairing with any supplement approach.
 
 ## Finding the Right Magnesium Subscription for Your Shift
 
 For most shift workers, the practical differences between capsule, powder, and gummy subscriptions come down to convenience and flexibility rather than one format being definitively "better." A <a href="https://www.amazon.com/s?k=magnesium+glycinate+capsules&tag=quietrecover-20" rel="nofollow sponsored">capsule-based option</a> with an easy pause policy is a reasonable starting point for an unpredictable schedule.
 
 This article is for informational purposes only and is not medical advice. Always consult a healthcare professional before starting a new supplement, especially if you are pregnant, nursing, have a kidney condition, or take other medications.
-
-*(Replace the `quietrecover-20` placeholder link with your own Amazon Associates ID — see the setup guide.)*

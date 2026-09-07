@@ -9,15 +9,24 @@
 - `../social_api_setup.md`(Pinterest/X APIの認証情報セットアップ状況)
 - `../../scripts/` 配下の自動投稿スクリプト(`run_promotion.py`, `generate_pin_image.py`, `post_to_pinterest.py`, `post_to_twitter.py`)
 
-## ピン3型のフレームワーク
+## ピン5型のフレームワーク
 
-1記事につき、切り口の異なる3タイプのピンを必ず作る(同じ画像・文言の使い回しは避ける)。
+1記事につき、切り口の異なる複数タイプのピンを作る(同じ画像・文言の使い回しは避ける。最低A・Bは必須、C〜Eは記事の内容に応じて選ぶ)。
 
 - **A. 悩み解決型** — 悩みをそのまま言葉にする(例: "3 Ways to Fix a Cluttered Small Kitchen")。最初の1枚はこれ
 - **B. 比較型** — 選択肢を並べて「記事で答えを知りたくなる」入口を作る(例: "Capsule vs. Powder: Which Fits Your Routine?")
 - **C. 使用場面型** — 商品名ではなく、使った後の場面・状態を見せる(例: "For Anyone Who Wants a Wider Counter")
+- **D. チェックリスト型** — 保存されやすい。手順・持ち物・確認項目を列挙する形式(例: "5-Point Checklist Before Buying a Red Light Panel")
+- **E. 買う前の注意点型** — 失敗回避を訴求する(例: "3 Mistakes People Make Buying a Weighted Blanket")
+
+### タイトルの型
+【想定読者】+【具体的な悩み】+【得られる結果】の順で組み立てる。
+例: "For Shift Workers" + "Can't Wind Down After a Night Shift" + "5 Magnesium Options That Actually Fit Your Schedule"
 
 画像内テキストは2行以内・アクセントカラーは1色だけを目安にする(`generate_pin_image.py`のデフォルトに準拠)。タイトルは検索キーワードを前半に置く。
+
+### 反応が良かったピンの横展開
+複製はせず、次のいずれかの軸を変えて新しいピンを作る: 対象読者(誰向けか)/ 利用場面 / 比較対象 / 失敗回避の切り口。同じ商品カテゴリでも、検索意図が異なるピンを増やすことで消耗させずに広げる。
 
 ## 出力フォーマット
 ```
@@ -39,19 +48,20 @@
 - 週5〜10枚の新規ピン、SNSは記事1本につき3〜4投稿を目安にする
 - Xは投稿1件ごとに従量課金(リンクあり$0.20/リンクなし$0.015)が発生するため、SNS投稿案は本当に価値のある3〜4件に絞る(`.env`の`MAX_POSTS_PER_RUN`が上限のセーフティネットとして機能する)
 
-## 実際の投稿手順(認証情報が`.env`に設定済みの場合)
+## リンクURLの記法(重要・事故防止)
+manifest内の`link`フィールドは、必ず実際のサイトURL(`https://lionlion0201-jpg.github.io/home-recovery-blog/posts/xxx/`)を使うこと。`scripts/manifest.example.json`はテンプレートなので、コピーする際に`example.com`のまま残さないよう必ず実URLに置き換える。過去に実際にexample.comのまま本番のmanifestに残っていた事故があった。
 
-1. 上記フォーマットで作成したピン案・SNS投稿案を、`scripts/manifest.example.json` と同じ形式のJSON(`cycle_manifest.json`等)にまとめる
-2. まずドライランで確認する:
+## manifestの作成とcommit(実際の投稿はここではなくGitHub Actionsが行う)
+
+**重要**: このCowork環境(サンドボックス)からは `api.twitter.com` / `api.pinterest.com` へのネットワークアクセスがブロックされているため、`run_promotion.py`をこの環境で直接実行しても投稿は成立しない(2026年8月時点で確認済み)。実際の投稿は`.github/workflows/run-promotion.yml`が別途GitHub Actions上で行う。
+
+1. 上記フォーマットで作成したピン案・SNS投稿案を、`scripts/manifest.example.json` と同じ形式のJSON(`docs/cycles/cycle_manifest_YYYY-MM-DD.json`)にまとめる。`link`は必ず実URLにする
+2. ドライランで内容を確認する(ネットワーク不要、投稿はしない):
    ```
    cd scripts
-   python3 run_promotion.py --manifest cycle_manifest.json --dry-run
+   python3 run_promotion.py --manifest ../docs/cycles/cycle_manifest_YYYY-MM-DD.json --dry-run
    ```
-3. 問題なければ本番実行する:
-   ```
-   python3 run_promotion.py --manifest cycle_manifest.json
-   ```
-4. `run_promotion.py`はPinterest/Xいずれかの認証情報が`.env`に未設定の場合、自動的に「画像生成のみ行い投稿はスキップ」という安全側の挙動になる(エラーで落ちない)。この場合は結果に`skipped_no_credentials`と出るので、その旨をユーザーに報告し、`../social_api_setup.md`のセットアップを促すこと
+3. 問題なければ、記事本体・生成したピン画像・manifestをまとめて `git add` → `git commit` → `git push` する(**このタスク自体はこれで完了**。実際のPinterest/X投稿はここではなく、pushをきっかけにGitHub Actions側で自動的に行われる)
 
 ## 実行プロンプト(Agent tool用テンプレート)
 ```

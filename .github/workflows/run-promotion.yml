@@ -1,0 +1,54 @@
+name: Run Weekly Promotion (Pinterest + X)
+
+# Cowork(このリポジトリを自動運用しているサンドボックス環境)からは
+# api.twitter.com / api.pinterest.com への通信がプロキシでブロックされているため、
+# 実際の投稿はここ(GitHub Actionsのランナー、通常のインターネットアクセスを持つ)で行う。
+# 週次パイプラインはdocs/cycles/cycle_manifest_YYYY-MM-DD.jsonを生成してpushするところまでを担当し、
+# 実際の投稿はこのワークフローが引き継ぐ。
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/cycles/cycle_manifest_*.json"
+  schedule:
+    # 念のための保険。毎週土曜10:00 JST (01:00 UTC、記事生成の少し後)にも確認する。
+    - cron: "0 1 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "run-promotion"
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r scripts/requirements.txt
+      - name: Run new promotions
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_DEFAULT_BOARD_ID: ${{ secrets.PINTEREST_DEFAULT_BOARD_ID }}
+          MAX_POSTS_PER_RUN: "6"
+        run: python3 scripts/run_new_promotions.py
+      - name: Commit posted markers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/cycles/*.posted scripts/.post_count_state 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: mark cycle manifest(s) as promoted [skip ci]"
+            git push
+          else
+            echo "Nothing to commit"
+          fi

@@ -11,4 +11,4 @@ When you click a link on this site and make a purchase, we may earn a commission
 
 This disclosure is provided in accordance with the U.S. Federal Trade Commission's guidelines on endorsements and testimonials.
 
-*(Update the specific affiliate programs listed here as you join new ones — ShareASale, CJ Affiliate, Impact, individual brand programs, etc.)*
+As of this writing, our current affiliate relationship is with the Amazon Associates Program. We'll update this page as we join additional affiliate programs (such as ShareASale, CJ Affiliate, or Impact).

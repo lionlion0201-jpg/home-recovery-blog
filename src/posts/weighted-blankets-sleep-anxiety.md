@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Do Weighted Blankets Actually Help With Sleep and Anxiety?"
 description: "What the research says about weighted blankets, how to pick the right weight, and where they realistically help most."
-date: 2026-08-15
+date: 2026-07-25
 tags: post
 category: Sleep
 ---
@@ -43,4 +43,4 @@ Weighted blankets tend to help most with general restlessness, racing thoughts a
 
 If you're a hot sleeper, get the cooling-weave version or you'll likely stop using it within a month — that's the single most common reason people abandon weighted blankets, more than the weight itself.
 
-*(Replace the `quietrecover-20` placeholder link with your own Amazon Associates ID — see the setup guide.)*
+For a supplement-based approach to the same racing-thoughts-at-bedtime problem, see our comparison of [magnesium glycinate subscriptions for shift workers]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) — the two pair well together.
