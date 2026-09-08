@@ -16,6 +16,14 @@ Manifest format (see manifest.example.json):
   ]
 }
 
+The "tweets" list is posted as a single thread, in order: the first tweet
+is the root post, and each following tweet is posted as a reply to the one
+before it (so the whole list reads as one connected thread rather than
+several separate, unrelated posts). If an earlier tweet in the list fails
+to post, the next one is still attempted as a reply to the last
+successfully-posted tweet, so one failure doesn't break the rest of the
+thread.
+
 Usage:
   python3 run_promotion.py --manifest cycle_manifest.json [--dry-run]
 """
@@ -85,12 +93,30 @@ def run(manifest_path, dry_run):
                 "image_path": image_path,
             })
 
+    # Tweets are posted as one thread: each tweet replies to the previous
+    # one, starting from the root (no reply target) for the first tweet.
+    previous_tweet_id = None
     for tweet in manifest.get("tweets", []):
         if x_ready or dry_run:
             try:
-                result = post_tweet(tweet["text"], dry_run=dry_run or not x_ready)
-                report["tweets"].append({"text": tweet["text"], "status": "ok", "result": result})
+                result = post_tweet(
+                    tweet["text"],
+                    dry_run=dry_run or not x_ready,
+                    in_reply_to_tweet_id=previous_tweet_id,
+                )
+                report["tweets"].append({
+                    "text": tweet["text"],
+                    "status": "ok",
+                    "result": result,
+                    "in_reply_to": previous_tweet_id,
+                })
+                new_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+                if new_id:
+                    previous_tweet_id = new_id
             except Exception as e:
+                # Keep previous_tweet_id as-is so the next tweet still
+                # attaches to the last tweet that actually posted, instead
+                # of breaking the thread chain because of one failure.
                 report["tweets"].append({"text": tweet["text"], "status": "error", "error": str(e)})
         else:
             report["tweets"].append({

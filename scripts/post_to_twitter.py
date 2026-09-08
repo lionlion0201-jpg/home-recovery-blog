@@ -49,7 +49,11 @@ def _record_post():
     return count
 
 
-def post_tweet(text, dry_run=False):
+def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
+    """Post a tweet. If in_reply_to_tweet_id is given, this tweet is posted
+    as a reply to that tweet ID, which is how a thread is built: post the
+    root tweet first (in_reply_to_tweet_id=None), then pass the returned
+    tweet's id as in_reply_to_tweet_id for each following tweet in sequence."""
     max_per_run = int(os.environ.get("MAX_POSTS_PER_RUN", "6"))
     current = _posts_made_today()
     if current >= max_per_run:
@@ -60,8 +64,11 @@ def post_tweet(text, dry_run=False):
 
     if dry_run:
         print("[DRY RUN] Would post tweet:")
+        if in_reply_to_tweet_id:
+            print(f"  (as reply to tweet id {in_reply_to_tweet_id})")
         print(" ", text)
-        return {"dry_run": True}
+        # Fake id so a dry-run can still simulate chaining downstream.
+        return {"dry_run": True, "id": f"dryrun-{abs(hash(text)) % 100000}"}
 
     api_key = os.environ.get("X_API_KEY")
     api_secret = os.environ.get("X_API_SECRET")
@@ -76,7 +83,10 @@ def post_tweet(text, dry_run=False):
         access_token=access_token,
         access_token_secret=access_secret,
     )
-    resp = client.create_tweet(text=text[:280])
+    kwargs = {"text": text[:280]}
+    if in_reply_to_tweet_id:
+        kwargs["in_reply_to_tweet_id"] = in_reply_to_tweet_id
+    resp = client.create_tweet(**kwargs)
     _record_post()
     return resp.data
 
@@ -85,10 +95,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--text", required=True)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--in-reply-to", default=None, help="Tweet ID to post this as a reply to (for threads)")
     args = parser.parse_args()
 
     try:
-        result = post_tweet(args.text, args.dry_run)
+        result = post_tweet(args.text, args.dry_run, in_reply_to_tweet_id=args.in_reply_to)
         print(result)
     except tweepy.TweepyException as e:
         print(f"X API error: {e}", file=sys.stderr)
