@@ -49,6 +49,40 @@ def _record_post():
     return count
 
 
+def _normalize(text):
+    """Loose normalization so near-identical text (whitespace/case/truncation
+    differences) still counts as the same tweet for duplicate detection."""
+    return " ".join(text.split()).strip().lower()[:280]
+
+
+def _recent_posted_texts(client, max_results=100):
+    """Fetch the account's own recent tweet texts, so we can refuse to post
+    something that's already out there. This is a safety net independent of
+    the .posted marker files in docs/cycles/ -- those markers are only as
+    reliable as the git commit that saves them (a push race or a mid-run
+    crash can leave a manifest "unmarked" even though it already posted),
+    which is exactly how the same tweets ended up posted multiple times on
+    2026-08-07. Checking the account's actual timeline before posting means
+    a repeat run can't duplicate content even if the marker file is wrong."""
+    try:
+        me = client.get_me()
+        user_id = me.data.id
+        resp = client.get_users_tweets(
+            id=user_id,
+            max_results=min(max_results, 100),
+            tweet_fields=["text"],
+            exclude=["retweets"],
+        )
+        if not resp.data:
+            return set()
+        return {_normalize(t.text) for t in resp.data}
+    except Exception as e:
+        # If we can't check (rate limit, permissions, etc.), don't block
+        # posting on it -- just note that the safety net is unavailable.
+        print(f"Warning: could not fetch recent tweets for duplicate check: {e}", file=sys.stderr)
+        return None
+
+
 def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
     """Post a tweet. If in_reply_to_tweet_id is given, this tweet is posted
     as a reply to that tweet ID, which is how a thread is built: post the
@@ -83,6 +117,12 @@ def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
         access_token=access_token,
         access_token_secret=access_secret,
     )
+
+    recent = _recent_posted_texts(client)
+    if recent is not None and _normalize(text) in recent:
+        print(f"Skipping duplicate tweet (already on the timeline): {text[:60]}...")
+        return {"skipped_duplicate": True, "id": None}
+
     kwargs = {"text": text[:280]}
     if in_reply_to_tweet_id:
         kwargs["in_reply_to_tweet_id"] = in_reply_to_tweet_id

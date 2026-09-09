@@ -14,6 +14,18 @@ on:
     # 念のための保険。毎週土曜10:00 JST (01:00 UTC、記事生成の少し後)にも確認する。
     - cron: "0 1 * * 6"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal = 通常の週次処理(.postedがある manifest はスキップ) / catchup = 全manifestを再処理(重複投稿チェックが安全網、Pinterest未投稿分の取りこぼし修正用)"
+        type: choice
+        default: "normal"
+        options:
+          - "normal"
+          - "catchup"
+      max_posts:
+        description: "1回の実行で投稿してよいツイート数の上限(catchup実行時、未投稿分をまとめて片付けたい場合は増やす)"
+        type: string
+        default: "6"
 
 permissions:
   contents: write
@@ -31,7 +43,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r scripts/requirements.txt
-      - name: Run new promotions
+      - name: Run promotions
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -39,8 +51,13 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_DEFAULT_BOARD_ID: ${{ secrets.PINTEREST_DEFAULT_BOARD_ID }}
-          MAX_POSTS_PER_RUN: "6"
-        run: python3 scripts/run_new_promotions.py
+          MAX_POSTS_PER_RUN: ${{ github.event.inputs.max_posts || '6' }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "catchup" ]; then
+            python3 scripts/catchup_all_manifests.py
+          else
+            python3 scripts/run_new_promotions.py
+          fi
       - name: Commit posted markers
         run: |
           git config user.name "github-actions[bot]"
@@ -48,7 +65,18 @@ jobs:
           git add docs/cycles/*.posted scripts/.post_count_state 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: mark cycle manifest(s) as promoted [skip ci]"
-            git push
+            # Retry with rebase on push rejection (e.g. a deploy.yml commit landed
+            # on main in the meantime) instead of failing outright -- a failed
+            # push here would leave content already-posted but unmarked, which
+            # is exactly what let the same tweets get posted multiple times on
+            # 2026-08-07. The post-time duplicate check in post_to_twitter.py /
+            # post_to_pinterest.py is the primary safety net; this retry is the
+            # second layer so the marker itself doesn't silently fail to save.
+            for i in 1 2 3; do
+              git push && break
+              echo "Push failed (attempt $i), pulling and retrying..."
+              git pull --rebase origin main
+            done
           else
             echo "Nothing to commit"
           fi

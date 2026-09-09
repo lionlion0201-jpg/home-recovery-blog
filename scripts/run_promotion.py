@@ -52,7 +52,7 @@ def has_x_creds():
     )
 
 
-def run(manifest_path, dry_run):
+def run(manifest_path, dry_run, skip_pins=False, skip_tweets=False):
     with open(manifest_path, encoding="utf-8") as f:
         manifest = json.load(f)
 
@@ -61,7 +61,7 @@ def run(manifest_path, dry_run):
     pinterest_ready = has_pinterest_creds()
     x_ready = has_x_creds()
 
-    for i, pin in enumerate(manifest.get("pins", [])):
+    for i, pin in enumerate([] if skip_pins else manifest.get("pins", [])):
         image_path = os.path.join(
             os.path.dirname(manifest_path), f"_generated_pin_{i}.png"
         )
@@ -82,7 +82,12 @@ def run(manifest_path, dry_run):
                     board_id=pin.get("board_id"),
                     dry_run=dry_run or not pinterest_ready,
                 )
-                report["pins"].append({"title": pin["title"], "status": "ok", "result": result})
+                is_duplicate = isinstance(result, dict) and result.get("skipped_duplicate")
+                report["pins"].append({
+                    "title": pin["title"],
+                    "status": "skipped_duplicate" if is_duplicate else "ok",
+                    "result": result,
+                })
             except Exception as e:
                 report["pins"].append({"title": pin["title"], "status": "error", "error": str(e)})
         else:
@@ -96,7 +101,7 @@ def run(manifest_path, dry_run):
     # Tweets are posted as one thread: each tweet replies to the previous
     # one, starting from the root (no reply target) for the first tweet.
     previous_tweet_id = None
-    for tweet in manifest.get("tweets", []):
+    for tweet in ([] if skip_tweets else manifest.get("tweets", [])):
         if x_ready or dry_run:
             try:
                 result = post_tweet(
@@ -104,9 +109,10 @@ def run(manifest_path, dry_run):
                     dry_run=dry_run or not x_ready,
                     in_reply_to_tweet_id=previous_tweet_id,
                 )
+                is_duplicate = isinstance(result, dict) and result.get("skipped_duplicate")
                 report["tweets"].append({
                     "text": tweet["text"],
-                    "status": "ok",
+                    "status": "skipped_duplicate" if is_duplicate else "ok",
                     "result": result,
                     "in_reply_to": previous_tweet_id,
                 })
@@ -132,7 +138,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--pins-only", action="store_true", help="Post pins, skip tweets entirely (e.g. to catch up Pinterest without touching X)")
+    parser.add_argument("--tweets-only", action="store_true", help="Post tweets, skip pins entirely")
     args = parser.parse_args()
 
-    report = run(args.manifest, args.dry_run)
+    report = run(
+        args.manifest,
+        args.dry_run,
+        skip_pins=args.tweets_only,
+        skip_tweets=args.pins_only,
+    )
     print(json.dumps(report, indent=2, ensure_ascii=False))
