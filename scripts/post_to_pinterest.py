@@ -22,6 +22,9 @@ import mimetypes
 import requests
 from dotenv import load_dotenv
 
+sys.path.insert(0, os.path.dirname(__file__))
+from posted_content_log import PostedContentLog  # noqa: E402
+
 load_dotenv()
 
 API_BASE = "https://api.pinterest.com/v5"
@@ -54,30 +57,6 @@ def _resolve_board_id(board_id):
     return default_id
 
 
-def _existing_pin_titles(token, board_id):
-    """Fetch titles of pins already on this board, so create_pin() can skip
-    re-creating a pin that's already there. This is a safety net independent
-    of the docs/cycles/*.posted marker files -- those are only as reliable as
-    the git commit that saves them, and a push race or a mid-run crash can
-    leave a manifest "unmarked" even though its pins already posted (this is
-    exactly how the same tweets got posted 3x on 2026-08-07 for a sibling
-    script). Checking the board's actual contents before posting means a
-    repeat run can't duplicate a pin even if the marker file is wrong."""
-    try:
-        resp = requests.get(
-            f"{API_BASE}/boards/{board_id}/pins",
-            headers={"Authorization": f"Bearer {token}"},
-            params={"page_size": 100},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        items = resp.json().get("items", [])
-        return {(item.get("title") or "").strip().lower() for item in items}
-    except Exception as e:
-        print(f"Warning: could not fetch existing pins for duplicate check: {e}", file=sys.stderr)
-        return None
-
-
 def create_pin(title, description, link, image_path, board_id, dry_run=False):
     token = os.environ.get("PINTEREST_ACCESS_TOKEN")
     board_id = _resolve_board_id(board_id)
@@ -85,11 +64,15 @@ def create_pin(title, description, link, image_path, board_id, dry_run=False):
     if not board_id and not dry_run:
         raise RuntimeError("No board_id provided and PINTEREST_DEFAULT_BOARD_ID not set in .env")
 
-    if not dry_run and token and board_id:
-        existing = _existing_pin_titles(token, board_id)
-        if existing is not None and title.strip().lower() in existing:
-            print(f"Skipping duplicate pin (already on board {board_id}): {title[:60]}...")
-            return {"skipped_duplicate": True}
+    # Local, git-committed duplicate check -- see posted_content_log.py for
+    # why this replaced an earlier live-API-based check (querying the
+    # board's existing pins). That check silently failed open on
+    # 2026-09-09 (401 Unauthorized on every call) because it treated "can't
+    # check" as "safe to post" -- this local log has no such dependency.
+    log = PostedContentLog()
+    if not dry_run and log.has_pin(title):
+        print(f"Skipping duplicate pin (already in posted_content_log.json): {title[:60]}...")
+        return {"skipped_duplicate": True}
 
     with open(image_path, "rb") as f:
         image_bytes = f.read()
@@ -128,6 +111,7 @@ def create_pin(title, description, link, image_path, board_id, dry_run=False):
     if resp.status_code >= 300:
         print(f"Pinterest API error {resp.status_code}: {resp.text}", file=sys.stderr)
         resp.raise_for_status()
+    log.add_pin(title)
     return resp.json()
 
 

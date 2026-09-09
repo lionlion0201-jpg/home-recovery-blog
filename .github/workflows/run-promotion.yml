@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/cycles/*.posted scripts/.post_count_state 2>/dev/null || true
+          git add docs/cycles/*.posted scripts/.post_count_state scripts/posted_content_log.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: mark cycle manifest(s) as promoted [skip ci]"
             # Retry with rebase on push rejection (e.g. a deploy.yml commit landed

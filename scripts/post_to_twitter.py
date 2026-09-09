@@ -16,6 +16,9 @@ from datetime import date
 import tweepy
 from dotenv import load_dotenv
 
+sys.path.insert(0, os.path.dirname(__file__))
+from posted_content_log import PostedContentLog  # noqa: E402
+
 load_dotenv()
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), ".post_count_state")
@@ -49,40 +52,6 @@ def _record_post():
     return count
 
 
-def _normalize(text):
-    """Loose normalization so near-identical text (whitespace/case/truncation
-    differences) still counts as the same tweet for duplicate detection."""
-    return " ".join(text.split()).strip().lower()[:280]
-
-
-def _recent_posted_texts(client, max_results=100):
-    """Fetch the account's own recent tweet texts, so we can refuse to post
-    something that's already out there. This is a safety net independent of
-    the .posted marker files in docs/cycles/ -- those markers are only as
-    reliable as the git commit that saves them (a push race or a mid-run
-    crash can leave a manifest "unmarked" even though it already posted),
-    which is exactly how the same tweets ended up posted multiple times on
-    2026-08-07. Checking the account's actual timeline before posting means
-    a repeat run can't duplicate content even if the marker file is wrong."""
-    try:
-        me = client.get_me()
-        user_id = me.data.id
-        resp = client.get_users_tweets(
-            id=user_id,
-            max_results=min(max_results, 100),
-            tweet_fields=["text"],
-            exclude=["retweets"],
-        )
-        if not resp.data:
-            return set()
-        return {_normalize(t.text) for t in resp.data}
-    except Exception as e:
-        # If we can't check (rate limit, permissions, etc.), don't block
-        # posting on it -- just note that the safety net is unavailable.
-        print(f"Warning: could not fetch recent tweets for duplicate check: {e}", file=sys.stderr)
-        return None
-
-
 def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
     """Post a tweet. If in_reply_to_tweet_id is given, this tweet is posted
     as a reply to that tweet ID, which is how a thread is built: post the
@@ -103,6 +72,14 @@ def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
         print(" ", text)
         # Fake id so a dry-run can still simulate chaining downstream.
         return {"dry_run": True, "id": f"dryrun-{abs(hash(text)) % 100000}"}
+
+    # Local, git-committed duplicate check -- see posted_content_log.py for
+    # why this replaced an earlier live-API-based check (it silently failed
+    # open on 2026-09-09 and let a dozen tweets get posted twice).
+    log = PostedContentLog()
+    if log.has_tweet(text):
+        print(f"Skipping duplicate tweet (already in posted_content_log.json): {text[:60]}...")
+        return {"skipped_duplicate": True, "id": None}
 
     api_key = os.environ.get("X_API_KEY")
     api_secret = os.environ.get("X_API_SECRET")
@@ -128,6 +105,7 @@ def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
         kwargs["in_reply_to_tweet_id"] = in_reply_to_tweet_id
     resp = client.create_tweet(**kwargs)
     _record_post()
+    log.add_tweet(text)
     return resp.data
 
 
