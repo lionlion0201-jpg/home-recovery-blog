@@ -95,11 +95,6 @@ def post_tweet(text, dry_run=False, in_reply_to_tweet_id=None):
         access_token_secret=access_secret,
     )
 
-    recent = _recent_posted_texts(client)
-    if recent is not None and _normalize(text) in recent:
-        print(f"Skipping duplicate tweet (already on the timeline): {text[:60]}...")
-        return {"skipped_duplicate": True, "id": None}
-
     kwargs = {"text": text[:280]}
     if in_reply_to_tweet_id:
         kwargs["in_reply_to_tweet_id"] = in_reply_to_tweet_id
