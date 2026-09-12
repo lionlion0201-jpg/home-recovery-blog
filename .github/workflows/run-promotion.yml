@@ -25,7 +25,7 @@ on:
       max_posts:
         description: "1回の実行で投稿してよいツイート数の上限(catchup実行時、未投稿分をまとめて片付けたい場合は増やす)"
         type: string
-        default: "6"
+        default: "12"
 
 permissions:
   contents: write
@@ -51,7 +51,7 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_DEFAULT_BOARD_ID: ${{ secrets.PINTEREST_DEFAULT_BOARD_ID }}
-          MAX_POSTS_PER_RUN: ${{ github.event.inputs.max_posts || '6' }}
+          MAX_POSTS_PER_RUN: ${{ github.event.inputs.max_posts || '12' }}
         run: |
           if [ "${{ github.event.inputs.mode }}" = "catchup" ]; then
             python3 scripts/catchup_all_manifests.py
