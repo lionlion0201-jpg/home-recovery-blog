@@ -1,8 +1,9 @@
 # Pinterest / X 自動投稿セットアップガイド
 
-## 現在の申請状況(2026-09-12時点)
+## 現在の申請状況(2026-09-16更新)
 
-- Pinterest Standard access: **申請済み・審査待ち**(2026年9月第1週頃に申請)。承認が下りるまでは本番投稿が`403 Apps with Trial access may not create Pins in production`で失敗し続ける(2026-09-12実行分で実際に確認済み)。今後のサイクルでは「申請を促す」のではなく、審査状況を確認するよう案内すること。承認され次第このメモを更新する
+- Pinterest Standard access: **申請済み・審査待ち**(App ID 1594065、初回申請2026-09-07)。承認が下りるまでは本番投稿が`403 Apps with Trial access may not create Pins in production`で失敗し続ける(2026-09-12実行分で実際に確認済み)。今後のサイクルでは「申請を促す」のではなく、審査状況を確認するよう案内すること。承認され次第このメモを更新する
+  - 2026-09-16: 審査が9日経過しても進捗がないため、Pinterest Help Center経由でサポートチケットを提出済み(カテゴリ: Pinterest API and Developer Tools → API Access → Application Status)。Pinterest Business Community(公式フォーラム)は運営が新規スレッドをKNOWN ISSUEスレッドにクローズ/マージする運用になっており、かつApp ID等の投稿が規約違反になるため、フォーラムへの投稿は行わずサポートチケットのみとした。次サイクル以降はこのチケットの回答有無を確認すること
 - X (Twitter) API: 認証情報設定済み・投稿実績あり(2026-09-05、2026-09-12サイクルで実際に投稿成功)
 
 ## 前提として知っておくべきこと(重要)
