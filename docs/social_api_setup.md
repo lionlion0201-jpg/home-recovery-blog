@@ -1,9 +1,12 @@
 # Pinterest / X 自動投稿セットアップガイド
 
-## 現在の申請状況(2026-09-16更新)
+## 現在の申請状況(2026-09-17更新)
 
-- Pinterest Standard access: **申請済み・審査待ち**(App ID 1594065、初回申請2026-09-07)。承認が下りるまでは本番投稿が`403 Apps with Trial access may not create Pins in production`で失敗し続ける(2026-09-12実行分で実際に確認済み)。今後のサイクルでは「申請を促す」のではなく、審査状況を確認するよう案内すること。承認され次第このメモを更新する
-  - 2026-09-16: 審査が9日経過しても進捗がないため、Pinterest Help Center経由でサポートチケットを提出済み(カテゴリ: Pinterest API and Developer Tools → API Access → Application Status)。Pinterest Business Community(公式フォーラム)は運営が新規スレッドをKNOWN ISSUEスレッドにクローズ/マージする運用になっており、かつApp ID等の投稿が規約違反になるため、フォーラムへの投稿は行わずサポートチケットのみとした。次サイクル以降はこのチケットの回答有無を確認すること
+- Pinterest Standard access: **却下→動画を撮り直して再申請済み・審査待ち**(App ID 1594065)。承認が下りるまでは本番投稿が`403 Apps with Trial access may not create Pins in production`で失敗し続ける(2026-09-12実行分で実際に確認済み)。今後のサイクルでは「申請を促す」のではなく、審査状況を確認するよう案内すること。承認され次第このメモを更新する
+  - 2026-09-16: 審査が9日経過しても進捗がないため、Pinterest Help Center経由でサポートチケットを提出済み(カテゴリ: Pinterest API and Developer Tools → API Access → Application Status)。Pinterest Business Community(公式フォーラム)は運営が新規スレッドをKNOWN ISSUEスレッドにクローズ/マージする運用になっており、かつApp ID等の投稿が規約違反になるため、フォーラムへの投稿は行わずサポートチケットのみとした
+  - 2026-09-16(続報): サポート担当Teriから返信あり。初回申請(2026-09-07)は実際には**却下されていた**(保留ではなかった)。却下理由はデモ動画がOAuth認可フロー全体とAPI呼び出しの両方を1本の連続録画で示せていなかったため。要求されたデモ内容: ①OAuth認可URLを開いてユーザーが許可する画面 → ②リダイレクトで認可コードを受け取る → ③コードをアクセストークンに交換 → ④そのトークンで実際にAPI呼び出し(ピンまたはボード作成)を行い成功レスポンスを得る、までを画面を切り替えても構わないので一度も録画を止めずに撮ること
+  - 2026-09-17: 上記要件を満たす形でOAuthフロー(Sandbox環境、`api-sandbox.pinterest.com`)を実際に動かして動画を再撮影し、Developer PortalのApp ID 1594065 Configureページ「アクセスをアップグレードする」から再申請完了。Teriのサポートチケットにも再申請済みである旨を返信済み。次サイクル以降は再申請の審査結果(承認/却下)を確認すること
+  - 補足(技術メモ): Sandbox環境でOAuthトークンを取得する際は、通常の`https://api.pinterest.com/v5/oauth/token`ではなく**`https://api-sandbox.pinterest.com/v5/oauth/token`**を使う必要がある(本番用トークンではSandbox APIの認証が通らず`{"code":2,"message":"Authentication failed."}`になる)。また、curlでBasic認証ヘッダーを手動base64エンコードすると入力ミスが起きやすいため、`-u "{client_id}:{client_secret}"`オプションを使う方が確実。デモ用にSandboxボードを作成する際は、同名ボードが既に存在すると`{"code":58,"message":"Try a different name..."}`になるため、毎回ユニークな名前(日付入りなど)にすること。動作確認だけしたい場合はOAuthフローを経由せず、Developer Portal → Configure → 「Generate Access Token」からSandboxトークンをワンクリックで発行することも可能(ただしStandard access審査用の動画としてはOAuthフロー自体を見せる必要があるため、審査提出用の動画ではこのショートカットは使えない)
 - X (Twitter) API: 認証情報設定済み・投稿実績あり(2026-09-05、2026-09-12サイクルで実際に投稿成功)
 
 ## 前提として知っておくべきこと(重要)
