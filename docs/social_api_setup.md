@@ -1,8 +1,10 @@
 # Pinterest / X 自動投稿セットアップガイド
 
-## 現在の申請状況(2026-09-17更新)
+## 現在の申請状況(2026-09-19更新)
 
-- Pinterest Standard access: **却下→動画を撮り直して再申請済み・審査待ち**(App ID 1594065)。承認が下りるまでは本番投稿が`403 Apps with Trial access may not create Pins in production`で失敗し続ける(2026-09-12実行分で実際に確認済み)。今後のサイクルでは「申請を促す」のではなく、審査状況を確認するよう案内すること。承認され次第このメモを更新する
+- Pinterest Standard access: **2026-09-17に承認済み**(App ID 1594065)。本番投稿が可能な状態になった。以前の`403 Apps with Trial access may not create Pins in production`は解消しており、サイクル実行時に審査状況を確認したり申請を促したりする必要はない
+  - 承認後の運用については `pipeline_runbook.md` の「Pinterest投稿の運用」を参照すること。ピン投稿は週次パイプラインではなく `pinterest-backlog.yml`(毎日10:00 JST、1日4枚のドリップ)が担当する
+  - 以下は承認に至るまでの経緯(記録として残す)
   - 2026-09-16: 審査が9日経過しても進捗がないため、Pinterest Help Center経由でサポートチケットを提出済み(カテゴリ: Pinterest API and Developer Tools → API Access → Application Status)。Pinterest Business Community(公式フォーラム)は運営が新規スレッドをKNOWN ISSUEスレッドにクローズ/マージする運用になっており、かつApp ID等の投稿が規約違反になるため、フォーラムへの投稿は行わずサポートチケットのみとした
   - 2026-09-16(続報): サポート担当Teriから返信あり。初回申請(2026-09-07)は実際には**却下されていた**(保留ではなかった)。却下理由はデモ動画がOAuth認可フロー全体とAPI呼び出しの両方を1本の連続録画で示せていなかったため。要求されたデモ内容: ①OAuth認可URLを開いてユーザーが許可する画面 → ②リダイレクトで認可コードを受け取る → ③コードをアクセストークンに交換 → ④そのトークンで実際にAPI呼び出し(ピンまたはボード作成)を行い成功レスポンスを得る、までを画面を切り替えても構わないので一度も録画を止めずに撮ること
   - 2026-09-17: 上記要件を満たす形でOAuthフロー(Sandbox環境、`api-sandbox.pinterest.com`)を実際に動かして動画を再撮影し、Developer PortalのApp ID 1594065 Configureページ「アクセスをアップグレードする」から再申請完了。Teriのサポートチケットにも再申請済みである旨を返信済み。次サイクル以降は再申請の審査結果(承認/却下)を確認すること
