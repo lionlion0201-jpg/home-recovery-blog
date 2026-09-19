@@ -28,6 +28,11 @@ CYCLES_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "cycles")
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--skip-pins", action="store_true",
+        help=("Post tweets only. Pin posting is owned by post_pin_backlog.py, "
+              "which paces pins a few per day; letting this script post pins too "
+              "would double-post them and defeat that pacing."))
     args = parser.parse_args()
 
     manifests = sorted(glob.glob(os.path.join(CYCLES_DIR, "cycle_manifest_*.json")))
@@ -42,8 +47,9 @@ def main():
             print(f"Skipping {os.path.basename(manifest_path)} (already posted)")
             continue
 
-        print(f"Processing {os.path.basename(manifest_path)}...")
-        report = run_promotion(manifest_path, args.dry_run)
+        print(f"Processing {os.path.basename(manifest_path)}"
+              f"{' (tweets only)' if args.skip_pins else ''}...")
+        report = run_promotion(manifest_path, args.dry_run, skip_pins=args.skip_pins)
         print(json.dumps(report, indent=2, ensure_ascii=False))
 
         if not args.dry_run:

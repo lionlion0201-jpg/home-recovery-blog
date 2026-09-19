@@ -52,11 +52,15 @@ jobs:
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_DEFAULT_BOARD_ID: ${{ secrets.PINTEREST_DEFAULT_BOARD_ID }}
           MAX_POSTS_PER_RUN: ${{ github.event.inputs.max_posts || '12' }}
+        # --skip-pins: ピン投稿は pinterest-backlog.yml が1日数枚ずつ担当する。
+        # ここでも投稿すると二重投稿になり、分散投稿の意味もなくなる。
+        # (2026-09-19: マニフェストのpushでこのワークフローが発火し、デザイン刷新前の
+        #  古いピンが一度に大量投稿される事故が起きたのを受けての変更)
         run: |
           if [ "${{ github.event.inputs.mode }}" = "catchup" ]; then
-            python3 scripts/catchup_all_manifests.py
+            python3 scripts/catchup_all_manifests.py --skip-pins
           else
-            python3 scripts/run_new_promotions.py
+            python3 scripts/run_new_promotions.py --skip-pins
           fi
       - name: Commit posted markers
         run: |

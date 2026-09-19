@@ -44,6 +44,10 @@ CYCLES_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "cycles")
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--skip-pins", action="store_true",
+        help=("Post tweets only. Pin posting is owned by post_pin_backlog.py, "
+              "which paces pins a few per day."))
     args = parser.parse_args()
 
     manifests = sorted(glob.glob(os.path.join(CYCLES_DIR, "cycle_manifest_*.json")))
@@ -55,7 +59,7 @@ def main():
     for manifest_path in manifests:
         name = os.path.basename(manifest_path)
         print(f"\n=== {name} ===")
-        report = run_promotion(manifest_path, args.dry_run)
+        report = run_promotion(manifest_path, args.dry_run, skip_pins=args.skip_pins)
         all_reports[name] = report
         for pin in report["pins"]:
             print(f"  [pin:{pin['status']}] {pin['title']}")
