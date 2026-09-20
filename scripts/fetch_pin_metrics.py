@@ -13,12 +13,23 @@ Pinterestは発見型のメディアなので、インプレッションは母�
 PIN_CLICK はピンを拡大しただけでも数えられるので、購買意向の指標としては弱い。
 設計の背景は アフィリエイト/共通/計測設計.md を参照。
 
-必要なスコープ(重要)
---------------------
+トークンを2本に分けている理由(重要)
+------------------------------------
 GET /v5/pins/{pin_id}/analytics には **boards:read と pins:read** が要る。
-2026-09-20時点のアクセストークンは `pins:write` `boards:read` `boards:write`
-で発行されており、**pins:read が無いため403になる**。
-再認可して pins:read を含むトークンを取り直す必要がある。
+一方、投稿用の `PINTEREST_ACCESS_TOKEN` は `pins:write` `boards:read`
+`boards:write` で発行されており pins:read を持たない。
+
+そこで、Developer Portal の「アクセストークンを生成する」で発行できる
+読み取り専用トークン(pins:read / boards:read / user_accounts:read /
+ads:read / catalogs:read)を `PINTEREST_READ_TOKEN` として別に持たせ、
+計測にはそちらだけを使う。
+
+この分け方には2つ利点がある:
+  1. 毎日動いているピン投稿(pinterest-backlog.yml)のトークンに一切触らない
+  2. 計測処理に書き込み権限を渡さない(最小権限)
+
+PINTEREST_READ_TOKEN が未設定の場合は PINTEREST_ACCESS_TOKEN に
+フォールバックするが、その場合は pins:read が無いので403になる。
 詳細は docs/social_api_setup.md を参照。
 
 APIの制約
@@ -80,9 +91,15 @@ def main():
               "以降に投稿したピンから順次たまります。")
         return
 
-    token = os.environ.get("PINTEREST_ACCESS_TOKEN")
+    # 読み取り専用トークンを優先する。投稿用トークンには pins:read が無いため、
+    # フォールバックした場合は403になる(その旨は403ハンドラで案内する)。
+    token = os.environ.get("PINTEREST_READ_TOKEN") or os.environ.get("PINTEREST_ACCESS_TOKEN")
+    using_fallback = not os.environ.get("PINTEREST_READ_TOKEN")
     if not token and not args.dry_run:
-        raise SystemExit("PINTEREST_ACCESS_TOKEN が設定されていません")
+        raise SystemExit("PINTEREST_READ_TOKEN(または PINTEREST_ACCESS_TOKEN)が設定されていません")
+    if using_fallback and not args.dry_run:
+        print("警告: PINTEREST_READ_TOKEN が未設定のため投稿用トークンを使います。"
+              "pins:read が無いため403になる見込みです。", file=sys.stderr)
 
     days = max(1, min(args.days, 90))
     end = date.today()
@@ -118,8 +135,10 @@ def main():
         if resp.status_code == 403:
             # スコープ不足がほぼ確実。1件目で分かるので、全件叩かずに止める。
             print(f"[{pin['id']}] 403 Forbidden: {resp.text[:200]}", file=sys.stderr)
-            print("アクセストークンに pins:read スコープが含まれていない可能性が高いです。"
-                  "docs/social_api_setup.md の手順で再認可してください。", file=sys.stderr)
+            print("トークンに pins:read が含まれていない可能性が高いです。"
+                  "Developer Portal の「アクセストークンを生成する」(本番環境)で発行した"
+                  "読み取り専用トークンを PINTEREST_READ_TOKEN に設定してください。"
+                  "詳細は docs/social_api_setup.md を参照。", file=sys.stderr)
             forbidden += 1
             break
         if resp.status_code != 200:

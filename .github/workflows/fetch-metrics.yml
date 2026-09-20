@@ -49,12 +49,14 @@ jobs:
           python3 scripts/fetch_tweet_metrics.py \
             --max-results "${{ github.event.inputs.max_results || '50' }}"
 
-      # pins:read スコープを含むトークンに更新するまでは403で失敗する。
-      # ツイート側の取得まで巻き添えで失敗させないよう continue-on-error にしている。
+      # Pinterest側で失敗してもツイート側の取得を巻き添えにしないよう continue-on-error。
       - name: Fetch pin metrics
         continue-on-error: true
         env:
-          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          # 計測には読み取り専用トークンだけを渡す。投稿用の
+          # PINTEREST_ACCESS_TOKEN はここでは意図的に渡していない
+          # (計測処理に書き込み権限を持たせないため)。
+          PINTEREST_READ_TOKEN: ${{ secrets.PINTEREST_READ_TOKEN }}
         run: python3 scripts/fetch_pin_metrics.py --days 30
 
       - name: Commit metrics
