@@ -1,0 +1,63 @@
+name: Fetch Tweet Metrics
+
+# Cowork(このリポジトリを自動運用しているサンドボックス環境)からは api.twitter.com への
+# 通信がブロックされているため、メトリクス取得はここ(通常のインターネットアクセスを持つ
+# GitHub Actionsのランナー)で行い、結果をcommitする。
+# パイプラインはコミットされた docs/metrics/x_metrics.json を読むだけでよい。
+#
+# 併せて、台帳(docs/metrics/posted_assets.json)導入前に投稿したツイートを、
+# 本文の一致でマニフェストと突き合わせて遡って登録する。
+
+on:
+  schedule:
+    # 毎日 22:00 JST (13:00 UTC)
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      max_results:
+        description: "直近何件の自分のツイートを対象にするか(5〜100)"
+        required: false
+        default: "50"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "fetch-metrics"
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Fetch metrics
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          # 未設定でも動くが、その場合は毎回 GET /2/users/me に約$0.01かかる。
+          # Settings → Secrets and variables → Actions → Variables に X_USER_ID を登録すると節約できる。
+          X_USER_ID: ${{ vars.X_USER_ID }}
+        run: |
+          python3 scripts/fetch_tweet_metrics.py \
+            --max-results "${{ github.event.inputs.max_results || '50' }}"
+
+      - name: Commit metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/metrics/x_metrics.json docs/metrics/posted_assets.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update X metrics [skip ci]"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "No metric changes to commit."
+          fi
