@@ -30,6 +30,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 from generate_pin_image import generate as generate_pin_image  # noqa: E402
+from asset_ledger import record_safe, article_slug  # noqa: E402
 from post_to_pinterest import create_pin  # noqa: E402
 
 from dotenv import load_dotenv  # noqa: E402
@@ -121,6 +122,20 @@ def main():
             is_duplicate = isinstance(result, dict) and result.get("skipped_duplicate")
             status = "skipped_duplicate" if is_duplicate else "ok"
             results.append({"key": key, "title": pin["title"], "status": status, "result": result})
+
+            # 発行されたピンIDを台帳に残す(Pinterest Analyticsで保存数・
+            # クリック数を引くのに必要)。manifest本体は読み込み済みなので
+            # ファイル名からスラッグを割り出す。
+            pin_id = result.get("id") if isinstance(result, dict) else None
+            record_safe(
+                platform="pinterest",
+                asset_id=pin_id,
+                article=article_slug(os.path.join(CYCLES_DIR, basename)),
+                content_type="pin",
+                link=pin.get("link"),
+                text=pin["title"],
+                source=basename,
+            )
 
             # A duplicate means Pinterest already has it -- count it as done so we
             # stop retrying it, but don't count it against the posting quota.

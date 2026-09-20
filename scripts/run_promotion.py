@@ -36,6 +36,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from generate_pin_image import generate as generate_pin_image  # noqa: E402
 from post_to_pinterest import create_pin  # noqa: E402
 from post_to_twitter import post_tweet  # noqa: E402
+from asset_ledger import record_safe, article_slug  # noqa: E402
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -88,6 +89,16 @@ def run(manifest_path, dry_run, skip_pins=False, skip_tweets=False):
                     "status": "skipped_duplicate" if is_duplicate else "ok",
                     "result": result,
                 })
+                pin_id = result.get("id") if isinstance(result, dict) else None
+                record_safe(
+                    platform="pinterest",
+                    asset_id=pin_id,
+                    article=article_slug(manifest_path, manifest),
+                    content_type="pin",
+                    link=pin.get("link"),
+                    text=pin["title"],
+                    source=os.path.basename(manifest_path),
+                )
             except Exception as e:
                 report["pins"].append({"title": pin["title"], "status": "error", "error": str(e)})
         else:
@@ -118,6 +129,16 @@ def run(manifest_path, dry_run, skip_pins=False, skip_tweets=False):
                 })
                 new_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
                 if new_id:
+                    # 発行されたツイートIDを台帳に残す。これが無いと後から
+                    # インプレッションやクリックを問い合わせる手段がなくなる。
+                    record_safe(
+                        platform="x",
+                        asset_id=new_id,
+                        article=article_slug(manifest_path, manifest),
+                        content_type="thread_root" if previous_tweet_id is None else "thread_reply",
+                        text=tweet["text"],
+                        source=os.path.basename(manifest_path),
+                    )
                     previous_tweet_id = new_id
             except Exception as e:
                 # Keep previous_tweet_id as-is so the next tweet still
