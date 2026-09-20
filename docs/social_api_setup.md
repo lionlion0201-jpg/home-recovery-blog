@@ -9,6 +9,10 @@
   - 2026-09-16(続報): サポート担当Teriから返信あり。初回申請(2026-09-07)は実際には**却下されていた**(保留ではなかった)。却下理由はデモ動画がOAuth認可フロー全体とAPI呼び出しの両方を1本の連続録画で示せていなかったため。要求されたデモ内容: ①OAuth認可URLを開いてユーザーが許可する画面 → ②リダイレクトで認可コードを受け取る → ③コードをアクセストークンに交換 → ④そのトークンで実際にAPI呼び出し(ピンまたはボード作成)を行い成功レスポンスを得る、までを画面を切り替えても構わないので一度も録画を止めずに撮ること
   - 2026-09-17: 上記要件を満たす形でOAuthフロー(Sandbox環境、`api-sandbox.pinterest.com`)を実際に動かして動画を再撮影し、Developer PortalのApp ID 1594065 Configureページ「アクセスをアップグレードする」から再申請完了。Teriのサポートチケットにも再申請済みである旨を返信済み。次サイクル以降は再申請の審査結果(承認/却下)を確認すること
   - 補足(技術メモ): Sandbox環境でOAuthトークンを取得する際は、通常の`https://api.pinterest.com/v5/oauth/token`ではなく**`https://api-sandbox.pinterest.com/v5/oauth/token`**を使う必要がある(本番用トークンではSandbox APIの認証が通らず`{"code":2,"message":"Authentication failed."}`になる)。また、curlでBasic認証ヘッダーを手動base64エンコードすると入力ミスが起きやすいため、`-u "{client_id}:{client_secret}"`オプションを使う方が確実。デモ用にSandboxボードを作成する際は、同名ボードが既に存在すると`{"code":58,"message":"Try a different name..."}`になるため、毎回ユニークな名前(日付入りなど)にすること。動作確認だけしたい場合はOAuthフローを経由せず、Developer Portal → Configure → 「Generate Access Token」からSandboxトークンをワンクリックで発行することも可能(ただしStandard access審査用の動画としてはOAuthフロー自体を見せる必要があるため、審査提出用の動画ではこのショートカットは使えない)
+- **Pinterestアクセストークンのスコープ不足(2026-09-20発覚・要対応)**: 現在のトークンは `pins:write` `boards:read` `boards:write` で発行されている。一方 `GET /v5/pins/{pin_id}/analytics`(ピンの効果測定)に必要なスコープは **`boards:read` と `pins:read`** で、`pins:read` が足りていない。このままでは403になり、投稿はできるが効果が測れない。
+  - 対応: 認可URLの `scope` に `pins:read` を追加してOAuthフローをやり直し、新しいアクセストークンとリフレッシュトークンを取得する。取得後、GitHubの `PINTEREST_ACCESS_TOKEN` シークレットを更新する
+  - 取得できる指標: `IMPRESSION`(表示) / `SAVE`(保存) / `PIN_CLICK`(ピンの拡大) / `OUTBOUND_CLICK`(リンク先への遷移)。**売上に近いのは OUTBOUND_CLICK と SAVE**。PIN_CLICKは拡大表示だけでも数えられるため意向の指標としては弱い
+  - APIの制約: `start_date` は今日から90日前まで。それより古い期間は取得できないので、放置すると初期のピンの実績が永久に取れなくなる
 - X (Twitter) API: 認証情報設定済み・投稿実績あり(2026-09-05、2026-09-12サイクルで実際に投稿成功)
 
 ## 前提として知っておくべきこと(重要)
