@@ -44,6 +44,64 @@
 9. 録画をもとにPinterest Developer Portalから **Standard access** を申請する
 10. 承認が下りたら、以降の投稿が一般公開される状態になる
 
+## スコープを追加してPinterestトークンを取り直す手順
+
+`refresh_pinterest_token.py` はリフレッシュトークンで有効期限を延ばすだけで、**スコープは増やせない**。
+スコープを追加するには認可からやり直す必要がある。
+
+**api.pinterest.com はCoworkのサンドボックスから到達できないため、以下はすべて自分の端末のターミナルとブラウザで行う。**
+
+### 1. アプリのリダイレクトURIを確認する
+
+https://developers.pinterest.com → My apps → App ID 1594065 → Configure
+に登録されている Redirect URI を控える(初期設定なら `https://localhost/callback`)。次の手順で**完全一致**させる必要がある。
+
+### 2. 認可URLをブラウザで開く
+
+`CLIENT_ID` と `REDIRECT_URI` を自分の値に置き換える。スコープはカンマ区切り。
+
+```
+https://www.pinterest.com/oauth/?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&response_type=code&scope=boards:read,boards:write,pins:read,pins:write&state=rescope
+```
+
+`pins:read` を足しただけで、既存の3つはそのまま維持している。既存のものを落とすと投稿ができなくなる。
+
+### 3. 認可コードを受け取る
+
+許可すると `https://localhost/callback?code=XXXXX&state=rescope` にリダイレクトされる。
+**ページは表示されなくて正常**(ローカルにサーバーが無いため)。アドレスバーの `code=` の値をコピーする。
+
+**この認可コードは1回しか使えず、数分で失効する。** 次の手順をすぐ実行すること。
+
+### 4. アクセストークンに交換する
+
+```
+curl -s -X POST https://api.pinterest.com/v5/oauth/token \
+  -u "CLIENT_ID:CLIENT_SECRET" \
+  -d grant_type=authorization_code \
+  -d code=コピーした認可コード \
+  -d redirect_uri=REDIRECT_URI
+```
+
+Basic認証ヘッダーを手で作るとミスが起きやすいので、必ず `-u` を使う。
+
+### 5. 返ってきた scope を必ず確認する
+
+レスポンスの `scope` に **`pins:read` が含まれているか**を目視で確認する。
+含まれていなければ認可URLのスコープ指定が効いていないので、手順2からやり直す。
+
+### 6. 保存する
+
+- ローカルの `.env`(`scripts/.env` とプロジェクトルートの `.env` の両方)の `PINTEREST_ACCESS_TOKEN` と refresh token を更新
+- GitHub → リポジトリ → Settings → Secrets and variables → Actions → `PINTEREST_ACCESS_TOKEN` を更新
+
+### 7. 動作確認
+
+GitHubのActionsタブ →「Fetch Metrics (X / Pinterest)」→ Run workflow。
+ログに `取得成功 N件` と出れば成功。`403` が出るならスコープがまだ足りていない。
+
+---
+
 ## X (Twitter) セットアップ手順
 
 1. https://developer.twitter.com でデベロッパーアカウントを作成
