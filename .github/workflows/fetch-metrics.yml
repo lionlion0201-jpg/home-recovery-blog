@@ -1,4 +1,4 @@
-name: Fetch Tweet Metrics
+name: Fetch Metrics (X / Pinterest)
 
 # Cowork(このリポジトリを自動運用しているサンドボックス環境)からは api.twitter.com への
 # 通信がブロックされているため、メトリクス取得はここ(通常のインターネットアクセスを持つ
@@ -49,13 +49,21 @@ jobs:
           python3 scripts/fetch_tweet_metrics.py \
             --max-results "${{ github.event.inputs.max_results || '50' }}"
 
+      # pins:read スコープを含むトークンに更新するまでは403で失敗する。
+      # ツイート側の取得まで巻き添えで失敗させないよう continue-on-error にしている。
+      - name: Fetch pin metrics
+        continue-on-error: true
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+        run: python3 scripts/fetch_pin_metrics.py --days 30
+
       - name: Commit metrics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/metrics/x_metrics.json docs/metrics/posted_assets.json 2>/dev/null || true
+          git add docs/metrics/x_metrics.json docs/metrics/pin_metrics.json docs/metrics/posted_assets.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update X metrics [skip ci]"
+            git commit -m "chore: update X / Pinterest metrics [skip ci]"
             git pull --rebase --autostash
             git push
           else
