@@ -130,7 +130,9 @@ def main():
             record_safe(
                 platform="pinterest",
                 asset_id=pin_id,
-                article=article_slug(os.path.join(CYCLES_DIR, basename)),
+                # 2026-09-12以前のマニフェストはファイル名に記事スラッグを含まないため、
+                # ピン単体を渡してリンクURLから拾わせる(渡さないと article が None になる)。
+                article=article_slug(os.path.join(CYCLES_DIR, basename), {"pins": [pin]}),
                 content_type="pin",
                 link=pin.get("link"),
                 text=pin["title"],
