@@ -44,3 +44,5 @@ Weighted blankets tend to help most with general restlessness, racing thoughts a
 If you're a hot sleeper, get the cooling-weave version or you'll likely stop using it within a month — that's the single most common reason people abandon weighted blankets, more than the weight itself.
 
 For a supplement-based approach to the same racing-thoughts-at-bedtime problem, see our comparison of [magnesium glycinate subscriptions for shift workers]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) — the two pair well together.
+
+*This article is for general informational purposes only and is not a substitute for medical advice. Talk to a healthcare provider before starting any new recovery or sleep routine, especially if you have an existing health condition.*

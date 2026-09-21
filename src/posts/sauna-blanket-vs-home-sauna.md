@@ -38,7 +38,7 @@ If you have the space and you know you'll use it multiple times a week for the l
 
 <div class="cta-box">
 <strong>Space check first:</strong> Compact one-person infrared sauna pods start around a 3x3 ft footprint — measure your space before shopping.
-<br><a class="button" href="https://www.amazon.com/s?k=one+person+infrared+sauna" rel="nofollow sponsored">Check current compact sauna options →</a>
+<br><a class="button" href="https://www.amazon.com/s?k=one+person+infrared+sauna&tag=quietrecover-20" rel="nofollow sponsored">Check current compact sauna options →</a>
 </div>
 
 ## A simple way to decide
@@ -46,3 +46,5 @@ If you have the space and you know you'll use it multiple times a week for the l
 Ask yourself two questions: do you have a permanent 3x3 ft space you're willing to dedicate to this, and would you rather sit upright than lie down for a session? Two "yes" answers point toward a standalone sauna. Otherwise, start with a blanket — it's the lower-risk way to find out if a regular sweat routine actually sticks for you before spending ten times as much.
 
 Heat isn't the only recovery tool worth considering — see our guide to [red light therapy devices for home use]({{ '/posts/red-light-therapy-devices-for-home/' | url }}) for a lower-maintenance option that pairs well with a sauna routine.
+
+*This article is for general informational purposes only and is not a substitute for medical advice. Talk to a healthcare provider before starting any new recovery or sleep routine, especially if you have an existing health condition.*

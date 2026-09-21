@@ -1,0 +1,59 @@
+{
+  "site_label": "QuietRecover (US)",
+  "lang": "en",
+  "amazon_tag": "quietrecover-20",
+  "timezone_offset": "+09:00",
+  "publish_hour": "09:00:00",
+  "required_sections": [],
+  "required_phrases_any": [
+    "medical advice",
+    "informational purposes only",
+    "informational only"
+  ],
+  "ng_patterns": [
+    "\\bguaranteed\\b",
+    "\\bcures?\\b",
+    "\\balways works\\b",
+    "everyone should",
+    "\\bmiracle\\b",
+    "\\bproven to (?:cure|eliminate)\\b"
+  ],
+  "seasonal_keywords": {
+    "gift": [
+      10,
+      11,
+      12
+    ],
+    "holiday": [
+      11,
+      12
+    ],
+    "black friday": [
+      11
+    ],
+    "summer": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "winter": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "fall": [
+      9,
+      10,
+      11
+    ],
+    "spring": [
+      3,
+      4,
+      5
+    ]
+  },
+  "has_pins": true,
+  "tweet_queue": null
+}
