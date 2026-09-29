@@ -36,7 +36,13 @@ jobs:
           python-version: "3.11"
       - run: pip install -r scripts/requirements.txt
 
+      # 2026-09-28: X側の失敗(残高不足など)でジョブが止まり、後続のピン取得が一度も
+      # 走っていなかった(Run 1〜8 すべて失敗、pin_metrics.json 未生成)。ピンは90日より
+      # 古い期間が取れなくなるため、X側が失敗してもピン取得とコミットは続行する。
+      # 失敗は最後のステップでジョブを失敗させて見えるようにする。
       - name: Fetch metrics
+        id: fetch_x
+        continue-on-error: true
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -51,6 +57,7 @@ jobs:
 
       # Pinterest側で失敗してもツイート側の取得を巻き添えにしないよう continue-on-error。
       - name: Fetch pin metrics
+        id: fetch_pin
         continue-on-error: true
         env:
           # 計測には読み取り専用トークンだけを渡す。投稿用の
@@ -63,7 +70,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/metrics/x_metrics.json docs/metrics/pin_metrics.json docs/metrics/posted_assets.json 2>/dev/null || true
+          # まとめて add すると存在しないファイルが1つでもあると全体が失敗する
+          # (X失敗で x_metrics.json が無い日にピンの結果まで捨てられる)ので1つずつ add する。
+          for f in docs/metrics/x_metrics.json docs/metrics/pin_metrics.json docs/metrics/posted_assets.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m "chore: update X / Pinterest metrics [skip ci]"
             git pull --rebase --autostash
@@ -71,3 +82,11 @@ jobs:
           else
             echo "No metric changes to commit."
           fi
+
+      - name: Report fetch failures
+        if: steps.fetch_x.outcome == 'failure' || steps.fetch_pin.outcome == 'failure'
+        run: |
+          echo "X: ${{ steps.fetch_x.outcome }} / Pinterest: ${{ steps.fetch_pin.outcome }}"
+          echo "X が failure なら上の Fetch metrics のログを確認(402=クレジット残高不足)。"
+          echo "Pinterest が failure なら PINTEREST_READ_TOKEN の有無と pins:read スコープを確認。"
+          exit 1
