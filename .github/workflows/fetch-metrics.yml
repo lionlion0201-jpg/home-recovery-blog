@@ -66,13 +66,22 @@ jobs:
           PINTEREST_READ_TOKEN: ${{ secrets.PINTEREST_READ_TOKEN }}
         run: python3 scripts/fetch_pin_metrics.py --days 30
 
+      # アフィリエイトリンクのクリック(affiliate_click)とセッション。X・Pinterest とは独立して動かす。
+      - name: Fetch GA4 clicks
+        id: fetch_ga4
+        continue-on-error: true
+        env:
+          GA4_SA_KEY: ${{ secrets.GA4_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+        run: python3 scripts/fetch_ga4.py --days 30
+
       - name: Commit metrics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # まとめて add すると存在しないファイルが1つでもあると全体が失敗する
           # (X失敗で x_metrics.json が無い日にピンの結果まで捨てられる)ので1つずつ add する。
-          for f in docs/metrics/x_metrics.json docs/metrics/pin_metrics.json docs/metrics/posted_assets.json; do
+          for f in docs/metrics/x_metrics.json docs/metrics/pin_metrics.json docs/metrics/posted_assets.json docs/metrics/ga4_clicks.json docs/metrics/ga4_products.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
@@ -84,9 +93,10 @@ jobs:
           fi
 
       - name: Report fetch failures
-        if: steps.fetch_x.outcome == 'failure' || steps.fetch_pin.outcome == 'failure'
+        if: steps.fetch_x.outcome == 'failure' || steps.fetch_pin.outcome == 'failure' || steps.fetch_ga4.outcome == 'failure'
         run: |
-          echo "X: ${{ steps.fetch_x.outcome }} / Pinterest: ${{ steps.fetch_pin.outcome }}"
+          echo "X: ${{ steps.fetch_x.outcome }} / Pinterest: ${{ steps.fetch_pin.outcome }} / GA4: ${{ steps.fetch_ga4.outcome }}"
+          echo "GA4 が failure なら GA4_SA_KEY / GA4_PROPERTY_ID の登録と、サービスアカウントがプロパティの閲覧者になっているかを確認。"
           echo "X が failure なら上の Fetch metrics のログを確認(402=クレジット残高不足)。"
           echo "Pinterest が failure なら PINTEREST_READ_TOKEN の有無と pins:read スコープを確認。"
           exit 1
