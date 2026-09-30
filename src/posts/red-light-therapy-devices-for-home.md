@@ -17,13 +17,13 @@ Red and near-infrared light devices expose skin and tissue to specific wavelengt
 
 ## The three device categories
 
-### 1. Handheld / small panel devices ($50–150)
+### 1. Handheld / small panel devices (budget)
 Good for spot-treating a specific area — a knee, an elbow, a patch of skin. Sessions take longer since coverage is small. This is the right starting point if you're not sure you'll stick with a routine.
 
-### 2. Mid-size panels ($150–500)
+### 2. Mid-size panels (mid-range)
 Cover a larger area (torso, back, or full face) in a single session. This is the sweet spot for most home users — enough coverage to treat multiple areas without the price or bulk of a full-body unit.
 
-### 3. Full-body panels ($500–2,000+)
+### 3. Full-body panels (premium)
 Stand-alone panels tall enough to treat the whole body at once. Makes sense if you're using red light therapy daily as part of a broader recovery routine (post-workout, for example) and want to minimize session time.
 
 ## What actually matters when comparing devices
@@ -41,7 +41,7 @@ Stand-alone panels tall enough to treat the whole body at once. Makes sense if y
 If this is your first red light device, or you're treating one specific issue (a nagging joint, a small skin area), a handheld unit is the lower-risk way to test whether you'll actually use it consistently before spending on a full panel.
 
 <div class="cta-box">
-<strong>Budget pick:</strong> A well-reviewed handheld panel in the $60–100 range is a reasonable low-commitment starting point.
+<strong>Budget pick:</strong> A well-reviewed handheld panel at the budget end of the category is a reasonable low-commitment starting point.
 <br><a class="button" href="https://www.amazon.com/s?k=handheld+red+light+therapy+device&tag=quietrecover-20" rel="nofollow sponsored">Check current handheld options →</a>
 </div>
 
@@ -50,7 +50,7 @@ If this is your first red light device, or you're treating one specific issue (a
 If you already have a consistent routine in mind — post-workout recovery, a morning skin routine, or targeting back/shoulder tension — a mid-size panel avoids the "I outgrew my starter device in three months" problem.
 
 <div class="cta-box">
-<strong>Mid-range pick:</strong> Look for a panel in the $200–350 range with published irradiance data and a warranty of at least 2 years.
+<strong>Mid-range pick:</strong> Look for a mid-size panel with published irradiance data and a warranty of at least 2 years.
 <br><a class="button" href="https://www.amazon.com/s?k=mid+size+red+light+therapy+panel&tag=quietrecover-20" rel="nofollow sponsored">Check current mid-size panels →</a>
 </div>
 

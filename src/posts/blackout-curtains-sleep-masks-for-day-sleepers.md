@@ -26,7 +26,7 @@ A curtain that blocks 90% of light still lets in enough at the edges, through th
 
 | Factor | Blackout Curtains | Contoured Sleep Mask |
 |---|---|---|
-| Typical price | $25–$60 per window | $13–$35 |
+| Relative cost | Higher (priced per window) | Lower |
 | Light-blocking power | High, but gaps at edges/rod are common | Very high if it seals around the eyes |
 | Setup effort | Requires mounting hardware, one-time install | None — just wear it |
 | Portability | Not portable (fixed to a window) | Fully portable, good for travel or hotel stays |

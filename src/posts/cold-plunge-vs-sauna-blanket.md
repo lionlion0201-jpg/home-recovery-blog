@@ -49,25 +49,25 @@ Rather than treating this as "which is better," it helps to think about which on
 
 | | Cold Plunge | Sauna Blanket |
 |---|---|---|
-| **Typical price range** | $300 – $1,500+ | $300 – $700 |
+| **Relative price** | Mid-range to premium (chiller models cost the most) | Mid-range |
 | **Space needed** | Garage, patio, or large bathroom; needs room to fill/drain | Fits on a bed, floor, or couch; folds away in a closet |
 | **Setup time** | 15–30 minutes (filling, plus ice/chiller time) | 5–10 minutes (unfold, plug in, preheat) |
 | **Power required** | Only if using an electric chiller; ice-only models need none | Yes, standard wall outlet |
 
-If your budget is closer to $300–$500, a basic ice-and-fill cold plunge tub or an entry sauna blanket are both realistic starting points; if you're working with $1,000+, a chiller-equipped tub or a higher-end sauna blanket becomes worth considering.
+If you're working with a tighter budget, a basic ice-and-fill cold plunge tub or an entry sauna blanket are both realistic starting points; if you have more room in your budget, a chiller-equipped tub or a higher-end sauna blanket becomes worth considering.
 
 ## Top Picks Compared: Cold Plunge Tubs vs. Sauna Blankets
 
 | | Polar Monkeys Portable Cold Plunge | Ice Barrel 400 | HigherDOSE Sauna Blanket |
 |---|---|---|---|
-| **Price** | ~$300–$450 | ~$1,200–$1,400 | ~$500–$700 |
+| **Relative price** | Entry-level | Premium | Mid-range |
 | **Size** | Collapsible, ~30-gallon capacity | Barrel-shaped, fixed footprint (~3 ft diameter) | Foldable, storable flat |
 | **Setup time** | ~15 min fill + ice | ~20–30 min fill; semi-permanent placement | ~5–10 min, plug-and-go |
 | **Best for** | Budget-conscious beginners testing cold exposure | Those wanting a durable, semi-permanent outdoor setup | Anyone wanting indoor, low-mess heat recovery |
 
 ### Best Budget Cold Plunge Tub: Polar Monkeys Portable Cold Plunge
 
-For readers who want to test whether cold immersion is something they'll actually stick with before spending serious money, a collapsible ice-bath-style tub in the $300–$450 range is generally the lowest-risk entry point. These tubs are typically ice-and-fill only (no built-in chiller), which keeps the price down but means you'll need a steady supply of ice or cold water and won't get precise temperature control. They're portable enough to store in a closet or garage between uses and set up on a patio, deck, or garage floor.
+For readers who want to test whether cold immersion is something they'll actually stick with before spending serious money, a collapsible ice-bath-style tub at the entry level of the category is generally the lowest-risk entry point. These tubs are typically ice-and-fill only (no built-in chiller), which keeps the price down but means you'll need a steady supply of ice or cold water and won't get precise temperature control. They're portable enough to store in a closet or garage between uses and set up on a patio, deck, or garage floor.
 
 <div class="cta-box">
 <p><strong>Polar Monkeys Portable Cold Plunge</strong> — a budget-friendly way to try cold water immersion without committing to a built-in chiller system.</p>

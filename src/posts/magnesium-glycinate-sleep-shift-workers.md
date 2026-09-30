@@ -37,9 +37,9 @@ Given the current state of research, "may support relaxation" is a more accurate
 
 | Format | Flavor | Price per Month | Subscription Flexibility | Cancellation Policy |
 |---|---|---|---|---|
-| Capsule-based subscription | Unflavored | $18–$28 | Adjustable delivery frequency (30/45/60 days) | Cancel anytime online, no fee |
-| Powder blend subscription | Berry or citrus | $22–$35 | Skip or pause individual shipments | Cancel anytime; some require 48-hr notice before next charge |
-| Gummy subscription | Fruit-flavored | $20–$30 | Fixed monthly cadence, limited pause options | Cancel anytime; refund policies vary by seller |
+| Capsule-based subscription | Unflavored | Lower | Adjustable delivery frequency (30/45/60 days) | Cancel anytime online, no fee |
+| Powder blend subscription | Berry or citrus | Higher | Skip or pause individual shipments | Cancel anytime; some require 48-hr notice before next charge |
+| Gummy subscription | Fruit-flavored | Moderate | Fixed monthly cadence, limited pause options | Cancel anytime; refund policies vary by seller |
 
 ### Capsule vs. Powder vs. Gummy — Which Fits a Shift Work Routine?
 

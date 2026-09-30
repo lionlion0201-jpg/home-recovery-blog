@@ -127,7 +127,7 @@ Buying the right unit is only half the equation — placement and maintenance af
 
 ### Ideal bedroom humidity range for sleep (avoid mold/dust mites)
 
-Most guidance points to roughly 30-50% relative humidity as a comfortable indoor range. Going much above that can encourage mold growth and dust mites, both of which can aggravate allergies and, ironically, disrupt sleep further. A humidifier with a built-in hygrometer makes it easier to stay in this range; if yours doesn't have one, a separate $10-15 hygrometer is a worthwhile add-on so you're not guessing.
+Most guidance points to roughly 30-50% relative humidity as a comfortable indoor range. Going much above that can encourage mold growth and dust mites, both of which can aggravate allergies and, ironically, disrupt sleep further. A humidifier with a built-in hygrometer makes it easier to stay in this range; if yours doesn't have one, an inexpensive standalone hygrometer is a worthwhile add-on so you're not guessing.
 
 ### Cleaning schedule so it doesn't become an allergen source
 

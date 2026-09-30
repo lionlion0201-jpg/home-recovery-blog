@@ -11,7 +11,7 @@ category: Gift Guide
 
 Buying a recovery or sleep gift is easy to get wrong. Get it too generic (a candle, a gift card, "some tea") and it reads like you didn't think about the person at all. Get it too niche and it sits in a drawer. The trick is matching the gift to who the person actually is — a guy who complains his shoulders are wrecked after every gym session, a partner who's always talking about her sleep score, a friend mid-marathon-training-block, or a parent who hasn't had eight hours of sleep since 2019.
 
-This guide is organized by recipient, not by price, so you can jump straight to the section that matches the person you're shopping for. If you'd rather browse by how much you want to spend, we also have [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}) that sorts picks from under $50 to splurge-worthy. And one note up front: nothing here is medical advice — these are gift suggestions based on general product research, not a recommendation for any specific health condition.
+This guide is organized by recipient, not by price, so you can jump straight to the section that matches the person you're shopping for. If you'd rather browse by how much you want to spend, we also have [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}) that sorts picks from stocking stuffers to splurge-worthy. And one note up front: nothing here is medical advice — these are gift suggestions based on general product research, not a recommendation for any specific health condition.
 
 ## How to Use This Gift Guide
 
@@ -136,7 +136,7 @@ Every gift in this guide is a strong match for the right person — and a mismat
 
 ## Shopping by Budget Instead of Recipient?
 
-If price is your primary constraint rather than who you're buying for, this recipient-based structure might not be the most useful way to browse. Instead, check out [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}), which organizes recovery and sleep gifts from under $50 stocking-stuffer options up through bigger splurge-worthy picks — useful if you're shopping for a group, working within a strict budget, or just want to see the full range of options side by side before deciding.
+If price is your primary constraint rather than who you're buying for, this recipient-based structure might not be the most useful way to browse. Instead, check out [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}), which organizes recovery and sleep gifts from budget-friendly stocking-stuffer options up through bigger splurge-worthy picks — useful if you're shopping for a group, working within a strict budget, or just want to see the full range of options side by side before deciding.
 
 ## Frequently Asked Questions
 
@@ -144,7 +144,7 @@ If price is your primary constraint rather than who you're buying for, this reci
 
 Yes, generally — massage guns are useful for everyday muscle tightness from sitting at a desk, general stress, or occasional workouts, not just serious training. The compact/mini models tend to be the better gift choice for non-athletes since they're simpler and less intense than professional-grade full-size devices.
 
-### What's a thoughtful recovery gift under $50?
+### What's a thoughtful budget-friendly recovery gift?
 
 At lower price points, look at smaller accessories rather than full devices: a quality sleep mask, a foam roller, a weighted eye pillow, or a smaller massage tool. Full massage guns, smart rings, compression boots, and sauna blankets generally sit above this range, so if budget is the main constraint, [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}) is a better starting point than this recipient-based one.
 

@@ -53,7 +53,7 @@ They're a weaker fit for anyone tight on storage space, traveling frequently wit
 
 | Factor | Massage Gun | Compression Boots |
 |---|---|---|
-| Typical price range | $100–$400 | $250–$1,000+ |
+| Relative price | Budget to mid-range | Mid-range to premium |
 | Setup effort | Minimal—grab it and go | Moderate—zip in, connect hose, select program |
 | Can you multitask while using it? | Limited (one hand is occupied) | Yes—hands-free once zipped in |
 | Portability | Very portable, fits in a bag | Bulkier; travel versions exist but add weight |

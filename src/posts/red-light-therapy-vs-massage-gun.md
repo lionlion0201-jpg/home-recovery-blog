@@ -45,7 +45,7 @@ The honest summary: both categories have some supportive research and both have 
 
 | | Massage Gun | Red Light Therapy Panel |
 |---|---|---|
-| **Typical price range** | $60–$400 | $150–$1,000+ |
+| **Relative price** | Budget to mid-range | Mid-range to premium |
 | **Time per use** | 1–5 minutes per muscle group | 10–20 minutes per session |
 | **Best suited for** | Acute tightness, targeted knots, post-workout flare-ups | Ongoing stiffness, general recovery routines, whole-body sessions |
 | **Portability** | Highly portable, fits in a gym bag | Not portable — needs a fixed spot at home |
@@ -62,9 +62,9 @@ If your soreness shows up as a specific tight spot after a workout, the massage 
 
 Rather than trying to decide in the abstract, it helps to work backward from your budget and your actual complaint.
 
-### If Your Budget Is Under $200: Start Here
+### If You're on a Tighter Budget: Start Here
 
-At this price point, a solid entry-level massage gun is generally the more practical first purchase. Budget red light panels under $200 tend to be small, lower-powered, and cover a limited area of the body per session, which can make it harder to stick with a routine that actually delivers a noticeable dose of light. A compact massage gun in this range, on the other hand, still delivers meaningful percussive output and is genuinely useful the day it arrives.
+At this price point, a solid entry-level massage gun is generally the more practical first purchase. Budget red light panels tend to be small, lower-powered, and cover a limited area of the body per session, which can make it harder to stick with a routine that actually delivers a noticeable dose of light. A compact massage gun in this range, on the other hand, still delivers meaningful percussive output and is genuinely useful the day it arrives.
 
 <div class="cta-box">
 <p><strong>Theragun Mini</strong> — A compact, travel-friendly percussive device that's an easy entry point if you're not ready to commit to a full-size gun or a red light panel yet.</p>

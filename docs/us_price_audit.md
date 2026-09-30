@@ -1,5 +1,10 @@
 # US記事の価格記載 棚卸し (2026-09-29 自動抽出)
 
+> **2026-09-30 対応済み**: 以下の全箇所(A・Bとも)を budget / mid-range / premium などの相対表現に置き換えた。
+> `best-recovery-and-sleep-gifts-2026` はスラッグ(URL)を変えず、章立てを「Stocking stuffers / Mid-range / Splurge-worthy」に変更。
+> 置換後、`review_lib.check_amazon_policy` で全17本の指摘0件を確認。
+> 未対応: 公開済みのピン・X投稿の文面(`docs/cycles/cycle_manifest_*.json`)には価格が残っている。削除するかは未決定。
+
 US Operating Agreement: 価格・在庫の表示は Amazon が配信するリンク、または PA-API / Creators API 経由で取得した場合に限る。
 
 - **A:単品の価格** … 特定商品に金額を紐づけている。優先的に削除

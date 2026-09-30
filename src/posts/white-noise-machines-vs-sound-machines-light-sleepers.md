@@ -26,7 +26,7 @@ Mechanical fan-based machines generate real, continuously variable sound from an
 
 | Factor | Mechanical Fan Machine | Digital White Noise Machine | Smart Sound + Light Machine |
 |---|---|---|---|
-| Typical price | $45–$60 | $30–$50 | $100–$170 |
+| Relative price | Mid-range | Budget | Premium |
 | Sound type | Real fan sound, no looping | Digital tracks, may loop on some models | Digital sound + sunrise light + app control |
 | Extra features | Minimal — tone/volume dial only | Multiple sound options, timer | Alarm, sunrise light, guided routines, app |
 | Best for | Sensitive ears that notice loops | Budget buyers who want sound variety | Anyone also struggling with a wake-up routine |

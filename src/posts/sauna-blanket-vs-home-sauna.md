@@ -15,7 +15,7 @@ A sauna blanket is a portable, zip-up unit you lie inside — it heats you direc
 
 | | Sauna blanket | Standalone home sauna |
 |---|---|---|
-| Typical price | $150–400 | $1,500–5,000+ |
+| Relative price | Budget to mid-range | Premium (often several times the cost of a blanket) |
 | Space needed | Fits under a bed when stored | Needs a dedicated 3x3 ft+ footprint, permanently |
 | Setup | Plug in, unroll, done | Often needs assembly, sometimes electrical work |
 | Heat style | Direct contact heat | Ambient air heat (traditional) or panel heat (infrared) |

@@ -26,7 +26,7 @@ A percussion massage gun (the kind we compared in our [massage gun vs. compressi
 
 | Factor | Budget Pick | Mid-Range Pick | Premium Pick |
 |---|---|---|---|
-| Typical price | $30–$45 | $50–$70 | $90–$130 |
+| Relative price | Budget | Mid-range | Premium |
 | Heat function | Basic, single setting | Adjustable | Adjustable, more even heat distribution |
 | Extra coverage | Neck and shoulders only | Neck, shoulders, and back attachment | Neck, shoulders, and back attachment |
 | Car adapter included | Rarely | Often | Usually |
