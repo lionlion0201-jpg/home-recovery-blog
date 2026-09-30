@@ -1,0 +1,42 @@
+[
+  {
+    "article": "(not set)/",
+    "source": "pinterest.com",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-09-30"
+  },
+  {
+    "article": "/",
+    "source": "(direct)",
+    "affiliate_clicks": 0,
+    "sessions": 54,
+    "period_start": "2026-09-21",
+    "period_end": "2026-09-30"
+  },
+  {
+    "article": "/",
+    "source": "gopher.com",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-09-30"
+  },
+  {
+    "article": "/posts/2026-recovery-sleep-gift-guide-by-recipient/",
+    "source": "(direct)",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-09-30"
+  },
+  {
+    "article": "/posts/apple-watch-vs-oura-ring-sleep-tracking/",
+    "source": "(direct)",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-09-30"
+  }
+]
