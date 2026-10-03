@@ -1,27 +1,19 @@
 [
   {
-    "article": "",
-    "source": "pinterest.com",
-    "affiliate_clicks": 0,
-    "sessions": 1,
-    "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
-  },
-  {
     "article": "(not set)/",
     "source": "pinterest.com",
     "affiliate_clicks": 0,
-    "sessions": 1,
+    "sessions": 2,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
+    "period_end": "2026-10-04"
   },
   {
     "article": "/",
     "source": "(direct)",
     "affiliate_clicks": 0,
-    "sessions": 60,
+    "sessions": 61,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
+    "period_end": "2026-10-04"
   },
   {
     "article": "/",
@@ -29,7 +21,7 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
+    "period_end": "2026-10-04"
   },
   {
     "article": "/posts/2026-recovery-sleep-gift-guide-by-recipient/",
@@ -37,7 +29,7 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
+    "period_end": "2026-10-04"
   },
   {
     "article": "/posts/apple-watch-vs-oura-ring-sleep-tracking/",
@@ -45,6 +37,6 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-03"
+    "period_end": "2026-10-04"
   }
 ]
