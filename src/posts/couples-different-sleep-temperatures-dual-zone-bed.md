@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Couples With Different Sleep Temperatures: Dual-Zone Bed Options Compared (Two Comforters, Heated Pads & BedJet)"
 description: "One of you runs hot, the other runs cold? Compare dual-zone bed options for couples — from two separate comforters to dual-control heated pads and BedJet — and find the setup that fits your bed."
-date: 2026-10-04
+date: 2026-10-05
 tags: post
+publishAt: "2026-10-05T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Sunrise Alarm Clocks Compared: Which Wake-Up Light Fits Your Bedroom?"
 description: "Dark mornings and jarring alarms? We compare Hatch Restore, Philips, and Lumie sunrise alarm clocks by light, sound, phone-free use, and partner-friendliness."
-date: 2026-10-04
+date: 2026-10-07
 tags: post
+publishAt: "2026-10-07T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

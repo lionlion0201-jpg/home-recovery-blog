@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Red-Eye Flight Recovery Kit: What to Pack to Sleep on a Plane and Land More Comfortably"
 description: "Can't sleep on planes and land stiff? We compare two travel neck pillows and a mini massage gun, plus a carry-on packing checklist for red-eye and long-haul flights."
-date: 2026-10-04
+date: 2026-10-06
 tags: post
+publishAt: "2026-10-06T09:00:00+09:00"
 category: Recovery
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
