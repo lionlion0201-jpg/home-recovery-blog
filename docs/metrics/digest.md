@@ -1,6 +1,6 @@
 # ファネル表(US)
 
-生成日: 2026-09-30 / 生成: `scripts/build_digest.py`(手で編集しない)
+生成日: 2026-10-04 / 生成: `scripts/build_digest.py`(手で編集しない)
 
 読み方は `docs/agents/analyst.md` の「読み方のルール」に従う。**インプレッションは売上の指標ではない。**判断の主軸はアフィリエイトリンクのクリック(GA4 `affiliate_click`)。
 
