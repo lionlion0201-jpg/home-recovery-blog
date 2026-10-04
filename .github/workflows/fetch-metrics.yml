@@ -64,6 +64,10 @@ jobs:
           # PINTEREST_ACCESS_TOKEN はここでは意図的に渡していない
           # (計測処理に書き込み権限を持たせないため)。
           PINTEREST_READ_TOKEN: ${{ secrets.PINTEREST_READ_TOKEN }}
+          # 登録されていれば毎回リフレッシュトークンからアクセストークンを作り直す(scripts/pinterest_auth.py)
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
         run: python3 scripts/fetch_pin_metrics.py --days 30
 
       # アフィリエイトリンクのクリック(affiliate_click)とセッション。X・Pinterest とは独立して動かす。

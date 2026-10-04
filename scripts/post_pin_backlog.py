@@ -32,6 +32,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from generate_pin_image import generate as generate_pin_image  # noqa: E402
 from asset_ledger import record_safe, article_slug  # noqa: E402
 from post_to_pinterest import create_pin  # noqa: E402
+from run_new_promotions import not_ready_reason  # noqa: E402
 
 from dotenv import load_dotenv  # noqa: E402
 load_dotenv()
@@ -66,10 +67,18 @@ def _iter_backlog_pins(posted):
         except (json.JSONDecodeError, OSError) as e:
             print(f"Skipping {basename}: cannot parse ({e})", file=sys.stderr)
             continue
-        for i, pin in enumerate(manifest.get("pins", [])):
-            key = f"{basename}#{i}"
-            if key not in posted:
-                yield key, basename, i, pin
+        pending = [(i, pin) for i, pin in enumerate(manifest.get("pins", []))
+                   if f"{basename}#{i}" not in posted]
+        if not pending:
+            continue
+        # 記事がまだ読めない(公開日前・デプロイ待ち)マニフェストのピンは後回しにする。
+        # 2026-10-04: 承認直後に公開前の記事へのリンクが投稿されたため
+        reason = not_ready_reason(manifest)
+        if reason:
+            print(f"Waiting {basename}: {reason}")
+            continue
+        for i, pin in pending:
+            yield f"{basename}#{i}", basename, i, pin
 
 
 def main():

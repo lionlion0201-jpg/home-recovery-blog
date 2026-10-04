@@ -24,6 +24,7 @@ from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.dirname(__file__))
 from posted_content_log import PostedContentLog  # noqa: E402
+from pinterest_auth import access_token  # noqa: E402
 
 load_dotenv()
 
@@ -58,7 +59,7 @@ def _resolve_board_id(board_id):
 
 
 def create_pin(title, description, link, image_path, board_id, dry_run=False):
-    token = os.environ.get("PINTEREST_ACCESS_TOKEN")
+    token = None if dry_run else access_token("PINTEREST_ACCESS_TOKEN")
     board_id = _resolve_board_id(board_id)
 
     if not board_id and not dry_run:

@@ -43,7 +43,7 @@ load_dotenv()
 
 
 def has_pinterest_creds():
-    return bool(os.environ.get("PINTEREST_ACCESS_TOKEN"))
+    return bool(os.environ.get("PINTEREST_ACCESS_TOKEN") or os.environ.get("PINTEREST_REFRESH_TOKEN"))
 
 
 def has_x_creds():

@@ -49,6 +49,9 @@ from datetime import date, datetime, timedelta, timezone
 import requests
 from dotenv import load_dotenv
 
+sys.path.insert(0, os.path.dirname(__file__))
+from pinterest_auth import access_token  # noqa: E402
+
 load_dotenv()
 
 JST = timezone(timedelta(hours=9))
@@ -93,8 +96,11 @@ def main():
 
     # 読み取り専用トークンを優先する。投稿用トークンには pins:read が無いため、
     # フォールバックした場合は403になる(その旨は403ハンドラで案内する)。
-    token = os.environ.get("PINTEREST_READ_TOKEN") or os.environ.get("PINTEREST_ACCESS_TOKEN")
-    using_fallback = not os.environ.get("PINTEREST_READ_TOKEN")
+    # リフレッシュトークンが登録されていれば毎回作り直したトークンを使う(pinterest_auth.py 参照)。
+    # そのトークンには pins:read を含めて認可しておく必要がある(無ければ下の403ハンドラで止まる)。
+    using_refresh = bool(os.environ.get("PINTEREST_REFRESH_TOKEN"))
+    token = (None if args.dry_run else access_token("PINTEREST_READ_TOKEN")) or os.environ.get("PINTEREST_ACCESS_TOKEN")
+    using_fallback = not (using_refresh or os.environ.get("PINTEREST_READ_TOKEN"))
     if not token and not args.dry_run:
         raise SystemExit("PINTEREST_READ_TOKEN(または PINTEREST_ACCESS_TOKEN)が設定されていません")
     if using_fallback and not args.dry_run:
@@ -141,6 +147,14 @@ def main():
                   "詳細は docs/social_api_setup.md を参照。", file=sys.stderr)
             forbidden += 1
             break
+        if resp.status_code == 401:
+            # トークン切れ。全件同じ結果になるので1件目で止める。
+            # 2026-10-01〜03: Developer Portal で発行したトークンが約1日で失効し、
+            # 43件すべて 401 なのに終了コード0でワークフローが「成功」表示だった。
+            print(f"[{pin['id']}] 401 Authentication failed: PINTEREST_READ_TOKEN が無効(期限切れ)です。",
+                  file=sys.stderr)
+            failed += 1
+            break
         if resp.status_code != 200:
             print(f"[{pin['id']}] HTTP {resp.status_code}: {resp.text[:200]}", file=sys.stderr)
             failed += 1
@@ -173,6 +187,8 @@ def main():
     print(f"取得成功 {ok}件 / スコープ不足で中断 {forbidden}件 / その他失敗 {failed}件")
     if forbidden:
         sys.exit(2)
+    if failed and not ok:
+        sys.exit(1)  # 1件も取れなかったら失敗として表に出す
 
 
 if __name__ == "__main__":
