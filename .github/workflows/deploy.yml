@@ -4,6 +4,12 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  schedule:
+    # 毎日 09:00 JST (00:00 UTC) に自動再ビルドし、予約公開(publishAt)の記事を反映する。
+    # 2026-10-06: US には schedule が無く、push が無い日は予約記事が公開されなかった
+    # (10/5 公開予定の記事が 10/6 朝になっても 404)。Actions の自動コミットは [skip ci] のため
+    # デプロイを起こさない。JP と同じ設定にそろえた。
+    - cron: "0 0 * * *"
 
 permissions:
   contents: read

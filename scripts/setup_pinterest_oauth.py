@@ -52,11 +52,20 @@ def update_env(key, value):
         f.write("\n".join(out) + "\n")
 
 
+def clean(s):
+    """矢印キーの記号(^[[C)や貼り付けの目印([200~ / [201~)、空白を取り除く。"""
+    s = re.sub(r"\x1b\[[0-9;]*[A-Za-z~]", "", s)
+    s = re.sub(r"\[?20[01]~", "", s)
+    return "".join(ch for ch in s if ch.isprintable()).strip()
+
+
 def main():
     print("Pinterest Developer Portal(https://developers.pinterest.com → My apps → App ID 1594065)の値を入力してください。")
-    client_id = input("Client ID(App ID): ").strip()
-    client_secret = getpass.getpass("Client Secret(入力しても表示されません): ").strip()
-    redirect = input("Redirect URI(そのまま Enter で https://localhost/callback): ").strip() or "https://localhost/callback"
+    client_id = re.sub(r"\D", "", clean(input("Client ID(App ID): "))) or "1594065"
+    print(f"  Client ID: {client_id}")
+    client_secret = clean(getpass.getpass("Client Secret(入力しても表示されません): "))
+    print(f"  Client Secret: {len(client_secret)}文字を受け取りました")
+    redirect = clean(input("Redirect URI(そのまま Enter で https://localhost/callback): ")) or "https://localhost/callback"
 
     url = "https://www.pinterest.com/oauth/?" + urllib.parse.urlencode({
         "client_id": client_id, "redirect_uri": redirect, "response_type": "code",
@@ -65,10 +74,16 @@ def main():
     print("\n次の URL をブラウザで開き、「許可する」を押してください:\n")
     print(url)
     print("\n許可すると、表示できないページ(localhost)に移動します。それで正常です。")
-    pasted = input("そのときのアドレスバーの URL をまるごと貼って Enter: ").strip()
-    m = re.search(r"[?&]code=([^&]+)", pasted)
-    if not m:
-        sys.exit("URL に code= が見つかりませんでした。最初からやり直してください。")
+    print("貼るのは、許可したあとに移動した先の URL です(https://localhost/callback?code=... で始まるもの)。")
+    while True:
+        pasted = clean(input("\nそのときのアドレスバーの URL をまるごと貼って Enter: "))
+        m = re.search(r"[?&]code=([^&\s]+)", pasted)
+        if m:
+            break
+        if "pinterest.com/oauth" in pasted:
+            print("→ これは許可画面の URL です。ブラウザで「許可する」を押したあと、移動した先の URL を貼ってください。")
+        else:
+            print("→ URL に code= が見つかりませんでした。もう一度貼ってください(Ctrl+C で中止)。")
 
     resp = requests.post(
         "https://api.pinterest.com/v5/oauth/token",
