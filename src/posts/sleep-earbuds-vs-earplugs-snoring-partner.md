@@ -120,7 +120,7 @@ If earplugs alone don't take enough of the edge off, and comfort matters more to
 
 **What it's for:** people who are fairly sure sleep earbuds are the right category for them, and who want a pair built specifically for sleep, with comfort as a priority.
 
-Ozlo Sleepbuds are small earbuds designed only for sleeping. According to the manufacturer, they're shaped to rest inside the ear with a low profile so lying on your side is more comfortable, and they offer masking sounds along with alarm-related features. Exactly which features are included, how the alarm works, and what you can play through them can change with updates, so check the current listing and the manufacturer's description for details.
+Ozlo Sleepbuds are small earbuds designed only for sleeping (the current generation is sold as Sleepbuds 2, so check which version a listing is for). According to the manufacturer, they're shaped to rest inside the ear with a low profile so lying on your side is more comfortable, and they offer masking sounds along with a built-in alarm that plays in your ears. Exactly which features are included, how the alarm works, and what you can play through them can change with updates, so check the current listing and the manufacturer's description for details.
 
 The appeal is the same as with any sleep earbud: the fit reduces some of the sound, and a steady masking sound may help cover what's left. The difference with a premium pick is mostly design focus and fit.
 

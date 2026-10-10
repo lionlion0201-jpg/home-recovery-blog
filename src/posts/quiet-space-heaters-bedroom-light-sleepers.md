@@ -134,16 +134,16 @@ De'Longhi is a long-established brand in oil-filled radiators, and its heaters f
 
 **What it's for:** people who want fan-free heat but also want more control over settings, timers, and lights.
 
-Dreo's oil-filled radiators pair the same fan-free design with digital controls. Depending on the model, the manufacturer describes features such as a remote, a timer, and multiple heat settings. Similar heating type to De'Longhi, different approach to controls.
+Dreo's oil-filled radiators use the same fan-free design, with digital controls on some models (others use dials, so check the listing). Depending on the model, the manufacturer describes features such as a remote, a timer, and multiple heat settings. Similar heating type to De'Longhi, different approach to controls.
 
 **Why it suits a bedroom:** no fan noise, and on models with a timer, it's easier to warm the room before bed and let the heater turn off on its own. If your model includes a remote, you don't have to leave the covers to change a setting.
 
-**The trade-offs:** digital controls usually mean a display, and whether it can be dimmed or turned off varies by model, so check the listing and manual if light matters to you. There may still be a soft relay click when the element switches. It's also bulkier and slower to warm than a fan heater.
+**The trade-offs:** on models with digital controls, there's usually a display, and whether it can be dimmed or turned off varies by model, so check the listing and manual if light matters to you. There may still be a soft relay click when the element switches. It's also bulkier and slower to warm than a fan heater.
 
 **Who it fits:** light sleepers who want no fan sound and prefer managing the heater with a timer and remote, and who are willing to confirm the display options before buying.
 
 <div class="cta-box">
-<p><strong>Dreo oil-filled radiator</strong> — fan-free radiator with digital controls; remote, timer, and display options vary by model.</p>
+<p><strong>Dreo oil-filled radiator</strong> — fan-free radiator; controls (digital or dial), remote, timer, and display options vary by model.</p>
 <a href="https://www.amazon.com/s?k=Dreo+oil+filled+radiator+heater&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">Check Price on Amazon</a>
 </div>
 
@@ -241,7 +241,7 @@ Whichever you choose, read the manual in full, plug the heater directly into a w
 <div class="cta-box">
 <p><strong>The three picks:</strong></p>
 <p><a href="https://www.amazon.com/s?k=DeLonghi+oil+filled+radiator+heater&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">See De'Longhi oil-filled radiators on Amazon</a> — fan-free heat, silence first</p>
-<p><a href="https://www.amazon.com/s?k=Dreo+oil+filled+radiator+heater&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">See Dreo oil-filled radiators on Amazon</a> — fan-free heat with digital controls</p>
+<p><a href="https://www.amazon.com/s?k=Dreo+oil+filled+radiator+heater&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">See Dreo oil-filled radiators on Amazon</a> — fan-free heat, digital controls on some models</p>
 <p><a href="https://www.amazon.com/s?k=Dreo+ceramic+space+heater&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">See Dreo ceramic space heaters on Amazon</a> — fast pre-warming for small rooms</p>
 </div>
 
