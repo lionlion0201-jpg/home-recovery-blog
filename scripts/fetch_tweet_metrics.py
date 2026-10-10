@@ -24,13 +24,22 @@ docs/metrics/posted_assets.json は 2026-09-20 に導入したので、それ以
 ツイート本文を docs/cycles/ のマニフェストと突き合わせ、一致したものを
 台帳に遡って登録する(--no-backfill で無効化できる)。
 
+JP サイトと同じ X アカウントを使っていることについて
+------------------------------------------------------
+自分の投稿一覧には JP(シニアペット)の日本語ツイートも混ざって返ってくる。
+2026-10-10 の点検で、記事・型が「不明」だった72件のうち55件が JP の投稿だった
+(JP 側は自分の docs/engagement_log.json に記録している)。US の数字に混ぜると
+インプレッションの合計も型の比較も歪むので、日本語を含むツイートは記録しない。
+
 Usage:
   python3 fetch_tweet_metrics.py [--dry-run] [--max-results 50] [--no-backfill]
 """
 import argparse
 import glob
+import html
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -99,10 +108,31 @@ def get_own_user_id(client, dry_run=False):
     return user_id
 
 
+_JAPANESE = re.compile(r"[\u3040-\u30ff\u4e00-\u9fff]")
+
+
+def is_other_site(text):
+    """JP サイトの投稿か(ひらがな・カタカナ・漢字を含むか)。US の投稿は英語のみ。"""
+    return bool(_JAPANESE.search(text or ""))
+
+
+def normalize(text):
+    """本文の突き合わせ用に表記ゆれを消す。
+
+    X の API が返す本文は、URL が t.co の短縮URLに置き換わり、& などが
+    HTMLエスケープされている。マニフェストの原文とそのまま比べると、リンク付きの
+    CTA投稿や & を含む投稿が一致せず「記事不明」になっていた。
+    """
+    text = html.unescape(text or "")
+    text = re.sub(r"https?://\S+", "<url>", text)
+    return " ".join(text.split()).lower()
+
+
 def manifest_index():
-    """マニフェストのツイート本文 -> (記事スラッグ, マニフェスト名) の対応表。
+    """マニフェストのツイート本文(正規化済み) -> (記事スラッグ, マニフェスト名, 型) の対応表。
 
     台帳導入前に投稿したツイートを、本文の一致で記事に紐づけ直すために使う。
+    型は run_promotion.py と同じく、スレッドの1件目を thread_root、それ以降を thread_reply とする。
     """
     index = {}
     for path in sorted(glob.glob(os.path.join(CYCLES_DIR, "cycle_manifest_*.json"))):
@@ -112,10 +142,11 @@ def manifest_index():
         except (json.JSONDecodeError, OSError):
             continue
         slug = article_slug(path, manifest)
-        for tweet in manifest.get("tweets", []):
-            text = (tweet.get("text") or "").strip()
+        for i, tweet in enumerate(manifest.get("tweets", [])):
+            text = normalize(tweet.get("text"))
             if text:
-                index[text] = (slug, os.path.basename(path))
+                index[text] = (slug, os.path.basename(path),
+                               "thread_root" if i == 0 else "thread_reply")
     return index
 
 
@@ -159,21 +190,25 @@ def main():
     by_text = {} if args.no_backfill else manifest_index()
     log = load_json(METRICS_FILE, [])
     checked_at = datetime.now(JST).isoformat()
-    logged = backfilled = 0
+    logged = backfilled = skipped = 0
 
     for tweet in resp.data:
         tid = str(tweet.id)
         entry = known.get(tid)
 
+        if entry is None and is_other_site(tweet.text):
+            skipped += 1
+            continue
+
         if entry is None and by_text:
             # 台帳導入前の投稿。本文が一致するマニフェストがあれば記事に紐づけ直す。
-            hit = by_text.get((tweet.text or "").strip())
+            hit = by_text.get(normalize(tweet.text))
             if hit:
-                slug, source = hit
+                slug, source, ctype = hit
                 if record_safe(platform="x", asset_id=tid, article=slug,
-                               content_type="thread", text=tweet.text, source=source):
+                               content_type=ctype, text=tweet.text, source=source):
                     backfilled += 1
-                entry = {"article": slug, "type": "thread"}
+                entry = {"article": slug, "type": ctype}
 
         m = tweet.public_metrics or {}
         log.append({
@@ -192,7 +227,8 @@ def main():
 
     save_json(METRICS_FILE, log)
     print(f"Logged metrics for {logged} tweet(s) to {os.path.basename(METRICS_FILE)}. "
-          f"Backfilled {backfilled} ledger entry(ies).")
+          f"Backfilled {backfilled} ledger entry(ies). "
+          f"Skipped {skipped} JP-site tweet(s).")
 
 
 if __name__ == "__main__":
