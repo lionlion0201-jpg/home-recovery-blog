@@ -4,6 +4,7 @@
   "amazon_tag": "quietrecover-20",
   "timezone_offset": "+09:00",
   "publish_hour": "09:00:00",
+  "publish_interval_days": 2,
   "required_sections": [],
   "required_phrases_any": [
     "medical advice",

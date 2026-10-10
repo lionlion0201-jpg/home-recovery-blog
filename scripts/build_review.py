@@ -88,7 +88,8 @@ def build():
         print("下書きの記事がありません(published: false の記事が0本)。")
         return
 
-    slots = next_free_slots(posts, len(drafts_posts))
+    slots = next_free_slots(posts, len(drafts_posts),
+                            interval_days=config.get("publish_interval_days", 1))
     sns = match_drafts_to_posts(parse_sns_drafts(latest_cycle_log()), drafts_posts)
 
     items = []

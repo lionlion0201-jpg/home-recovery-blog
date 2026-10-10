@@ -107,7 +107,7 @@ def internal_links(body):
     return sorted(set(re.findall(r"/posts/([a-z0-9-]+)/", body)))
 
 
-def next_free_slots(posts, count, start_from=None):
+def next_free_slots(posts, count, start_from=None, interval_days=1):
     """publishAt が埋まっていない日を count 日分提案する。
 
     途中に空き日があればそちらを先に埋め、無くなったら最終日の翌日から続ける
@@ -115,40 +115,32 @@ def next_free_slots(posts, count, start_from=None):
      季節ものやセール前など「この日に出したい」記事を差し込んだあとに
      できた穴が埋まらず、公開が途切れる日ができていた)。
 
+    interval_days は公開日どうしの最小間隔(2 なら1日おき)。
+    2026-10-10変更: US は週3本を毎日出すと週の後半が空くため、1日おきに散らす。
+    既存の予約・提案済みの日のどちらとも interval_days 未満に近づけない。
+
     start_from を指定しない場合は翌日から探す。今日はビルド済みなので使わない。
     """
     used = set()
     for p in posts.values():
         d = p["publish_date"]
         if d and d != "0000-00-00":
-            used.add(d)
+            used.add(date.fromisoformat(d))
 
     start = (date.fromisoformat(start_from) if start_from
              else date.today() + timedelta(days=1))
     slots = []
 
-    # 1) 既存の予約のあいだに空いている日を先に埋める
-    if used:
-        cursor = start
-        latest = date.fromisoformat(max(used))
-        while cursor <= latest and len(slots) < count:
-            s = cursor.isoformat()
-            if s not in used:
-                slots.append(s)
-            cursor += timedelta(days=1)
-        # 既存の予約がすべて過去なら、過去日を提案しないよう start から続ける
-        cursor = max(latest + timedelta(days=1), start)
-    else:
-        cursor = start
-
-    # 2) 足りない分は最終日の翌日から続ける
+    # 翌日から順に見て、どの予約とも interval_days 以上離れた日を採る。
+    # 既存の予約のあいだの空きも、最終日より後も、同じ条件で埋まる
+    cursor = start
     while len(slots) < count:
-        s = cursor.isoformat()
-        if s not in used and s not in slots:
-            slots.append(s)
+        taken = used | set(slots)
+        if all(abs((cursor - t).days) >= interval_days for t in taken):
+            slots.append(cursor)
         cursor += timedelta(days=1)
 
-    return slots
+    return [s.isoformat() for s in slots]
 
 
 def check_article(post, posts, config, planned_date=None):
