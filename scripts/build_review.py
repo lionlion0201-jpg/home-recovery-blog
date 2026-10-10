@@ -25,6 +25,7 @@ Pinterestの背景写真レビュー(photo_review.html)が同じ方式で実運�
 """
 import json
 import os
+import re
 import sys
 from datetime import date
 
@@ -48,25 +49,37 @@ def latest_cycle_log():
     return os.path.join(d, logs[-1]) if logs else None
 
 
+_STOP = {"the", "and", "for", "with", "vs", "vs.", "your", "you", "what", "which",
+         "that", "from", "into", "how", "who", "are", "best", "guide"}
+
+
+def _words(s):
+    return {w for w in re.findall(r"[a-z0-9']+", s.lower()) if len(w) > 2 and w not in _STOP}
+
+
 def match_drafts_to_posts(drafts, drafts_posts):
     """サイクルログの「### 記事N: 見出し」と実ファイルを対応づける。
 
-    見出しは内容の要約なのでスラッグとは一致しない。見出しの語がタイトルに
-    含まれていればそれを優先し、なければ生成順に割り当てる。
+    見出しは内容の要約なのでスラッグとは一致しない。見出しとタイトル+スラッグで
+    共通する語が最も多い記事に割り当て、1語も重ならなければ生成順に割り当てる。
+
+    2026-10-10: 以前は「3文字以上の語が1つでもタイトルに含まれれば一致」としていたため、
+    "for" だけで別の記事に一致し、SNS投稿案が記事と入れ違って表示された。
     """
     result = {}
     used = set()
     for i, block in enumerate(drafts):
         head = block["heading"]
-        key = head.split(":", 1)[-1].strip() if ":" in head else head
-        hit = None
+        key = _words(head.split(":", 1)[-1] if ":" in head else head)
+        best, best_score = None, 0
         for p in drafts_posts:
             if p["slug"] in used:
                 continue
-            title = p["front_matter"].get("title", "")
-            if key and (key in title or any(w in title for w in key.split() if len(w) > 2)):
-                hit = p
-                break
+            target = _words(p["front_matter"].get("title", "") + " " + p["slug"].replace("-", " "))
+            score = len(key & target)
+            if score > best_score:
+                best, best_score = p, score
+        hit = best
         if hit is None and i < len(drafts_posts):
             for p in drafts_posts:
                 if p["slug"] not in used:
