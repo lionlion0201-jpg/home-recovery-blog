@@ -15,7 +15,7 @@ JP のアカウントでログインしたまま発行したとみられる。X 
 違うアカウントだったら登録せずに止まる。
 
 やること:
-  1. 開発者アプリの API Key / API Key Secret を入力してもらう(Secret は画面に表示しない)
+  1. 開発者アプリの API Key / API Key Secret を .env(git 管理外)に書いてもらい、そこから読む
   2. 認可URLを表示 → ブラウザで US のアカウントにログインして「許可」→ 表示された番号(PIN)を入力
   3. 発行されたトークンで「誰のトークンか」を確認し、@ユーザー名を表示する
   4. 想定のアカウントだと確認できたら、GitHub Secrets の X_API_KEY / X_API_SECRET /
@@ -28,8 +28,8 @@ JP のアカウントでログインしたまま発行したとみられる。X 
 Usage(自分のターミナルで):
   python3 scripts/setup_x_oauth.py
 """
-import getpass
 import os
+import re
 import subprocess
 import sys
 
@@ -41,16 +41,49 @@ GH = os.path.expanduser("~/.local/bin/gh")
 WRONG_ACCOUNT = "95wDCuNebX41439"
 
 
+ENV_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
+
+
+def read_env():
+    """.env の値を読む(値は表示しない)。前後の空白や引用符は取り除く。"""
+    values = {}
+    if not os.path.exists(ENV_FILE):
+        return values
+    with open(ENV_FILE, encoding="utf-8") as f:
+        for line in f:
+            m = re.match(r"\s*([A-Z_]+)\s*=\s*(.*)$", line)
+            if m:
+                values[m.group(1)] = m.group(2).strip().strip('"').strip("'").strip()
+    return values
+
+
+def write_env(updates):
+    """.env の指定キーだけ書き換える(手元で手動実行するとき用。.env は git 管理外)。"""
+    with open(ENV_FILE, encoding="utf-8") as f:
+        lines = f.read().splitlines()
+    done = set()
+    for i, line in enumerate(lines):
+        m = re.match(r"\s*([A-Z_]+)\s*=", line)
+        if m and m.group(1) in updates:
+            lines[i] = f"{m.group(1)}={updates[m.group(1)]}"
+            done.add(m.group(1))
+    lines += [f"{k}={v}" for k, v in updates.items() if k not in done]
+    with open(ENV_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def set_secret(name, value):
     subprocess.run([GH, "secret", "set", name, "-R", REPO], input=value.encode(), check=True)
 
 
 def main():
-    print("X の開発者アプリ(https://console.x.com)の Keys and tokens にある値を入力してください。")
-    api_key = input("API Key: ").strip()
-    api_secret = getpass.getpass("API Key Secret(入力しても表示されません): ").strip()
+    # API Key / Secret はターミナルに貼り付けず、.env に書いてもらって読む。
+    # 2026-10-10: 画面に表示されない入力欄(getpass)への貼り付けが何度やっても通らなかったため
+    env = read_env()
+    api_key, api_secret = env.get("X_API_KEY", ""), env.get("X_API_SECRET", "")
     if not api_key or not api_secret:
-        sys.exit("API Key と API Key Secret の両方が必要です。")
+        sys.exit(f"{ENV_FILE} の X_API_KEY= と X_API_SECRET= の後ろに値を貼り付けて保存してから、もう一度実行してください。")
+    print(f".env から API Key({len(api_key)}文字)と API Key Secret({len(api_secret)}文字)を読み込みました。")
 
     auth = tweepy.OAuth1UserHandler(api_key, api_secret, callback="oob")
     try:
@@ -93,6 +126,7 @@ def main():
     for name, value in [("X_API_KEY", api_key), ("X_API_SECRET", api_secret),
                         ("X_ACCESS_TOKEN", token), ("X_ACCESS_TOKEN_SECRET", token_secret)]:
         set_secret(name, value)
+    write_env({"X_ACCESS_TOKEN": token, "X_ACCESS_TOKEN_SECRET": token_secret})
     print(f"{REPO} の Secrets に登録しました。次の投稿から @{me.username} で投稿されます。")
     print(f"アカウントID(メモ用): {me.id}")
 
