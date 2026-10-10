@@ -6,7 +6,7 @@ GitHub Secrets に登録する。
 なぜ必要か
 ----------
 2026-10-10 の点検で、US(QuietRecover)の英語の投稿が JP(シニアペット)のアカウント
-(@95wDCuNebX41439)から出ていたことが分かった。8/7 に US 用のトークンを作ったとき、
+(@95wDCuNebX41439、現 @2seniorpets)から出ていたことが分かった。8/7 に US 用のトークンを作ったとき、
 JP のアカウントでログインしたまま発行したとみられる。X の開発者画面でトークンを
 作ると、そのときログインしているアカウントの投稿権限になるため、取り違えやすい。
 
@@ -37,8 +37,9 @@ import tweepy
 
 REPO = "lionlion0201-jpg/home-recovery-blog"
 GH = os.path.expanduser("~/.local/bin/gh")
-# JP のアカウント。US 用にこれで許可してしまったら登録しない
-WRONG_ACCOUNT = "95wDCuNebX41439"
+# JP のアカウント(@2seniorpets、旧 @95wDCuNebX41439)。US 用にこれで許可してしまったら登録しない。
+# ユーザー名は変えられるので、変わらない数字のIDで判定する
+WRONG_ACCOUNT_ID = "1963740489590661120"
 
 
 ENV_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
@@ -115,7 +116,7 @@ def main():
 
     print()
     print(f"このトークンのアカウント: @{me.username}({me.name})")
-    if me.username.lower() == WRONG_ACCOUNT.lower():
+    if str(me.id) == WRONG_ACCOUNT_ID:
         sys.exit("これは JP(シニアペット)のアカウントです。登録せずに終了します。"
                  "US のアカウントでログインし直して、もう一度実行してください。")
 
