@@ -948,5 +948,45 @@
     "source": "cycle_manifest_2026-09-19_cold-plunge-vs-red-light-therapy.json (inferred: posted within 1s of a known tweet in the same thread)",
     "posted_at": "2026-09-19T11:59:37.159000+09:00",
     "text_excerpt": null
+  },
+  {
+    "platform": "x",
+    "id": "2109161157940637706",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_root",
+    "link": null,
+    "source": "cycle_manifest_2026-10-10_heated-foot-massagers-nurses-standing-workers.json",
+    "posted_at": "2026-10-11T14:56:21.165036+09:00",
+    "text_excerpt": "End of a long shift, the usual way:\n\nYou finally sit down. Your feet feel heavy, worn out, and somehow cold, even though"
+  },
+  {
+    "platform": "x",
+    "id": "2109161159026946196",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "link": null,
+    "source": "cycle_manifest_2026-10-10_heated-foot-massagers-nurses-standing-workers.json",
+    "posted_at": "2026-10-11T14:56:21.419827+09:00",
+    "text_excerpt": "Heated foot massagers, three designs:\n\n- Open-top shiatsu: rollers knead soles and arches, top of foot stays free. Budge"
+  },
+  {
+    "platform": "x",
+    "id": "2109161160247574968",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "link": null,
+    "source": "cycle_manifest_2026-10-10_heated-foot-massagers-nurses-standing-workers.json",
+    "posted_at": "2026-10-11T14:56:21.724486+09:00",
+    "text_excerpt": "Before: buying an enclosed air-wrap model on looks alone, then finding the pocket presses your toes or squeezes a wide f"
+  },
+  {
+    "platform": "x",
+    "id": "2109161161497383262",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "link": null,
+    "source": "cycle_manifest_2026-10-10_heated-foot-massagers-nurses-standing-workers.json",
+    "posted_at": "2026-10-11T14:56:22.046167+09:00",
+    "text_excerpt": "Full guide: a side-by-side table of the three designs, a Nekteck vs Cloud Massage vs Comfier comparison, a fit checklist"
   }
 ]
