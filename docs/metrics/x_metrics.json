@@ -3454,5 +3454,101 @@
     "retweet_count": 0,
     "reply_count": 1,
     "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109958186975269273",
+    "article": "quiet-space-heaters-bedroom-light-sleepers",
+    "type": "thread_reply",
+    "created_at": "2026-10-13T10:43:27+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 0,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109958185536647565",
+    "article": "quiet-space-heaters-bedroom-light-sleepers",
+    "type": "thread_reply",
+    "created_at": "2026-10-13T10:43:27+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109958184311873734",
+    "article": "quiet-space-heaters-bedroom-light-sleepers",
+    "type": "thread_reply",
+    "created_at": "2026-10-13T10:43:26+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109958183082934719",
+    "article": "quiet-space-heaters-bedroom-light-sleepers",
+    "type": "thread_root",
+    "created_at": "2026-10-13T10:43:26+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109161161497383262",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "created_at": "2026-10-11T05:56:21+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 0,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109161160247574968",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "created_at": "2026-10-11T05:56:21+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109161159026946196",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_reply",
+    "created_at": "2026-10-11T05:56:21+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
+  },
+  {
+    "checked_at": "2026-10-14T04:47:34.909644+09:00",
+    "tweet_id": "2109161157940637706",
+    "article": "heated-foot-massagers-nurses-standing-workers",
+    "type": "thread_root",
+    "created_at": "2026-10-11T05:56:21+00:00",
+    "impression_count": 0,
+    "like_count": 0,
+    "retweet_count": 0,
+    "reply_count": 1,
+    "quote_count": 0
   }
 ]
