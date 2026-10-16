@@ -91,9 +91,21 @@ def main():
     period = {"period_start": start, "period_end": end}
 
     # 1. 記事ごと
+    try:
+        page_rows = query(svc, prop, start, end, ["page"])
+    except Exception as e:
+        if "sufficient permission" not in str(e):
+            raise
+        # 権限エラーの切り分け用。メールアドレスとアクセスできるプロパティは秘密情報ではない
+        email = json.loads(os.environ["GA4_SA_KEY"]).get("client_email")
+        sites = [s["siteUrl"] + "(" + s["permissionLevel"] + ")"
+                 for s in svc.sites().list().execute().get("siteEntry", [])]
+        raise SystemExit(f"{prop} を見る権限がありません。サービスアカウント: {email}\n"
+                         f"このアカウントがアクセスできるプロパティ: {sites or 'なし'}\n"
+                         f"Search Console の {prop} →「設定」→「ユーザーと権限」に上のアドレスを追加してください。")
     pages = [{"page": r["keys"][0], "clicks": r["clicks"], "impressions": r["impressions"],
               "position": round(r["position"], 1), **period}
-             for r in query(svc, prop, start, end, ["page"])]
+             for r in page_rows]
     save("gsc_pages.json", pages)
 
     # 2. 検索語 × 記事
