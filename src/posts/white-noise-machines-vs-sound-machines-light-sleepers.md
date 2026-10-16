@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: "White Noise Machines Compared: Which One Actually Helps a Light Sleeper Stay Asleep?"
-description: "We compare three sound machines — mechanical fan, digital white noise, and a smart sunrise alarm — to help light sleepers block out the noises that wake them."
+title: "Best Noise Machines for Light Sleepers: White Noise vs. Fan vs. Smart Sound Machines Compared"
+description: "Looking for a noise machine for light sleepers? We compare a mechanical fan, a digital white noise machine, and a smart sound machine — and how to choose the right one for the noises that wake you."
 date: 2026-09-27
 tags: post
 publishAt: "2026-09-27T09:00:00+09:00"

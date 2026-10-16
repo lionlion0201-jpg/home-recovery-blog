@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: "Best Cooling Pillow for Menopause Night Sweats: 3 Picks That Actually Help You Sleep Cooler"
-description: "Night sweats and hot flashes keeping you up? Compare the best cooling pillows and a cooling mattress topper for menopause — with a simple guide to which type fits you."
+title: "Best Cooling Pillows & Pads for Menopause Night Sweats and Hot Flashes: 3 Picks for Sleeping Cooler"
+description: "Night sweats and hot flashes keeping you up? Compare cooling pillows and a cooling mattress pad for menopause — what each can and can't do, and a simple guide to which type fits you."
 date: 2026-09-12
 tags: post
 category: Sleep
