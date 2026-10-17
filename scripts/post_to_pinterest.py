@@ -111,6 +111,8 @@ def create_pin(title, description, link, image_path, board_id, dry_run=False):
         "title": title[:100],
         "description": description[:800],
         "link": link,
+        # 画像の内容を文字で伝える代替テキスト。Pinterest の検索・アクセシビリティに使われる(2026-10-17 追加)
+        "alt_text": title[:500],
         "media_source": {
             "source_type": "image_base64",
             "content_type": content_type,
