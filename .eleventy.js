@@ -48,6 +48,12 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy");
   });
 
+  // "YYYY-MM-DD" の文字列を "September 22, 2026" にする(記事ページの公開日・更新日用)
+  eleventyConfig.addFilter("longDateStr", (s) => {
+    const dt = DateTime.fromISO(String(s || ""), { zone: "utc" });
+    return dt.isValid ? dt.setLocale("en").toFormat("LLLL d, yyyy") : "";
+  });
+
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
