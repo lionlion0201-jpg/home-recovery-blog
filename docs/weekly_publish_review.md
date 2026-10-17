@@ -32,6 +32,7 @@
           → 承認分のマニフェストを docs/cycles/ へ移動
 
           git add -A && git commit && git push
+          (2026-10-17から: `python3 scripts/apply_decisions.py` の1コマンドで、ダウンロードフォルダから最新の US の決定を選んで反映〜push し、使ったファイルを ~/Downloads/レビュー決定/US/decisions_US_YYMMDD.json に移す)
           → pushをトリガーにX投稿が走る
           → publishAt の日に記事が自動公開される
 ```
