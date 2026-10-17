@@ -8,6 +8,8 @@
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ site.domain }}{{ page.url | url }}">
 <meta property="og:type" content="website">
+{#- Pinterest のドメイン認証(2026-10-17)。消すと認証が外れる -#}
+<meta name="p:domain_verify" content="3f4f2cbbe4ec92ebb02e8345e4730089"/>
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description or site.description }}">
 <meta property="og:url" content="{{ site.domain }}{{ page.url | url }}">
