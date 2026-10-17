@@ -11,4 +11,4 @@ We don't chase every new trend. We focus on categories with steady, long-term de
 
 Every guide is researched from product specs, manufacturer documentation, and publicly available reviews before we publish. Where a claim touches on health or medical topics, we keep the language non-committal and point readers toward consulting a qualified professional rather than positioning ourselves as one.
 
-Have a question or a category you'd like covered? Reach out via the [contact info on our Privacy Policy page]({{ '/privacy-policy/' | url }}).
+Have a question, a correction, or a category you'd like covered? Send us a message through our [contact form](https://docs.google.com/forms/d/e/1FAIpQLSf2Q0N-l8hNTmeWcCkxO8xrbPAAtynMdff9WMGT4u_TjYLAwQ/viewform).

@@ -5,7 +5,7 @@ description: How QuietRecover collects, uses, and protects visitor data.
 ---
 # Privacy Policy
 
-*Last updated: August 3, 2026*
+*Last updated: October 17, 2026*
 
 This Privacy Policy explains how QuietRecover ("this site," "we," "us") handles information when you visit quietrecover's website. By using this site, you agree to the collection and use of information as described here.
 
@@ -17,7 +17,7 @@ This Privacy Policy explains how QuietRecover ("this site," "we," "us") handles 
 
 **Cookies.** This site itself does not set first-party cookies for tracking purposes beyond what Google Analytics requires. Affiliate links (for example, Amazon Associates links) may set cookies on your device once you click through to the destination retailer's site — those cookies are controlled by the destination site, not by us. See our [Affiliate Disclosure]({{ '/affiliate-disclosure/' | url }}) for more on how affiliate links work.
 
-**Information you provide directly.** If you contact us by email, we retain that correspondence only as needed to respond to you.
+**Information you provide directly.** If you contact us through our contact form (hosted on Google Forms), we use the name, email address, and message you submit only to respond to you.
 
 ## How we use information
 
@@ -41,4 +41,4 @@ We may update this policy from time to time. Changes will be posted on this page
 
 ## Contact
 
-Questions about this policy can be sent to [lionlion0201@gmail.com](mailto:lionlion0201@gmail.com).
+Questions about this policy can be sent through our [contact form](https://docs.google.com/forms/d/e/1FAIpQLSf2Q0N-l8hNTmeWcCkxO8xrbPAAtynMdff9WMGT4u_TjYLAwQ/viewform).
