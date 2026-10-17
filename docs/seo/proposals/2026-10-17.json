@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-10-17-1",
+    "slug": "best-bedding-couples-different-temperatures-hot-sleeper",
+    "query": "best bedding for couples with different temperatures",
+    "reason": "この検索語(表示3・64.7位)と関連語(表示6・60.7位)はいま既存のカップル記事に表示されている。暑がり側に絞った新記事へリンクして役割分担を示し、2本が同じ検索語で競合するのを和らげる。新記事の公開(10/18)後に反映すること",
+    "changes": [
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "Often, yes — just scale the solution to the problem. If only one partner is cold, a dual-control heated pad (or even an extra throw on one side) may be all you need. If only one partner runs hot, a lighter comforter on their side through the Scandinavian method is an inexpensive first step. The premium options make the most sense when both partners need something different, or when the simpler fixes haven't been enough.",
+        "new": "Often, yes — just scale the solution to the problem. If only one partner is cold, a dual-control heated pad (or even an extra throw on one side) may be all you need. If only one partner runs hot, a lighter comforter on their side through the Scandinavian method is an inexpensive first step. For more ways to cool only the hot sleeper's side, see [our guide to the best bedding for couples with different temperatures]({{ '/posts/best-bedding-couples-different-temperatures-hot-sleeper/' | url }}). The premium options make the most sense when both partners need something different, or when the simpler fixes haven't been enough."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-2",
+    "slug": "portable-white-noise-machine-athletes-hotel",
+    "query": "portable white noise machine for hotel",
+    "reason": "red-eye 記事の持ち物チェックリストにある「ホテルの廊下や空調の音対策のポータブル・ホワイトノイズ機」は汎用の Amazon 検索リンクだけで、比べた記事が無い。新記事(3機種の比較)へ案内する。新記事の公開(10/20)後に反映すること",
+    "changes": [
+      {
+        "file": "src/posts/red-eye-flight-recovery-kit-carry-on.md",
+        "old": "- [ ] <a href=\"https://www.amazon.com/s?k=portable+white+noise+machine+travel&tag=quietrecover-20\" rel=\"nofollow sponsored\" target=\"_blank\">Portable white noise machine</a> for hallway and HVAC noise at the hotel",
+        "new": "- [ ] <a href=\"https://www.amazon.com/s?k=portable+white+noise+machine+travel&tag=quietrecover-20\" rel=\"nofollow sponsored\" target=\"_blank\">Portable white noise machine</a> for hallway and HVAC noise at the hotel (we compare three portable models in [our guide to portable white noise machines for hotel rooms]({{ '/posts/portable-white-noise-machine-athletes-hotel/' | url }}))"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-3",
+    "slug": "shiatsu-back-massager-office-chair-desk-workers",
+    "query": "shiatsu back massager for office chair",
+    "reason": "首肩記事は検索で平均15.7位(伸ばす候補)。腰まで当てたい読者の話題が出る段落から、対になる背中用クッションの新記事へつなぐ。新記事の公開(10/22)後に反映すること",
+    "changes": [
+      {
+        "file": "src/posts/shiatsu-neck-shoulder-massager-desk-tension.md",
+        "old": "The Naipo model's main advantage is coverage: it comes with an extended strap and a separate attachment that lets you move it to the lower back, not just the neck and shoulders. For anyone whose desk-related tightness spreads beyond the neck — a stiff lower back from sitting, for example — this flexibility is the deciding factor over a neck-only model. It sits in the mid-range price bracket, between the budget and premium options.",
+        "new": "The Naipo model's main advantage is coverage: it comes with an extended strap and a separate attachment that lets you move it to the lower back, not just the neck and shoulders. For anyone whose desk-related tightness spreads beyond the neck — a stiff lower back from sitting, for example — this flexibility is the deciding factor over a neck-only model. It sits in the mid-range price bracket, between the budget and premium options. If the stiffness is mainly in your mid or lower back, [our guide to shiatsu back massagers for office chairs]({{ '/posts/shiatsu-back-massager-office-chair-desk-workers/' | url }}) compares chair-mounted cushions that cover more of the back."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-4",
+    "slug": "shiatsu-back-massager-office-chair-desk-workers",
+    "query": "shiatsu back massager for office chair",
+    "reason": "足マッサージャー記事は検索結果に未掲載で、新記事からのリンクも今回初めて付いた。導入の『座り仕事の人向けの記事』の案内に背中用の新記事を加え、マッサージャー記事どうしを相互につなぐ。新記事の公開(10/22)後に反映すること",
+    "changes": [
+      {
+        "file": "src/posts/heated-foot-massagers-nurses-standing-workers.md",
+        "old": "This guide compares those three designs and helps you choose by type and by fit. For desk workers, we've already covered the upper-body version of this problem in [our guide to shiatsu neck and shoulder massagers for desk-related tension]({{ '/posts/shiatsu-neck-shoulder-massager-desk-tension/' | url }}). We haven't put these foot massagers through a hands-on test. This guide compares designs, how each type is built to work, and what to check on the listing, based on manufacturer descriptions, published product information, and the general traits of each category.",
+        "new": "This guide compares those three designs and helps you choose by type and by fit. For desk workers, we've already covered the upper-body version of this problem in [our guide to shiatsu neck and shoulder massagers for desk-related tension]({{ '/posts/shiatsu-neck-shoulder-massager-desk-tension/' | url }}), and chair-mounted options for the back in [our guide to shiatsu back massagers for office chairs]({{ '/posts/shiatsu-back-massager-office-chair-desk-workers/' | url }}). We haven't put these foot massagers through a hands-on test. This guide compares designs, how each type is built to work, and what to check on the listing, based on manufacturer descriptions, published product information, and the general traits of each category."
+      }
+    ]
+  }
+]
