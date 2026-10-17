@@ -157,17 +157,38 @@ def cmd_fix_pins(h, limit, apply):
         sys.exit(1)
 
 
+def cmd_delete_empty_boards(h, ids, apply):
+    """指定したボードを、ピンが0枚のときだけ削除する(誤削除防止)。"""
+    boards = {b["id"]: b for b in paged(f"{API}/boards", h)}
+    for i in ids:
+        b = boards.get(i)
+        if not b:
+            print(f"{i}: 見つからない(削除済み?)")
+            continue
+        if b.get("pin_count"):
+            print(f"{i} {b['name']}: ピンが {b['pin_count']} 枚あるので削除しない")
+            continue
+        if not apply:
+            print(f"(削除予定) {i} {b['name']}")
+            continue
+        r = requests.delete(f"{API}/boards/{i}", headers=h, timeout=30)
+        print(f"{i} {b['name']}: " + ("削除しました" if r.status_code < 300 else f"失敗 HTTP {r.status_code} {r.text[:200]}"))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["boards", "ensure-boards", "fix-pins"])
+    ap.add_argument("command", choices=["boards", "ensure-boards", "fix-pins", "delete-empty-boards"])
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--ids", default="", help="delete-empty-boards の対象ボードID(カンマ区切り)")
     a = ap.parse_args()
     h = headers()
     if a.command == "boards":
         cmd_boards(h)
     elif a.command == "ensure-boards":
         cmd_ensure_boards(h, a.apply)
+    elif a.command == "delete-empty-boards":
+        cmd_delete_empty_boards(h, [x for x in a.ids.split(",") if x], a.apply)
     else:
         cmd_fix_pins(h, a.limit, a.apply)
 

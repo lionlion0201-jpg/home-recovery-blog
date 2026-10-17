@@ -10,13 +10,17 @@ on:
         description: "boards = 一覧 / ensure-boards = テーマ別ボードを用意 / fix-pins = 投稿済みピンのボード移動と旧URL修正"
         type: choice
         default: "boards"
-        options: ["boards", "ensure-boards", "fix-pins"]
+        options: ["boards", "ensure-boards", "fix-pins", "delete-empty-boards"]
       apply:
         description: "実際に変更する(外すと表示だけ)"
         type: boolean
         default: false
       limit:
         description: "fix-pins で変更する最大枚数(空なら全部)"
+        type: string
+        default: ""
+      ids:
+        description: "delete-empty-boards の対象ボードID(カンマ区切り。ピン0枚のボードだけ削除される)"
         type: string
         default: ""
 
@@ -45,10 +49,12 @@ jobs:
           CMD: ${{ github.event.inputs.command }}
           APPLY: ${{ github.event.inputs.apply }}
           LIMIT: ${{ github.event.inputs.limit }}
+          IDS: ${{ github.event.inputs.ids }}
         run: |
           args="$CMD"
           [ "$APPLY" = "true" ] && args="$args --apply"
           [ -n "$LIMIT" ] && args="$args --limit $LIMIT"
+          [ -n "$IDS" ] && args="$args --ids $IDS"
           python3 scripts/pinterest_admin.py $args
       - name: Commit board mapping
         if: github.event.inputs.command == 'ensure-boards' && github.event.inputs.apply == 'true'
