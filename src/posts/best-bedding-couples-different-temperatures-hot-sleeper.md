@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Best Bedding for Couples With Different Temperatures: Cooling Options for the Hot Sleeper's Side"
 description: "The best bedding for couples with different temperatures cools only the hot sleeper's side. Compare a cooling blanket, Twin XL topper, and half-size Chilipad."
-date: 2026-10-17
+date: 2026-10-18
 tags: post
+publishAt: "2026-10-18T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
