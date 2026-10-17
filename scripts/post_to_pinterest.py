@@ -15,6 +15,7 @@ Usage:
 """
 import argparse
 import base64
+import json
 import os
 import re
 import sys
@@ -58,7 +59,32 @@ def _resolve_board_id(board_id):
     return default_id
 
 
+_ROOT = os.path.join(os.path.dirname(__file__), "..")
+_OLD_PREFIX = "https://lionlion0201-jpg.github.io/home-recovery-blog/"
+
+
+def board_for_link(link):
+    """リンク先の記事のテーマに対応するボードIDを返す(2026-10-17 追加)。
+
+    テーマは src/_data/categories.json、テーマ→ボードは docs/pinterest_boards.json
+    (scripts/pinterest_admin.py ensure-boards で作成)。マニフェストのボード名より優先する。
+    以前は未作成のボード名が既定ボードに落ちて、全ピンが1つのボードに混在していた。
+    """
+    try:
+        cats = json.load(open(os.path.join(_ROOT, "src", "_data", "categories.json"), encoding="utf-8"))
+        boards = json.load(open(os.path.join(_ROOT, "docs", "pinterest_boards.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    m = re.search(r"/posts/([^/?#]+)/?", link or "")
+    theme = cats.get("posts", {}).get(m.group(1)) if m else None
+    return boards.get(theme) if theme else None
+
+
 def create_pin(title, description, link, image_path, board_id, dry_run=False):
+    # 旧URL(GitHub Pages)のリンクは新ドメインに直してから投稿する
+    if link and link.startswith(_OLD_PREFIX):
+        link = "https://quietrecover.com/" + link[len(_OLD_PREFIX):]
+    board_id = board_for_link(link) or board_id
     token = None if dry_run else access_token("PINTEREST_ACCESS_TOKEN")
     board_id = _resolve_board_id(board_id)
 
