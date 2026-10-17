@@ -26,5 +26,545 @@
       "period_end": "2026-10-13"
     },
     "changes": "git の 10/16 のコミットを参照"
+  },
+  {
+    "id": "2026-10-17-t1",
+    "slug": "2026-recovery-sleep-gift-guide-by-recipient",
+    "query": null,
+    "reason": "タイトル105文字→63文字(<title>では末尾に ' | QuietRecover' が付く)、説明文163文字→125文字。順位6.1・表示8・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 6.1,
+      "impressions": 8,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "title: \"2026 Recovery & Sleep Gift Guide: Best Picks by Who You're Buying For (Him, Her, Athletes, Tired Parents)\"",
+        "new": "title: \"2026 Recovery & Sleep Gift Guide: Picks for Him, Her & Athletes\""
+      },
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "description: \"Not sure what to get the recovery-and-sleep-obsessed people on your list? Our 2026 gift guide breaks down the best picks for him, her, athletes, and tired parents.\"",
+        "new": "description: \"Gift ideas for people who love recovery and sleep gear. Our 2026 guide sorts picks for him, her, athletes, and tired parents.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t2",
+    "slug": "apple-watch-vs-oura-ring-sleep-tracking",
+    "query": "oura ring vs apple watch",
+    "reason": "タイトル88文字→53文字(<title>では末尾に ' | QuietRecover' が付く)、説明文219文字→132文字。順位57.8・表示5・クリック0(9/16〜10/14)。検索語「oura ring vs apple watch」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 57.8,
+      "impressions": 5,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/apple-watch-vs-oura-ring-sleep-tracking.md",
+        "old": "title: \"Apple Watch vs. Oura Ring for Sleep: Do You Need Both If You Already Own an Apple Watch?\"",
+        "new": "title: \"Oura Ring vs Apple Watch for Sleep: Do You Need Both?\""
+      },
+      {
+        "file": "src/posts/apple-watch-vs-oura-ring-sleep-tracking.md",
+        "old": "description: \"Apple Watch sleep tracking accuracy vs. Oura Ring, compared honestly. See where the two diverge on deep sleep, comfort, and price, and whether adding an Oura Ring is actually worth it if you already wear an Apple Watch.\"",
+        "new": "description: \"Oura Ring vs Apple Watch for sleep tracking: how they differ on deep sleep, comfort, and price, and whether owning both is worth it.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t3",
+    "slug": "best-bedding-couples-different-temperatures-hot-sleeper",
+    "query": "best bedding for couples with different temperatures",
+    "reason": "タイトル96文字→52文字(<title>では末尾に ' | QuietRecover' が付く)。GSCデータなし(9/16〜10/14)。検索語「best bedding for couples with different temperatures」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "title: \"Best Bedding for Couples With Different Temperatures: Cooling Options for the Hot Sleeper's Side\"",
+        "new": "title: \"Best Bedding for Couples With Different Temperatures\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t4",
+    "slug": "best-quiet-bedroom-humidifiers-for-fall",
+    "query": null,
+    "reason": "タイトル73文字→45文字(<title>では末尾に ' | QuietRecover' が付く)、説明文166文字→144文字。順位5・表示1・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 5,
+      "impressions": 1,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-quiet-bedroom-humidifiers-for-fall.md",
+        "old": "title: \"Best Quiet Bedroom Humidifiers for Fall: Stop Waking Up With a Dry Throat\"",
+        "new": "title: \"Best Quiet Bedroom Humidifiers for Fall Sleep\""
+      },
+      {
+        "file": "src/posts/best-quiet-bedroom-humidifiers-for-fall.md",
+        "old": "description: \"Dry air keeping you up this fall? Compare the quietest bedroom humidifiers for sleep — noise levels, mist type, and tank size — so you can breathe easy without a hum.\"",
+        "new": "description: \"Dry fall air in the bedroom? Compare quiet humidifiers by noise level, mist type, and tank size so you can pick one that will not hum all night.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t5",
+    "slug": "best-recovery-and-sleep-gifts-2026",
+    "query": null,
+    "reason": "タイトル103文字→48文字(<title>では末尾に ' | QuietRecover' が付く)、説明文232文字→145文字。順位6.2・表示5・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 6.2,
+      "impressions": 5,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "title: \"Best Home Recovery & Sleep Gifts 2026: The Ultimate Guide by Budget, From Stocking Stuffers to Splurges\"",
+        "new": "title: \"Best Home Recovery & Sleep Gifts 2026, by Budget\""
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "description: \"Struggling to buy for someone who's always tired or sore? This 2026 gift guide breaks down the best recovery and sleep gifts by budget tier, from stocking stuffers to splurges — with real comparisons, not just a random product list.\"",
+        "new": "description: \"Shopping for someone who is always tired or sore? Our 2026 guide compares recovery and sleep gifts by budget, from stocking stuffers to splurges.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t6",
+    "slug": "blackout-curtains-sleep-masks-for-day-sleepers",
+    "query": null,
+    "reason": "タイトル85文字→50文字(<title>では末尾に ' | QuietRecover' が付く)、説明文165文字→130文字。順位8.2・表示39・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 8.2,
+      "impressions": 39,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/blackout-curtains-sleep-masks-for-day-sleepers.md",
+        "old": "title: \"Blackout Curtains vs. Sleep Masks for Day Sleepers: Which Actually Blocks More Light?\"",
+        "new": "title: \"Blackout Curtains vs. Sleep Masks for Day Sleepers\""
+      },
+      {
+        "file": "src/posts/blackout-curtains-sleep-masks-for-day-sleepers.md",
+        "old": "description: \"Sleeping during the day after a night shift? We compare blackout curtains and contoured sleep masks — light-blocking power, cost, and portability — to help you pick.\"",
+        "new": "description: \"Sleeping by day after a night shift? Compare blackout curtains and contoured sleep masks on light blocking, cost, and portability.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t7",
+    "slug": "cold-plunge-vs-red-light-therapy",
+    "query": null,
+    "reason": "タイトル93文字→54文字(<title>では末尾に ' | QuietRecover' が付く)、説明文177文字→132文字。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/cold-plunge-vs-red-light-therapy.md",
+        "old": "title: \"Cold Plunge vs. Red Light Therapy: Which Recovery Tool Should You Buy First for Sore Muscles?\"",
+        "new": "title: \"Cold Plunge vs. Red Light Therapy: Which to Buy First?\""
+      },
+      {
+        "file": "src/posts/cold-plunge-vs-red-light-therapy.md",
+        "old": "description: \"Cold plunge vs. red light therapy for sore muscles: which recovery tool should you buy first on a mid-range budget in a small apartment? A side-by-side comparison and top picks.\"",
+        "new": "description: \"Cold plunge or red light therapy for sore muscles? A side-by-side look for a mid-range budget and a small apartment, with top picks.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t8",
+    "slug": "cold-plunge-vs-sauna-blanket",
+    "query": "sauna vs cold plunge",
+    "reason": "タイトル71文字→50文字(<title>では末尾に ' | QuietRecover' が付く)。順位51・表示2・クリック0(9/16〜10/14)。検索語「sauna vs cold plunge」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 51,
+      "impressions": 2,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/cold-plunge-vs-sauna-blanket.md",
+        "old": "title: \"Cold Plunge vs. Sauna Blanket: Which Should You Buy First for Recovery?\"",
+        "new": "title: \"Sauna Blanket vs. Cold Plunge: Which to Buy First?\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t9",
+    "slug": "couples-different-sleep-temperatures-dual-zone-bed",
+    "query": "what bedding keeps both partners comfortable if one sleeps hot",
+    "reason": "タイトル112文字→58文字(<title>では末尾に ' | QuietRecover' が付く)、説明文194文字→130文字。順位44.4・表示15・クリック0(9/16〜10/14)。検索語「what bedding keeps both partners comfortable if one sleeps hot」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 44.4,
+      "impressions": 15,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "title: \"Couples With Different Sleep Temperatures: Dual-Zone Bed Options Compared (Two Comforters, Heated Pads & BedJet)\"",
+        "new": "title: \"Bedding for Couples When One Sleeps Hot: Dual-Zone Options\""
+      },
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "description: \"One of you runs hot, the other runs cold? Compare dual-zone bed options for couples — from two separate comforters to dual-control heated pads and BedJet — and find the setup that fits your bed.\"",
+        "new": "description: \"One of you runs hot and the other cold? Compare two comforters, dual-control heated pads, and BedJet to find a setup for your bed.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t10",
+    "slug": "heated-foot-massagers-nurses-standing-workers",
+    "query": null,
+    "reason": "タイトル86文字→61文字(<title>では末尾に ' | QuietRecover' が付く)、説明文196文字→142文字。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/heated-foot-massagers-nurses-standing-workers.md",
+        "old": "title: \"Heated Foot Massagers for Nurses and On-Your-Feet Workers: Shiatsu vs. Air Compression\"",
+        "new": "title: \"Heated Foot Massagers for Nurses: Shiatsu vs. Air Compression\""
+      },
+      {
+        "file": "src/posts/heated-foot-massagers-nurses-standing-workers.md",
+        "old": "description: \"On your feet all shift and coming home with tired, cold feet? We compare heated foot massager types — open shiatsu, air-wrap, and foot-and-calf — plus fit tips for larger feet. Not medical advice.\"",
+        "new": "description: \"On your feet all shift? Compare open shiatsu, air-wrap, and foot-and-calf heated massagers, with fit tips for larger feet. Not medical advice.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t11",
+    "slug": "magnesium-glycinate-sleep-shift-workers",
+    "query": null,
+    "reason": "タイトル77文字→57文字(<title>では末尾に ' | QuietRecover' が付く)、説明文222文字→137文字。順位9.2・表示10・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 9.2,
+      "impressions": 10,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/magnesium-glycinate-sleep-shift-workers.md",
+        "old": "title: \"Magnesium Glycinate for Sleep: A Shift Worker's Subscription Comparison Guide\"",
+        "new": "title: \"Magnesium Glycinate for Sleep: Shift Worker Subscriptions\""
+      },
+      {
+        "file": "src/posts/magnesium-glycinate-sleep-shift-workers.md",
+        "old": "description: \"We compare top magnesium glycinate subscriptions built for shift workers' irregular sleep schedules — format, flavor, cost per month, and cancellation policy — plus who should check with a doctor first. Not medical advice.\"",
+        "new": "description: \"Compare magnesium glycinate subscriptions for shift workers by format, flavor, monthly cost, and cancellation policy. Not medical advice.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t12",
+    "slug": "massage-gun-vs-compression-boots-recovery",
+    "query": null,
+    "reason": "タイトル85文字→59文字(<title>では末尾に ' | QuietRecover' が付く)、説明文177文字→123文字。順位8.2・表示10・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 8.2,
+      "impressions": 10,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/massage-gun-vs-compression-boots-recovery.md",
+        "old": "title: \"Massage Gun vs. Compression Boots: Which Actually Cuts Post-Workout Soreness at Home?\"",
+        "new": "title: \"Massage Gun vs. Compression Boots for Post-Workout Soreness\""
+      },
+      {
+        "file": "src/posts/massage-gun-vs-compression-boots-recovery.md",
+        "old": "description: \"Massage guns and compression boots both promise faster muscle recovery at home—but which fits your routine and budget? We compare Theragun, Normatec, and Air Relax side by side.\"",
+        "new": "description: \"Massage guns or compression boots for recovery at home? We compare Theragun, Normatec, and Air Relax by routine and budget.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t13",
+    "slug": "oura-ring-vs-whoop-sleep-tracking",
+    "query": "whoop versus oura ring",
+    "reason": "タイトル90文字→55文字(<title>では末尾に ' | QuietRecover' が付く)、説明文184文字→123文字。順位24・表示9・クリック0(9/16〜10/14)。検索語「whoop versus oura ring」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 24,
+      "impressions": 9,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/oura-ring-vs-whoop-sleep-tracking.md",
+        "old": "title: \"Oura Ring vs Whoop for Sleep Tracking: Which Smart Ring Actually Fits Your Recovery Goals?\"",
+        "new": "title: \"Whoop vs. Oura Ring for Sleep Tracking: Which Fits You?\""
+      },
+      {
+        "file": "src/posts/oura-ring-vs-whoop-sleep-tracking.md",
+        "old": "description: \"Comparing Oura Ring vs Whoop for sleep tracking? See how each device measures sleep, what the subscription actually costs, and which one fits shift workers or irregular schedules best.\"",
+        "new": "description: \"Oura Ring vs Whoop for sleep tracking: how each measures sleep, what the subscription costs, and which suits shift workers.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t14",
+    "slug": "portable-white-noise-machine-athletes-hotel",
+    "query": null,
+    "reason": "タイトル80文字→56文字(<title>では末尾に ' | QuietRecover' が付く)。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/portable-white-noise-machine-athletes-hotel.md",
+        "old": "title: \"White Noise Machine for Athletes: 3 Portable Picks for Hotel Rooms on Away Trips\"",
+        "new": "title: \"White Noise Machine for Athletes: 3 Portable Hotel Picks\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t15",
+    "slug": "quiet-space-heaters-bedroom-light-sleepers",
+    "query": null,
+    "reason": "タイトル105文字→56文字(<title>では末尾に ' | QuietRecover' が付く)、説明文177文字→139文字。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/quiet-space-heaters-bedroom-light-sleepers.md",
+        "old": "title: \"Quiet Space Heaters for Bedrooms: Oil-Filled vs. Ceramic for Light Sleepers (Clicks, Hum & Glow Compared)\"",
+        "new": "title: \"Quiet Space Heaters for Bedrooms: Oil-Filled vs. Ceramic\""
+      },
+      {
+        "file": "src/posts/quiet-space-heaters-bedroom-light-sleepers.md",
+        "old": "description: \"Bedroom too cold, but heaters keep waking you up? Compare oil-filled radiators and ceramic heaters by noise, display glow, thermostat clicks, and safety features before you buy.\"",
+        "new": "description: \"Bedroom too cold but heaters keep waking you? Compare oil-filled and ceramic heaters on noise, display glow, thermostat clicks, and safety.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t16",
+    "slug": "red-eye-flight-recovery-kit-carry-on",
+    "query": null,
+    "reason": "タイトル87文字→58文字(<title>では末尾に ' | QuietRecover' が付く)、説明文165文字→139文字。順位12・表示1・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 12,
+      "impressions": 1,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/red-eye-flight-recovery-kit-carry-on.md",
+        "old": "title: \"Red-Eye Flight Recovery Kit: What to Pack to Sleep on a Plane and Land More Comfortably\"",
+        "new": "title: \"Red-Eye Flight Recovery Kit: What to Pack in Your Carry-On\""
+      },
+      {
+        "file": "src/posts/red-eye-flight-recovery-kit-carry-on.md",
+        "old": "description: \"Can't sleep on planes and land stiff? We compare two travel neck pillows and a mini massage gun, plus a carry-on packing checklist for red-eye and long-haul flights.\"",
+        "new": "description: \"Can't sleep on planes? Compare two travel neck pillows and a mini massage gun, plus a carry-on checklist for red-eye and long-haul flights.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t17",
+    "slug": "red-light-therapy-devices-for-home",
+    "query": null,
+    "reason": "タイトル70文字→56文字(<title>では末尾に ' | QuietRecover' が付く)。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/red-light-therapy-devices-for-home.md",
+        "old": "title: \"Best Red Light Therapy Devices for Home Use: A Buyer's Guide by Budget\"",
+        "new": "title: \"Best Red Light Therapy Devices for Home: Guide by Budget\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t18",
+    "slug": "red-light-therapy-vs-massage-gun",
+    "query": null,
+    "reason": "タイトル75文字→53文字(<title>では末尾に ' | QuietRecover' が付く)、説明文193文字→135文字。順位3.8・表示11・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 3.8,
+      "impressions": 11,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/red-light-therapy-vs-massage-gun.md",
+        "old": "title: \"Red Light Therapy vs Massage Gun: Which Recovery Tool Should You Buy First?\"",
+        "new": "title: \"Red Light Therapy vs Massage Gun: Which to Buy First?\""
+      },
+      {
+        "file": "src/posts/red-light-therapy-vs-massage-gun.md",
+        "old": "description: \"Sore after workouts and can't decide between a red light panel and a massage gun? Compare how each actually works, what they can't do, and which one to buy first based on your budget and goals.\"",
+        "new": "description: \"Sore after workouts and torn between a red light panel and a massage gun? See how each works, what it can't do, and which to buy first.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t19",
+    "slug": "sauna-blanket-vs-home-sauna",
+    "query": null,
+    "reason": "タイトル74文字→54文字(<title>では末尾に ' | QuietRecover' が付く)。順位6・表示1・クリック0(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 6,
+      "impressions": 1,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/sauna-blanket-vs-home-sauna.md",
+        "old": "title: \"Infrared Sauna Blanket vs. Home Sauna: Which Is Worth It in a Small Space?\"",
+        "new": "title: \"Infrared Sauna Blanket vs. Home Sauna for Small Spaces\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t20",
+    "slug": "shiatsu-back-massager-office-chair-desk-workers",
+    "query": null,
+    "reason": "タイトル88文字→55文字(<title>では末尾に ' | QuietRecover' が付く)。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/shiatsu-back-massager-office-chair-desk-workers.md",
+        "old": "title: \"Shiatsu Back Massager for Office Chair: 3 Heated Cushion Types Compared for Desk Workers\"",
+        "new": "title: \"Shiatsu Back Massager for Office Chairs: 3 Heated Types\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t21",
+    "slug": "shiatsu-neck-shoulder-massager-desk-tension",
+    "query": "best neck massagers for coworking spaces",
+    "reason": "タイトル75文字→59文字(<title>では末尾に ' | QuietRecover' が付く)、説明文164文字→141文字。順位15.7・表示11・クリック0(9/16〜10/14)。検索語「best neck massagers for coworking spaces」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 15.7,
+      "impressions": 11,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/shiatsu-neck-shoulder-massager-desk-tension.md",
+        "old": "title: \"Shiatsu Neck & Shoulder Massagers for Desk-Related Tension: A Buyer's Guide\"",
+        "new": "title: \"Best Neck Massagers for Desk Workers: Shiatsu Buyer's Guide\""
+      },
+      {
+        "file": "src/posts/shiatsu-neck-shoulder-massager-desk-tension.md",
+        "old": "description: \"Tight neck and shoulders from a desk job? We compare kneading shiatsu neck massagers with heat — how they differ from a massage gun and which model fits your setup.\"",
+        "new": "description: \"Tight neck from a desk job? Compare kneading shiatsu neck massagers with heat, how they differ from a massage gun, and which fits your setup.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t22",
+    "slug": "sleep-earbuds-vs-earplugs-snoring-partner",
+    "query": null,
+    "reason": "タイトル78文字→48文字(<title>では末尾に ' | QuietRecover' が付く)、説明文169文字→145文字。GSCデータなし(9/16〜10/14)",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/sleep-earbuds-vs-earplugs-snoring-partner.md",
+        "old": "title: \"Sleep Earbuds vs. Earplugs for a Snoring Partner: What Works for Side Sleepers\"",
+        "new": "title: \"Sleep Earbuds vs. Earplugs for a Snoring Partner\""
+      },
+      {
+        "file": "src/posts/sleep-earbuds-vs-earplugs-snoring-partner.md",
+        "old": "description: \"Partner's snoring keeping you up, and earplugs hurt when you sleep on your side? Compare sleep earbuds, reusable earplugs, and foam plugs on comfort, alarms, and upkeep.\"",
+        "new": "description: \"Partner's snoring keeping you up, and earplugs hurt on your side? Compare sleep earbuds, reusable earplugs, and foam plugs on comfort and upkeep.\""
+      }
+    ]
+  },
+  {
+    "id": "2026-10-17-t23",
+    "slug": "sunrise-alarm-clocks-wake-up-light-comparison",
+    "query": "lumie vs hatch",
+    "reason": "タイトル69文字→58文字(<title>では末尾に ' | QuietRecover' が付く)。順位38.8・表示5・クリック0(9/16〜10/14)。検索語「lumie vs hatch」を前半に反映",
+    "applied_at": "2026-10-17",
+    "before": {
+      "position": 38.8,
+      "impressions": 5,
+      "clicks": 0,
+      "period_end": "2026-10-14"
+    },
+    "changes": [
+      {
+        "file": "src/posts/sunrise-alarm-clocks-wake-up-light-comparison.md",
+        "old": "title: \"Sunrise Alarm Clocks Compared: Which Wake-Up Light Fits Your Bedroom?\"",
+        "new": "title: \"Sunrise Alarm Clocks: Hatch vs. Lumie vs. Philips Compared\""
+      }
+    ]
   }
 ]

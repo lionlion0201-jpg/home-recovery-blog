@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Quiet Space Heaters for Bedrooms: Oil-Filled vs. Ceramic for Light Sleepers (Clicks, Hum & Glow Compared)"
-description: "Bedroom too cold, but heaters keep waking you up? Compare oil-filled radiators and ceramic heaters by noise, display glow, thermostat clicks, and safety features before you buy."
+title: "Quiet Space Heaters for Bedrooms: Oil-Filled vs. Ceramic"
+description: "Bedroom too cold but heaters keep waking you? Compare oil-filled and ceramic heaters on noise, display glow, thermostat clicks, and safety."
 date: 2026-10-13
 tags: post
 publishAt: "2026-10-13T09:00:00+09:00"
 category: Sleep
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice. Your heater's manufacturer instructions take priority over anything in this article when it comes to safe use.*

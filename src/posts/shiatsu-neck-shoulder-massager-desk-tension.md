@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Shiatsu Neck & Shoulder Massagers for Desk-Related Tension: A Buyer's Guide"
-description: "Tight neck and shoulders from a desk job? We compare kneading shiatsu neck massagers with heat — how they differ from a massage gun and which model fits your setup."
+title: "Best Neck Massagers for Desk Workers: Shiatsu Buyer's Guide"
+description: "Tight neck from a desk job? Compare kneading shiatsu neck massagers with heat, how they differ from a massage gun, and which fits your setup."
 date: 2026-09-26
 tags: post
 publishAt: "2026-09-26T09:00:00+09:00"
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

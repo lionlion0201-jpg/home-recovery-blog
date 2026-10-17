@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Best Quiet Bedroom Humidifiers for Fall: Stop Waking Up With a Dry Throat"
-description: "Dry air keeping you up this fall? Compare the quietest bedroom humidifiers for sleep — noise levels, mist type, and tank size — so you can breathe easy without a hum."
+title: "Best Quiet Bedroom Humidifiers for Fall Sleep"
+description: "Dry fall air in the bedroom? Compare quiet humidifiers by noise level, mist type, and tank size so you can pick one that will not hum all night."
 date: 2026-08-29
 tags: post
 category: Sleep
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice — always check with a healthcare provider before using a humidifier if you have a respiratory condition, a mold or dust allergy, or an infant in the home.*

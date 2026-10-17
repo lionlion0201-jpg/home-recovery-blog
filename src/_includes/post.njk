@@ -1,13 +1,16 @@
 ---
 layout: base.njk
 ---
+{% set ogImg = page.fileSlug | ogImage %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": {{ title | dump | safe }},
+  {% if ogImg %}"image": ["{{ site.domain }}{{ ogImg }}"],{% endif %}
   "description": {{ (description or site.description) | dump | safe }},
-  "datePublished": "{{ date | htmlDateString }}",
+  "datePublished": "{{ publishedDateStr }}",
+  "dateModified": "{{ modifiedDateStr }}",
   "author": { "@type": "Organization", "name": {{ site.author | dump | safe }} },
   "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }} },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.domain }}{{ page.url | url }}" }
@@ -35,9 +38,10 @@ layout: base.njk
 <article>
   <div class="post-card-meta">
     {% if categorySlug %}<a class="category-pill" href="{{ ('/category/' + categorySlug + '/') | url }}">{{ categoryName }}</a>{% endif %}
-    <span class="post-meta">Published {{ date | readableDate }} · {{ content | readingTime }}</span>
+    <span class="post-meta">Published <time datetime="{{ publishedDateStr }}">{{ publishedDateStr | longDateStr }}</time>{% if updatedShownStr %} · Updated <time datetime="{{ updatedShownStr }}">{{ updatedShownStr | longDateStr }}</time>{% endif %} · {{ content | readingTime }}</span>
   </div>
   <h1>{{ title }}</h1>
+  {% if ogImg %}<img class="post-eyecatch" src="{{ ogImg }}" alt="{{ title }}" width="1200" height="630" loading="eager" decoding="async">{% endif %}
   <div class="affiliate-note">This post contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you. See our <a href="{{ '/affiliate-disclosure/' | url }}">affiliate disclosure</a>.</div>
   {{ content | safe }}
 </article>

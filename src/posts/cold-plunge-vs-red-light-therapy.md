@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Cold Plunge vs. Red Light Therapy: Which Recovery Tool Should You Buy First for Sore Muscles?"
-description: "Cold plunge vs. red light therapy for sore muscles: which recovery tool should you buy first on a mid-range budget in a small apartment? A side-by-side comparison and top picks."
+title: "Cold Plunge vs. Red Light Therapy: Which to Buy First?"
+description: "Cold plunge or red light therapy for sore muscles? A side-by-side look for a mid-range budget and a small apartment, with top picks."
 date: 2026-09-19
 tags: post
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice — always check with a healthcare provider before starting any new recovery protocol, especially if you have a heart condition, are pregnant, or have circulation issues.*

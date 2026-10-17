@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "2026 Recovery & Sleep Gift Guide: Best Picks by Who You're Buying For (Him, Her, Athletes, Tired Parents)"
-description: "Not sure what to get the recovery-and-sleep-obsessed people on your list? Our 2026 gift guide breaks down the best picks for him, her, athletes, and tired parents."
+title: "2026 Recovery & Sleep Gift Guide: Picks for Him, Her & Athletes"
+description: "Gift ideas for people who love recovery and sleep gear. Our 2026 guide sorts picks for him, her, athletes, and tired parents."
 date: 2026-09-19
 tags: post
 category: Gift Guide
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
