@@ -202,7 +202,7 @@ Partly. With a dual-control heated pad, the warmer partner can simply leave thei
 
 ### Is it worth it if only one of us is uncomfortable?
 
-Often, yes — just scale the solution to the problem. If only one partner is cold, a dual-control heated pad (or even an extra throw on one side) may be all you need. If only one partner runs hot, a lighter comforter on their side through the Scandinavian method is an inexpensive first step. The premium options make the most sense when both partners need something different, or when the simpler fixes haven't been enough.
+Often, yes — just scale the solution to the problem. If only one partner is cold, a dual-control heated pad (or even an extra throw on one side) may be all you need. If only one partner runs hot, a lighter comforter on their side through the Scandinavian method is an inexpensive first step. {% whenPublished "best-bedding-couples-different-temperatures-hot-sleeper" %}For more ways to cool only the hot sleeper's side, see [our guide to the best bedding for couples with different temperatures]({{ '/posts/best-bedding-couples-different-temperatures-hot-sleeper/' | url }}). {% endwhenPublished %}The premium options make the most sense when both partners need something different, or when the simpler fixes haven't been enough.
 
 ## The Bottom Line: Finding a Setup You Can Both Sleep On
 

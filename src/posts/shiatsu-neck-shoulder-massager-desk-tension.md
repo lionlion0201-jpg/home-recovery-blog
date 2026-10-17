@@ -53,7 +53,7 @@ Who it's less suited for: anyone specifically wanting a separate back attachment
 
 ### Naipo Shiatsu Massager with Heat (Neck, Shoulder, and Back)
 
-The Naipo model's main advantage is coverage: it comes with an extended strap and a separate attachment that lets you move it to the lower back, not just the neck and shoulders. For anyone whose desk-related tightness spreads beyond the neck — a stiff lower back from sitting, for example — this flexibility is the deciding factor over a neck-only model. It sits in the mid-range price bracket, between the budget and premium options.
+The Naipo model's main advantage is coverage: it comes with an extended strap and a separate attachment that lets you move it to the lower back, not just the neck and shoulders. For anyone whose desk-related tightness spreads beyond the neck — a stiff lower back from sitting, for example — this flexibility is the deciding factor over a neck-only model. It sits in the mid-range price bracket, between the budget and premium options.{% whenPublished "shiatsu-back-massager-office-chair-desk-workers" %} If the stiffness is mainly in your mid or lower back, [our guide to shiatsu back massagers for office chairs]({{ '/posts/shiatsu-back-massager-office-chair-desk-workers/' | url }}) compares chair-mounted cushions that cover more of the back.{% endwhenPublished %}
 
 Who it's less suited for: anyone who only ever feels tightness in the neck and shoulders and doesn't need the extra back attachment taking up drawer space.
 

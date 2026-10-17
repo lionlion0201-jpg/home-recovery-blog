@@ -143,7 +143,7 @@ Save this list and check it off the night before you fly.
 **In your carry-on:**
 
 - [ ] Mini massage gun and its charger. Check your airline's and the TSA's current rules on lithium-ion batteries before you pack
-- [ ] <a href="https://www.amazon.com/s?k=portable+white+noise+machine+travel&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">Portable white noise machine</a> for hallway and HVAC noise at the hotel
+- [ ] <a href="https://www.amazon.com/s?k=portable+white+noise+machine+travel&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">Portable white noise machine</a> for hallway and HVAC noise at the hotel{% whenPublished "portable-white-noise-machine-athletes-hotel" %} (we compare three portable models in [our guide to portable white noise machines for hotel rooms]({{ '/posts/portable-white-noise-machine-athletes-hotel/' | url }})){% endwhenPublished %}
 
 **For the hotel:**
 

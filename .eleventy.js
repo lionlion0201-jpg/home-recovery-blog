@@ -34,6 +34,13 @@ module.exports = function (eleventyConfig) {
   }
   eleventyConfig.addFilter("ogImage", (slug) => ogImages[slug] || "");
 
+  // 予約公開の記事へのリンクを、リンク先が公開されたビルドから表示する(JP と同じ)。
+  //   {% whenPublished "slug" %}...[記事]({{ '/posts/slug/' | url }})...{% endwhenPublished %}
+  // リンク先が未公開の間は中身を丸ごと出さない(404 のリンクを作らない)。
+  eleventyConfig.addPairedShortcode("whenPublished", (content, slug) =>
+    isSlugPublished(slug) ? content : ""
+  );
+
   eleventyConfig.addCollection("posts", function (collectionApi) {
     const now = new Date();
     // 判定は lib/publishing.js に集約している。
