@@ -23,8 +23,19 @@
  */
 
 const CAMPAIGNS = [
-  // USはまだセール記事を持っていない。追加するときはここに期間を書く。
-  // 例: Prime Big Deal Days / Black Friday
+  {
+    id: "black-friday-cyber-monday-2026",
+    name: "Black Friday and Cyber Monday",
+    // 2026年の感謝祭は11/26(木)なので、ブラックフライデーは11/27、サイバーマンデーは11/30。
+    // 暦どおりの日付であって、Amazon が発表したセール期間ではない(2026-10-17 時点で未発表)。
+    // Amazon が期間を発表したら earlyStart / window / asOf を更新する。
+    earlyStart: "2026-11-27T00:00:00-05:00",
+    start: "2026-11-27T00:00:00-05:00",
+    end: "2026-11-30T23:59:59-08:00",
+    teaseFrom: "2026-11-01T00:00:00-05:00",
+    window: "Black Friday (November 27) through Cyber Monday (November 30)",
+    asOf: "the 2026 U.S. calendar; retailer sale windows may start earlier or run longer",
+  },
   /*
   {
     id: "prime-thanks-2026",

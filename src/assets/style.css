@@ -56,3 +56,6 @@ th{background:#efe9db;font-family:"Fraunces",serif;font-weight:600}
 .cta-box strong{font-family:"Fraunces",serif;color:var(--text);font-weight:600}
 .cta-box a.button{display:inline-block;background:var(--text);color:#fff;padding:.6rem 1.15rem;border-radius:4px;text-decoration:none;margin-top:.7rem;font-size:.85rem;letter-spacing:.02em;transition:background .15s}
 .cta-box a.button:hover{background:var(--accent)}
+.campaign-note{background:var(--card,#fff);border:1px solid var(--border,#ddd);border-left:4px solid var(--accent,#333);border-radius:8px;padding:1rem 1.2rem;margin:1.6rem 0;font-size:.92rem;line-height:1.75}
+.campaign-note .campaign-note-head{font-weight:700;display:block;margin-bottom:.35rem}
+.campaign-note .campaign-note-meta{display:block;margin-top:.5rem;opacity:.75;font-size:.85rem}
