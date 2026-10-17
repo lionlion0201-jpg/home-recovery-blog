@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Cold Plunge vs. Sauna Blanket: Which Should You Buy First for Recovery?"
+title: "Sauna Blanket vs. Cold Plunge: Which to Buy First?"
 description: "Cold plunge or sauna blanket — which should you buy first? Compare cost, space, setup, and recovery use cases before you invest in at-home contrast therapy."
 date: 2026-08-01
 tags: post
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice — always check with a healthcare provider before starting any new recovery protocol, especially if you have a heart condition, are pregnant, or have circulation issues.*

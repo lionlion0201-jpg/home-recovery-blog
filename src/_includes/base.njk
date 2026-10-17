@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | {{ site.name }}</title>
+{#- 記事ページはサイト名を付けない(検索結果で約60文字を超えると切れるため。2026-10-17 如月さん判断) -#}
+<title>{% if page.url and '/posts/' in page.url %}{{ title }}{% else %}{{ title }} | {{ site.name }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ site.domain }}{{ page.url | url }}">
 <meta property="og:type" content="website">

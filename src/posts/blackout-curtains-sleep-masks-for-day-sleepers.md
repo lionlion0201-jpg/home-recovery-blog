@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Blackout Curtains vs. Sleep Masks for Day Sleepers: Which Actually Blocks More Light?"
-description: "Sleeping during the day after a night shift? We compare blackout curtains and contoured sleep masks — light-blocking power, cost, and portability — to help you pick."
+title: "Blackout Curtains vs. Sleep Masks for Day Sleepers"
+description: "Sleeping by day after a night shift? Compare blackout curtains and contoured sleep masks on light blocking, cost, and portability."
 date: 2026-09-25
 tags: post
 publishAt: "2026-09-25T09:00:00+09:00"
 category: Sleep
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

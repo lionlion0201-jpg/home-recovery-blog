@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Best Home Recovery & Sleep Gifts 2026: The Ultimate Guide by Budget, From Stocking Stuffers to Splurges"
-description: "Struggling to buy for someone who's always tired or sore? This 2026 gift guide breaks down the best recovery and sleep gifts by budget tier, from stocking stuffers to splurges — with real comparisons, not just a random product list."
+title: "Best Home Recovery & Sleep Gifts 2026, by Budget"
+description: "Shopping for someone who is always tired or sore? Our 2026 guide compares recovery and sleep gifts by budget, from stocking stuffers to splurges."
 date: 2026-08-15
 tags: post
 category: Gift Guide
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

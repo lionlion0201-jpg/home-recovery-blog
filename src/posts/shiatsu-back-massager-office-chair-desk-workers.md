@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Shiatsu Back Massager for Office Chair: 3 Heated Cushion Types Compared for Desk Workers"
+title: "Shiatsu Back Massager for Office Chairs: 3 Heated Types"
 description: "Shopping for a shiatsu back massager for office chair use? We compare 3 heated designs (Snailax SL-233, SL-256, Zyllion ZMA-13) and how to check chair fit."
 date: 2026-10-22
 tags: post
 publishAt: "2026-10-22T09:00:00+09:00"
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

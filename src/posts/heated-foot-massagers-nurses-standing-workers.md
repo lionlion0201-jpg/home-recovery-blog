@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Heated Foot Massagers for Nurses and On-Your-Feet Workers: Shiatsu vs. Air Compression"
-description: "On your feet all shift and coming home with tired, cold feet? We compare heated foot massager types — open shiatsu, air-wrap, and foot-and-calf — plus fit tips for larger feet. Not medical advice."
+title: "Heated Foot Massagers for Nurses: Shiatsu vs. Air Compression"
+description: "On your feet all shift? Compare open shiatsu, air-wrap, and foot-and-calf heated massagers, with fit tips for larger feet. Not medical advice."
 date: 2026-10-11
 tags: post
 publishAt: "2026-10-11T09:00:00+09:00"
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

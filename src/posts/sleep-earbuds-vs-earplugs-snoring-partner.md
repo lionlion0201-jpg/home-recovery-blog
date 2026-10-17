@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "Sleep Earbuds vs. Earplugs for a Snoring Partner: What Works for Side Sleepers"
-description: "Partner's snoring keeping you up, and earplugs hurt when you sleep on your side? Compare sleep earbuds, reusable earplugs, and foam plugs on comfort, alarms, and upkeep."
+title: "Sleep Earbuds vs. Earplugs for a Snoring Partner"
+description: "Partner's snoring keeping you up, and earplugs hurt on your side? Compare sleep earbuds, reusable earplugs, and foam plugs on comfort and upkeep."
 date: 2026-10-15
 tags: post
 publishAt: "2026-10-15T09:00:00+09:00"
 category: Sleep
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

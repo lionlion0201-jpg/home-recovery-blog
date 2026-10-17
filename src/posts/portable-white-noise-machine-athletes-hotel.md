@@ -1,11 +1,12 @@
 ---
 layout: post.njk
-title: "White Noise Machine for Athletes: 3 Portable Picks for Hotel Rooms on Away Trips"
+title: "White Noise Machine for Athletes: 3 Portable Hotel Picks"
 description: "Looking for a white noise machine for athletes? We compare 3 portable picks for hotel rooms on away trips, plus a hotel sleep kit checklist for tournaments."
 date: 2026-10-20
 tags: post
 publishAt: "2026-10-20T09:00:00+09:00"
 category: Sleep
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

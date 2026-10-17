@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Red Light Therapy vs Massage Gun: Which Recovery Tool Should You Buy First?"
-description: "Sore after workouts and can't decide between a red light panel and a massage gun? Compare how each actually works, what they can't do, and which one to buy first based on your budget and goals."
+title: "Red Light Therapy vs Massage Gun: Which to Buy First?"
+description: "Sore after workouts and torn between a red light panel and a massage gun? See how each works, what it can't do, and which to buy first."
 date: 2026-09-05
 tags: post
 category: Recovery
+updated: 2026-10-17
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through these links, we may earn a commission at no additional cost to you.*
