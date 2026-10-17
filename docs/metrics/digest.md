@@ -1,6 +1,6 @@
 # ファネル表(US)
 
-生成日: 2026-10-16 / 生成: `scripts/build_digest.py`(手で編集しない)
+生成日: 2026-10-17 / 生成: `scripts/build_digest.py`(手で編集しない)
 
 読み方は `docs/agents/analyst.md` の「読み方のルール」に従う。**インプレッションは売上の指標ではない。**判断の主軸はアフィリエイトリンクのクリック(GA4 `affiliate_click`)。
 
@@ -9,10 +9,10 @@
 | ソース | レコード数 | 対象投稿数 | 最終取得 |
 |---|---:|---:|---|
 | docs/metrics/posted_assets.json(投稿台帳) | 119 | 119 | - |
-| docs/metrics/x_metrics.json(Xメトリクス) | 352 | 61 | 2026-10-16 20:57 |
-| docs/metrics/pin_metrics.json(ピンメトリクス) | 1043 | 65 | 2026-10-16 20:57 |
+| docs/metrics/x_metrics.json(Xメトリクス) | 364 | 61 | 2026-10-17 02:14 |
+| docs/metrics/pin_metrics.json(ピンメトリクス) | 1103 | 65 | 2026-10-17 02:14 |
 | GA4 `affiliate_click` | あり | - | - |
-| Search Console | 22 | - | 2026-10-13 まで |
+| Search Console | 22 | - | 2026-10-14 まで |
 
 
 ## X投稿の型の比較(hook / cta など)
@@ -27,27 +27,27 @@
 
 ## 検索(Search Console)
 
-期間: 2026-09-15〜2026-10-13(Search Console は2〜3日遅れて確定する)/ 表示 242回 / クリック 0回
+期間: 2026-09-16〜2026-10-14(Search Console は2〜3日遅れて確定する)/ 表示 255回 / クリック 0回
 検索結果に載っている記事: 20 / 23(サイトマップの記事URLを URL 検査 API で確認)
 
 表示が少ない記事の順位は日々大きく動く。表示100回未満の記事どうしの比較は「データ不足」とする。
 
 | 記事 | 公開日 | 掲載 | 表示 | クリック | クリック率 | 平均順位 | 表示の多い検索語(順位) |
 |---|---|---|---:|---:|---:|---:|---|
-| White Noise Machines Compared: Which One | 2026-09-27 | ○ | 51 | 0 | 0.00% | 15.8 | noise machine for light sleepe(7.9) |
+| Best Noise Machines for Light Sleepers:  | 2026-09-27 | ○ | 53 | 0 | 0.00% | 19.5 | noise machine for light sleepe(7.9) |
 | Blackout Curtains vs. Sleep Masks for Da | 2026-09-25 | ○ | 39 | 0 | 0.00% | 8.2 | - |
-| Best Cooling Pillow for Menopause Night  | 2026-09-12 | ○ | 32 | 0 | 0.00% | 22.9 | most effective cooling pads fo(5.4) |
-| Do Weighted Blankets Actually Help With  | 2026-07-25 | ○ | 31 | 0 | 0.00% | 67.4 | anxiety and weighted blanket(64.5) |
+| Best Cooling Pillows & Pads for Menopaus | 2026-09-12 | ○ | 33 | 0 | 0.00% | 24.3 | most effective cooling pads fo(5.4) |
+| Do Weighted Blankets Actually Help With  | 2026-07-25 | ○ | 32 | 0 | 0.00% | 67.2 | anxiety and weighted blanket(63.7) |
+| Couples With Different Sleep Temperature | 2026-10-05 | ○ | 15 | 0 | 0.00% | 44.4 | what bedding keeps both partne(60.7) |
 | Red Light Therapy vs Massage Gun: Which  | 2026-09-05 | ○ | 11 | 0 | 0.00% | 3.8 | - |
 | Shiatsu Neck & Shoulder Massagers for De | 2026-09-26 | ○ | 11 | 0 | 0.00% | 15.7 | best neck massagers for cowork(93) |
-| Couples With Different Sleep Temperature | 2026-10-05 | ○ | 10 | 0 | 0.00% | 41.5 | what bedding keeps both partne(62.2) |
-| Magnesium Glycinate for Sleep: A Shift W | 2026-07-25 | ○ | 9 | 0 | 0.00% | 9 | - |
-| Massage Gun vs. Compression Boots: Which | 2026-08-08 | ○ | 9 | 0 | 0.00% | 7.9 | - |
+| Magnesium Glycinate for Sleep: A Shift W | 2026-07-25 | ○ | 10 | 0 | 0.00% | 9.2 | - |
+| Massage Gun vs. Compression Boots: Which | 2026-08-08 | ○ | 10 | 0 | 0.00% | 8.2 | - |
 | Oura Ring vs Whoop for Sleep Tracking: W | 2026-07-27 | ○ | 9 | 0 | 0.00% | 24 | whoop versus oura ring(6.5) |
 | 2026 Recovery & Sleep Gift Guide: Best P | 2026-09-19 | ○ | 8 | 0 | 0.00% | 6.1 | - |
+| Apple Watch vs. Oura Ring for Sleep: Do  | 2026-09-19 | ○ | 5 | 0 | 0.00% | 57.8 | oura ring vs apple watch(77) |
 | Best Home Recovery & Sleep Gifts 2026: T | 2026-08-15 | ○ | 5 | 0 | 0.00% | 6.2 | - |
-| Apple Watch vs. Oura Ring for Sleep: Do  | 2026-09-19 | ○ | 4 | 0 | 0.00% | 52.8 | oura ring review vs apple watc(67) |
-| Sunrise Alarm Clocks Compared: Which Wak | 2026-10-07 | ○ | 4 | 0 | 0.00% | 46.5 | lumie vs hatch(70) |
+| Sunrise Alarm Clocks Compared: Which Wak | 2026-10-07 | ○ | 5 | 0 | 0.00% | 38.8 | lumie vs hatch(70) |
 | Cold Plunge vs. Sauna Blanket: Which Sho | 2026-08-01 | ○ | 2 | 0 | 0.00% | 51 | sauna vs cold plunge(95) |
 | Best Quiet Bedroom Humidifiers for Fall: | 2026-08-29 | ○ | 1 | 0 | 0.00% | 5 | - |
 | Red-Eye Flight Recovery Kit: What to Pac | 2026-10-06 | ○ | 1 | 0 | 0.00% | 12 | - |
@@ -58,7 +58,7 @@
 | Best Red Light Therapy Devices for Home  | 2026-07-25 | × | 0 | 0 | 未取得 | - | - |
 | Sleep Earbuds vs. Earplugs for a Snoring | 2026-10-15 | ○ | 0 | 0 | 未取得 | - | - |
 
-**伸ばす候補**(平均8〜30位・表示10回以上。1ページ目の下〜2ページ目にいて、タイトル・説明文・内部リンク・内容の補強で上位を狙える): `blackout-curtains-sleep-masks-for-day-sleepers`(8.2位)、`shiatsu-neck-shoulder-massager-desk-tension`(15.7位)、`white-noise-machines-vs-sound-machines-light-sleepers`(15.8位)、`best-cooling-pillow-for-menopause-night-sweats`(22.9位)
+**伸ばす候補**(平均8〜30位・表示10回以上。1ページ目の下〜2ページ目にいて、タイトル・説明文・内部リンク・内容の補強で上位を狙える): `blackout-curtains-sleep-masks-for-day-sleepers`(8.2位)、`massage-gun-vs-compression-boots-recovery`(8.2位)、`magnesium-glycinate-sleep-shift-workers`(9.2位)、`shiatsu-neck-shoulder-massager-desk-tension`(15.7位)、`white-noise-machines-vs-sound-machines-light-sleepers`(19.5位)、`best-cooling-pillow-for-menopause-night-sweats`(24.3位)
 
 **検索結果に未掲載**: `heated-foot-massagers-nurses-standing-workers`、`quiet-space-heaters-bedroom-light-sleepers`、`red-light-therapy-devices-for-home`(Search Console の URL 検査からインデックス登録をリクエストできる)
 
@@ -74,13 +74,13 @@
 | Sunrise Alarm Clocks Compared: Which Wak | 2026-10-07 | 8 | 3 | 0 | 未取得 | 未取得 |
 | Red-Eye Flight Recovery Kit: What to Pac | 2026-10-06 | 8 | 46 | 0 | 未取得 | 未取得 |
 | Couples With Different Sleep Temperature | 2026-10-05 | 8 | 11 | 0 | 未取得 | 未取得 |
-| White Noise Machines Compared: Which One | 2026-09-27 | 8 | 14 | 0 | 未取得 | 未取得 |
+| Best Noise Machines for Light Sleepers:  | 2026-09-27 | 8 | 14 | 0 | 未取得 | 未取得 |
 | Shiatsu Neck & Shoulder Massagers for De | 2026-09-26 | 8 | 151 | 0 | 未取得 | 未取得 |
 | Blackout Curtains vs. Sleep Masks for Da | 2026-09-25 | 7 | 21 | 0 | 未取得 | 未取得 |
 | Cold Plunge vs. Red Light Therapy: Which | 2026-09-19 | 3 | 10 | 未取得 | 未取得 | 未取得 |
 | Apple Watch vs. Oura Ring for Sleep: Do  | 2026-09-19 | 3 | 14 | 未取得 | 0 | 0.00% |
 | 2026 Recovery & Sleep Gift Guide: Best P | 2026-09-19 | 3 | 2 | 未取得 | 0 | 0.00% |
-| Best Cooling Pillow for Menopause Night  | 2026-09-12 | 9 | 20 | 0 | 未取得 | 未取得 |
+| Best Cooling Pillows & Pads for Menopaus | 2026-09-12 | 9 | 20 | 0 | 未取得 | 未取得 |
 | Red Light Therapy vs Massage Gun: Which  | 2026-09-05 | 5 | 5 | 0 | 未取得 | 未取得 |
 | Best Quiet Bedroom Humidifiers for Fall: | 2026-08-29 | 7 | 15 | 0 | 未取得 | 未取得 |
 | Best Home Recovery & Sleep Gifts 2026: T | 2026-08-15 | 7 | 19 | 0 | 未取得 | 未取得 |
