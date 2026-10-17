@@ -49,6 +49,8 @@ BOARD_SPECS = {
                     "Gift ideas for people who are always tired or sore: home recovery and sleep gifts by budget and by recipient."),
 }
 
+RENAME_EXISTING = {"recovery": "Red Light Therapy at Home"}
+
 
 def headers():
     tok = access_token("PINTEREST_ACCESS_TOKEN")
@@ -84,6 +86,19 @@ def cmd_boards(h):
 def cmd_ensure_boards(h, apply):
     existing = {b["name"]: b["id"] for b in paged(f"{API}/boards", h)}
     mapping = {}
+    # 全ピンが入っている既存ボードは作り直さず、名前と説明を変えてリカバリー用に使う(保存やフォローを残すため)
+    for theme, old_name in RENAME_EXISTING.items():
+        name, desc = BOARD_SPECS[theme]
+        if old_name in existing and name not in existing:
+            if apply:
+                r = requests.patch(f"{API}/boards/{existing[old_name]}", headers=h,
+                                   json={"name": name, "description": desc}, timeout=30)
+                if r.status_code >= 300:
+                    sys.exit(f"ボード名の変更に失敗: {old_name}: HTTP {r.status_code} {r.text[:200]}")
+                print(f"名前を変更: {old_name} -> {name} ({existing[old_name]})")
+            else:
+                print(f"(名前を変更予定) {old_name} -> {name}")
+            existing[name] = existing.pop(old_name)
     for theme, (name, desc) in BOARD_SPECS.items():
         if name in existing:
             mapping[theme] = existing[name]
