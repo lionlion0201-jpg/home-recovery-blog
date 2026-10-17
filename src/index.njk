@@ -17,11 +17,20 @@ permalink: /
   </div>
 </div>
 
+<nav class="category-nav" aria-label="Browse by topic">
+  <h2>Browse by topic</h2>
+  <ul>
+  {% for cat in collections.categoryHubs %}
+    <li><a href="{{ ('/category/' + cat.slug + '/') | url }}">{{ cat.name }}<span class="count">{{ cat.posts.length }}</span></a></li>
+  {% endfor %}
+  </ul>
+</nav>
+
 <ul class="post-list">
 {% for post in collections.posts %}
   <li class="post-card">
     <div class="post-card-meta">
-      {% if post.data.category %}<span class="category-pill">{{ post.data.category }}</span>{% endif %}
+      {% if post.data.categorySlug %}<a class="category-pill" href="{{ ('/category/' + post.data.categorySlug + '/') | url }}">{{ post.data.categoryName }}</a>{% endif %}
       <span class="post-meta">{{ post.date | readableDate }} · {{ post.templateContent | readingTime }}</span>
     </div>
     <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>

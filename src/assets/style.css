@@ -59,3 +59,20 @@ th{background:#efe9db;font-family:"Fraunces",serif;font-weight:600}
 .campaign-note{background:var(--card,#fff);border:1px solid var(--border,#ddd);border-left:4px solid var(--accent,#333);border-radius:8px;padding:1rem 1.2rem;margin:1.6rem 0;font-size:.92rem;line-height:1.75}
 .campaign-note .campaign-note-head{font-weight:700;display:block;margin-bottom:.35rem}
 .campaign-note .campaign-note-meta{display:block;margin-top:.5rem;opacity:.75;font-size:.85rem}
+
+/* Topic (category) hub pages and breadcrumbs */
+.breadcrumb{font-size:.78rem;color:var(--muted);margin:0 0 .8rem;letter-spacing:.02em}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--accent);text-decoration:underline}
+.breadcrumb span{margin:0 .3rem}
+a.category-pill{text-decoration:none}
+a.category-pill:hover{background:rgba(61,92,77,.16)}
+.category-nav{margin:1.8rem 0 1.2rem}
+.category-nav h2{font-size:.95rem;margin:0 0 .6rem}
+.category-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.category-nav a{display:inline-block;border:1px solid var(--border);color:var(--text);font-size:.8rem;padding:.35rem .8rem;border-radius:999px;text-decoration:none}
+.category-nav a:hover{border-color:var(--accent);color:var(--accent)}
+.category-nav .count{color:var(--muted);font-size:.72rem;margin-left:.35rem}
+.category-intro{color:var(--muted);margin:0 0 1.4rem}
+.category-more{margin:.9rem 0 0;font-size:.88rem}
+.category-more a{color:var(--accent)}

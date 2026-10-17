@@ -1,0 +1,65 @@
+{
+  "_note": "Theme definitions (categories) and the post-slug -> theme-slug map (posts). Add one line to posts for every new article. If a post is not in posts, its front-matter `category` is matched against slug / name / aliases (old category names; 'Sleep' falls back to sleep-environment). See lib/categories.js.",
+  "categories": [
+    {
+      "slug": "recovery",
+      "name": "Recovery & Massage",
+      "aliases": [
+        "Recovery"
+      ],
+      "intro": "Guides to at-home recovery tools — red light therapy, cold plunges, sauna blankets, massage guns, compression boots and shiatsu massagers — compared on cost, space and everyday practicality. We explain what each tool is designed to do and say plainly where the evidence is still thin. This is general information, not medical advice: if you have an injury, a heart condition, are pregnant, or live with ongoing pain, talk to your doctor before using heat, cold or massage devices."
+    },
+    {
+      "slug": "sleep-environment",
+      "name": "Bedroom Sleep Environment",
+      "aliases": [
+        "Sleep"
+      ],
+      "intro": "Comparisons of the gear that shapes your bedroom at night: temperature (cooling pillows, dual-zone bedding, quiet heaters, humidifiers), noise (sound machines, sleep earbuds) and light (blackout curtains, sunrise alarms). Each guide focuses on fit for a specific situation — hot sleepers, couples, light sleepers and day sleepers. If poor sleep persists, see a doctor; ongoing insomnia, loud snoring or night sweats can have medical causes worth checking."
+    },
+    {
+      "slug": "sleep-tracking-aids",
+      "name": "Sleep Tracking & Sleep Aids",
+      "aliases": [
+        "Wearables"
+      ],
+      "intro": "Honest comparisons of sleep trackers such as the Oura Ring, Whoop and Apple Watch, plus popular sleep aids like weighted blankets and magnesium supplements. We cover what these products measure or claim and where the research is limited. Wearables are not medical devices for diagnosing sleep disorders, and supplements can interact with medications — check with your doctor or pharmacist before starting one."
+    },
+    {
+      "slug": "gift-guides",
+      "name": "Gift Guides",
+      "aliases": [
+        "Gift Guide"
+      ],
+      "intro": "Gift ideas for people who care about recovery and sleep, organized by budget and by recipient. Each pick links back to our full comparison guides so you can check the details before buying. Prices and availability change often, so confirm them at the retailer."
+    }
+  ],
+  "posts": {
+    "cold-plunge-vs-red-light-therapy": "recovery",
+    "cold-plunge-vs-sauna-blanket": "recovery",
+    "massage-gun-vs-compression-boots-recovery": "recovery",
+    "red-light-therapy-devices-for-home": "recovery",
+    "red-light-therapy-vs-massage-gun": "recovery",
+    "sauna-blanket-vs-home-sauna": "recovery",
+    "heated-foot-massagers-nurses-standing-workers": "recovery",
+    "shiatsu-neck-shoulder-massager-desk-tension": "recovery",
+    "red-eye-flight-recovery-kit-carry-on": "recovery",
+    "shiatsu-back-massager-office-chair-desk-workers": "recovery",
+    "best-cooling-pillow-for-menopause-night-sweats": "sleep-environment",
+    "best-quiet-bedroom-humidifiers-for-fall": "sleep-environment",
+    "couples-different-sleep-temperatures-dual-zone-bed": "sleep-environment",
+    "quiet-space-heaters-bedroom-light-sleepers": "sleep-environment",
+    "blackout-curtains-sleep-masks-for-day-sleepers": "sleep-environment",
+    "sleep-earbuds-vs-earplugs-snoring-partner": "sleep-environment",
+    "sunrise-alarm-clocks-wake-up-light-comparison": "sleep-environment",
+    "white-noise-machines-vs-sound-machines-light-sleepers": "sleep-environment",
+    "best-bedding-couples-different-temperatures-hot-sleeper": "sleep-environment",
+    "portable-white-noise-machine-athletes-hotel": "sleep-environment",
+    "apple-watch-vs-oura-ring-sleep-tracking": "sleep-tracking-aids",
+    "oura-ring-vs-whoop-sleep-tracking": "sleep-tracking-aids",
+    "weighted-blankets-sleep-anxiety": "sleep-tracking-aids",
+    "magnesium-glycinate-sleep-shift-workers": "sleep-tracking-aids",
+    "best-recovery-and-sleep-gifts-2026": "gift-guides",
+    "2026-recovery-sleep-gift-guide-by-recipient": "gift-guides"
+  }
+}
