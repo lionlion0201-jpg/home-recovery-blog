@@ -12,3 +12,6 @@ assets/pin-candidates/
 # decisions.json はその回限りの判断結果なので、リポジトリには残さない。
 docs/review/review.html
 docs/review/decisions.json
+
+# 記事ごとの OG 画像。deploy.yml のビルド前に GitHub Actions 上で毎回生成するのでコミットしない。
+og-images/
