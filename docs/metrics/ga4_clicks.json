@@ -5,15 +5,15 @@
     "affiliate_clicks": 0,
     "sessions": 2,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-18"
+    "period_end": "2026-10-19"
   },
   {
     "article": "/",
     "source": "(direct)",
     "affiliate_clicks": 0,
-    "sessions": 82,
+    "sessions": 83,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-18"
+    "period_end": "2026-10-19"
   },
   {
     "article": "/",
@@ -21,7 +21,15 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-18"
+    "period_end": "2026-10-19"
+  },
+  {
+    "article": "/category/recovery/",
+    "source": "(direct)",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-10-19"
   },
   {
     "article": "/posts/2026-recovery-sleep-gift-guide-by-recipient/",
@@ -29,7 +37,7 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-18"
+    "period_end": "2026-10-19"
   },
   {
     "article": "/posts/apple-watch-vs-oura-ring-sleep-tracking/",
@@ -37,6 +45,22 @@
     "affiliate_clicks": 0,
     "sessions": 1,
     "period_start": "2026-09-21",
-    "period_end": "2026-10-18"
+    "period_end": "2026-10-19"
+  },
+  {
+    "article": "/posts/couples-different-sleep-temperatures-dual-zone-bed/",
+    "source": "(direct)",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-10-19"
+  },
+  {
+    "article": "/posts/magnesium-glycinate-sleep-shift-workers/",
+    "source": "google",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-21",
+    "period_end": "2026-10-19"
   }
 ]
