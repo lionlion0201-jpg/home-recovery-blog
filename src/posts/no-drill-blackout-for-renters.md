@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Blackout Curtains for Renters, No Drill: 3 Shades That Stick, Clip, or Tension-Mount"
 description: "Need blackout curtains for renters with no drill? We compare a stick-on paper shade, a hook-and-loop window cover, and a tension-mount shade for a renter friendly blackout window."
-date: 2026-10-24
+date: 2026-10-28
 tags: post
+publishAt: "2026-10-28T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

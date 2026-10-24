@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Cooling Mattress Pad for Hot Flashes: 3 Picks by Night Sweats and Washing"
 description: "Looking for a cooling mattress pad for hot flashes? Compare a moisture-wicking pad, a phase-change pad, and a waterproof protector by night sweats and washing."
-date: 2026-10-24
+date: 2026-10-26
 tags: post
+publishAt: "2026-10-26T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

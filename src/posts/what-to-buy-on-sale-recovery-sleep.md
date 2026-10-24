@@ -2,12 +2,10 @@
 layout: post.njk
 title: "What to Buy on Sale for Recovery and Sleep — and What to Wait On"
 description: "Which sleep gadgets and recovery deals are worth it in sale season? What to buy on sale (fixed models, refills) and what to measure or try first."
-date: 2026-10-24
+date: 2026-10-30
 tags: post
+publishAt: "2026-10-30T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
