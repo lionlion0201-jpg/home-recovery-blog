@@ -6,7 +6,7 @@ date: 2026-09-25
 tags: post
 publishAt: "2026-09-25T09:00:00+09:00"
 category: Sleep
-updated: 2026-10-17
+updated: 2026-10-25
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -51,7 +51,7 @@ Who it's less suited for: renters who need a no-drill option, since it mounts wi
 <a href="https://www.amazon.com/s?k=NICETOWN+blackout+curtains&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">Check Price on Amazon</a>
 </div>
 
-For renters or anyone who wants a no-hardware option, portable blackout window covers (sometimes sold as travel blinds) that suction or Velcro directly onto the window frame are worth a look, though they generally cost more per window and don't look like a normal curtain during the day.
+For renters or anyone who wants a no-hardware option, portable blackout window covers (sometimes sold as travel blinds) that suction or Velcro directly onto the window frame are worth a look, though they generally cost more per window and don't look like a normal curtain during the day. {% whenPublished "no-drill-blackout-for-renters" %}We compare three no-drill options in [our guide to blackout curtains for renters, no drill required]({{ '/posts/no-drill-blackout-for-renters/' | url }}).{% endwhenPublished %}
 
 ## Sleep Masks, Compared
 

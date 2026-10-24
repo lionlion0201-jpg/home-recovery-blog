@@ -646,5 +646,200 @@
         "new": "This guide compares those three designs and helps you choose by type and by fit. For desk workers, we've already covered the upper-body version of this problem in [our guide to shiatsu neck and shoulder massagers for desk-related tension]({{ '/posts/shiatsu-neck-shoulder-massager-desk-tension/' | url }}){% whenPublished \"shiatsu-back-massager-office-chair-desk-workers\" %}, and chair-mounted options for the back in [our guide to shiatsu back massagers for office chairs]({{ '/posts/shiatsu-back-massager-office-chair-desk-workers/' | url }}){% endwhenPublished %}. We haven't put these foot massagers through a hands-on test. This guide compares designs, how each type is built to work, and what to check on the listing, based on manufacturer descriptions, published product information, and the general traits of each category."
       }
     ]
+  },
+  {
+    "id": "2026-10-24-L1",
+    "slug": "best-recovery-and-sleep-gifts-2026",
+    "query": "(不具合修正: 内部リンク)",
+    "reason": "本文の内部リンク 13 箇所が [文字](URL) の形になっておらず、本番で /posts/... という文字がそのまま表示され、リンクとして機能していない(2026-10-24 に本番ページで確認)。リンク文言を足してリンクにする。タイトル・説明文・URLは変えない",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": 6.2,
+      "impressions": 5,
+      "clicks": 0,
+      "period_end": "2026-10-21"
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "Magnesium glycinate is one of the more approachable gifts in this whole guide, because it doesn't ask the recipient to change anything about their evening routine — it's just something they take before bed instead of another supplement. It's a particularly fitting gift for anyone working rotating shifts or irregular hours, since it's one of the lower-risk, better-tolerated options some shift workers add alongside light management and a consistent wind-down routine, rather than a replacement for either. Some research links adequate magnesium levels to better sleep quality, though the evidence specific to sleep supplementation is still developing and isn't the same as a guaranteed fix. It's not the right gift for anyone with a kidney condition or who's on regular prescription medication without checking with a doctor or pharmacist first — for a fuller breakdown of who should be cautious, our guide to {{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }} covers that in more detail, along with how to compare capsule, powder, and gummy formats.",
+        "new": "Magnesium glycinate is one of the more approachable gifts in this whole guide, because it doesn't ask the recipient to change anything about their evening routine — it's just something they take before bed instead of another supplement. It's a particularly fitting gift for anyone working rotating shifts or irregular hours, since it's one of the lower-risk, better-tolerated options some shift workers add alongside light management and a consistent wind-down routine, rather than a replacement for either. Some research links adequate magnesium levels to better sleep quality, though the evidence specific to sleep supplementation is still developing and isn't the same as a guaranteed fix. It's not the right gift for anyone with a kidney condition or who's on regular prescription medication without checking with a doctor or pharmacist first — for a fuller breakdown of who should be cautious, our guide to [magnesium glycinate for sleep]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) covers that in more detail, along with how to compare capsule, powder, and gummy formats."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "A weighted sleep mask applies the same basic idea as a weighted blanket — gentle, even pressure that some people find calming at bedtime — but scaled down to something small enough to stocking-stuff. It's a genuinely useful entry point for someone who's curious about weighted therapy but isn't ready to commit to a full-size blanket, and it doubles as a simple light-blocking mask for anyone who sleeps poorly in a bright room or travels often. It's not going to replicate the full-body effect of a weighted blanket — for that, our full guide to {{ '/posts/weighted-blankets-sleep-anxiety/' | url }} covers sizing and material choices in more depth — so set expectations accordingly if the recipient is dealing with more than just light sensitivity. As with any weighted product, it's not recommended for anyone with certain respiratory or circulatory conditions without checking with a doctor first.",
+        "new": "A weighted sleep mask applies the same basic idea as a weighted blanket — gentle, even pressure that some people find calming at bedtime — but scaled down to something small enough to stocking-stuff. It's a genuinely useful entry point for someone who's curious about weighted therapy but isn't ready to commit to a full-size blanket, and it doubles as a simple light-blocking mask for anyone who sleeps poorly in a bright room or travels often. It's not going to replicate the full-body effect of a weighted blanket — for that, our full guide to [weighted blankets]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) covers sizing and material choices in more depth — so set expectations accordingly if the recipient is dealing with more than just light sensitivity. As with any weighted product, it's not recommended for anyone with certain respiratory or circulatory conditions without checking with a doctor first."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "A mini percussion massage ball is essentially a pocket-sized version of a full massage gun — smaller motor, less power, but enough for someone to work out a tight spot in their neck, shoulders, or feet after a long day. It's an easy gift for the person who sits at a desk all day, works on their feet, or just complains about tight shoulders without owning any recovery tools at all. It's a weaker fit for anyone doing serious athletic training, since the smaller motor won't deliver the depth or battery life of a full-size device — for that person, the entry-level massage gun in the next price tier is a better match, and our full comparison of {{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }} is worth a read once they're ready to go bigger.",
+        "new": "A mini percussion massage ball is essentially a pocket-sized version of a full massage gun — smaller motor, less power, but enough for someone to work out a tight spot in their neck, shoulders, or feet after a long day. It's an easy gift for the person who sits at a desk all day, works on their feet, or just complains about tight shoulders without owning any recovery tools at all. It's a weaker fit for anyone doing serious athletic training, since the smaller motor won't deliver the depth or battery life of a full-size device — for that person, the entry-level massage gun in the next price tier is a better match, and our full comparison of [massage guns vs. compression boots]({{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }}) is worth a read once they're ready to go bigger."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "Weighted blankets have graduated from trend to staple, and for good reason — they're one of the few sleep-wellness products people keep using years after buying, rather than abandoning after a month. The idea behind them is deep pressure stimulation, a gentle, even pressure some research links to reduced physiological arousal and modest improvements in self-reported sleep quality and anxiety symptoms, though the evidence isn't universal and isn't a substitute for treating a diagnosed sleep or anxiety disorder. Sizing matters more than most gift-givers expect — the general guideline is a blanket roughly 10% of the recipient's body weight, so if you're unsure of their exact weight, it's worth checking with someone close to them or leaning toward a mid-range weight and letting them exchange it. It's also not the right gift for a notoriously hot sleeper unless you specifically choose a cooling-weave version, or for young children and anyone with certain respiratory or circulatory conditions without medical guidance. Our full breakdown on {{ '/posts/weighted-blankets-sleep-anxiety/' | url }} covers weight charts, material differences, and who this helps most.",
+        "new": "Weighted blankets have graduated from trend to staple, and for good reason — they're one of the few sleep-wellness products people keep using years after buying, rather than abandoning after a month. The idea behind them is deep pressure stimulation, a gentle, even pressure some research links to reduced physiological arousal and modest improvements in self-reported sleep quality and anxiety symptoms, though the evidence isn't universal and isn't a substitute for treating a diagnosed sleep or anxiety disorder. Sizing matters more than most gift-givers expect — the general guideline is a blanket roughly 10% of the recipient's body weight, so if you're unsure of their exact weight, it's worth checking with someone close to them or leaning toward a mid-range weight and letting them exchange it. It's also not the right gift for a notoriously hot sleeper unless you specifically choose a cooling-weave version, or for young children and anyone with certain respiratory or circulatory conditions without medical guidance. Our full breakdown on [weighted blankets]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) covers weight charts, material differences, and who this helps most."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "If the person on your list is training regularly, works a physically demanding job, or just always seems to be complaining about a stiff back, an entry-level massage gun is a practical, well-liked gift that doesn't require the premium price of a top-tier model to be genuinely useful. These devices deliver rapid, repetitive pressure pulses to a targeted muscle group, and the idea is that this may help increase local blood flow and ease the sensation of tightness, similar in concept to a self-administered deep-tissue massage. An entry-level model won't have the quiet motor or the long battery life of a premium device, but for someone testing whether percussion therapy is worth using regularly, it's a sensible starting point rather than an unnecessary splurge. It's a weaker gift for anyone with a bleeding disorder, fresh injury, or a medical condition where localized percussion isn't appropriate — worth a quick check before gifting if you're not sure. For a full breakdown of how massage guns stack up against another popular recovery category, see our comparison of {{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }}.",
+        "new": "If the person on your list is training regularly, works a physically demanding job, or just always seems to be complaining about a stiff back, an entry-level massage gun is a practical, well-liked gift that doesn't require the premium price of a top-tier model to be genuinely useful. These devices deliver rapid, repetitive pressure pulses to a targeted muscle group, and the idea is that this may help increase local blood flow and ease the sensation of tightness, similar in concept to a self-administered deep-tissue massage. An entry-level model won't have the quiet motor or the long battery life of a premium device, but for someone testing whether percussion therapy is worth using regularly, it's a sensible starting point rather than an unnecessary splurge. It's a weaker gift for anyone with a bleeding disorder, fresh injury, or a medical condition where localized percussion isn't appropriate — worth a quick check before gifting if you're not sure. For a full breakdown of how massage guns stack up against another popular recovery category, see our comparison of [massage guns vs. compression boots]({{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }})."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "Red light therapy has moved from sports-medicine clinics into home wellness routines, and a handheld device is the lowest-commitment way for someone to find out whether it's worth their time before investing in a larger panel. These devices expose skin and tissue to red and near-infrared wavelengths, and some clinical research suggests potential benefits for skin appearance, muscle recovery, and joint discomfort — though the strength of evidence varies by use case, and a handheld unit will treat a much smaller area per session than a full panel. It's a good gift for someone curious about the category but not yet sure they'll stick with a daily routine; it's a weaker gift for someone who already knows they want full-body coverage, since they'll likely outgrow a handheld unit within a few months. Our full buyer's guide to {{ '/posts/red-light-therapy-devices-for-home/' | url }} breaks down the difference between handheld, mid-size, and full-body panels if you want to size up the gift later.",
+        "new": "Red light therapy has moved from sports-medicine clinics into home wellness routines, and a handheld device is the lowest-commitment way for someone to find out whether it's worth their time before investing in a larger panel. These devices expose skin and tissue to red and near-infrared wavelengths, and some clinical research suggests potential benefits for skin appearance, muscle recovery, and joint discomfort — though the strength of evidence varies by use case, and a handheld unit will treat a much smaller area per session than a full panel. It's a good gift for someone curious about the category but not yet sure they'll stick with a daily routine; it's a weaker gift for someone who already knows they want full-body coverage, since they'll likely outgrow a handheld unit within a few months. Our full buyer's guide to [red light therapy devices for home]({{ '/posts/red-light-therapy-devices-for-home/' | url }}) breaks down the difference between handheld, mid-size, and full-body panels if you want to size up the gift later."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "An infrared sauna blanket delivers a similar heat-based recovery experience to a standalone home sauna, at a fraction of the price and with none of the permanent floor space commitment. It wraps around the body and heats skin and core temperature directly, rather than heating the surrounding air, with sessions typically running 30–45 minutes. Some research on heat exposure suggests potential benefits for circulation and muscle relaxation, though sauna blankets specifically have less dedicated research behind them than full sauna rooms, and results vary by person. A popular option in this category is the HigherDOSE Sauna Blanket, frequently mentioned for its multi-layer infrared design and adjustable temperature settings, though it's worth confirming current pricing and availability before buying, since some sauna blanket brands sell primarily through their own sites. This is a strong gift for someone who's mentioned wanting a sauna but doesn't have the space for one — for a full comparison of the two, see {{ '/posts/sauna-blanket-vs-home-sauna/' | url }}. It's not the right gift for anyone with cardiovascular conditions, blood pressure issues, or who's pregnant, without medical clearance first.",
+        "new": "An infrared sauna blanket delivers a similar heat-based recovery experience to a standalone home sauna, at a fraction of the price and with none of the permanent floor space commitment. It wraps around the body and heats skin and core temperature directly, rather than heating the surrounding air, with sessions typically running 30–45 minutes. Some research on heat exposure suggests potential benefits for circulation and muscle relaxation, though sauna blankets specifically have less dedicated research behind them than full sauna rooms, and results vary by person. A popular option in this category is the HigherDOSE Sauna Blanket, frequently mentioned for its multi-layer infrared design and adjustable temperature settings, though it's worth confirming current pricing and availability before buying, since some sauna blanket brands sell primarily through their own sites. This is a strong gift for someone who's mentioned wanting a sauna but doesn't have the space for one — for a full comparison of the two, see [our sauna blanket vs. home sauna comparison]({{ '/posts/sauna-blanket-vs-home-sauna/' | url }}). It's not the right gift for anyone with cardiovascular conditions, blood pressure issues, or who's pregnant, without medical clearance first."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "A portable cold plunge tub is a bigger, more committed gift than anything else in this guide, and it's best reserved for someone who has already expressed real interest in cold exposure — a cold shower habit, curiosity about cryotherapy, or a training routine where soreness is a recurring complaint. Cold water immersion involves submerging most of the body in cold water for a few minutes at a time, and some research on the practice suggests it may help with next-day soreness and perceived recovery, though findings are mixed and the effect varies between individuals. A budget-friendly, collapsible option like the Polar Monkeys Portable Cold Plunge is a reasonable way to gift the category without the cost or permanence of a chiller-equipped tub. If the recipient is trying to decide between this and a heat-based option instead, our comparison of {{ '/posts/cold-plunge-vs-sauna-blanket/' | url }} walks through which one typically makes more sense to buy first. This is not a gift for someone who dislikes cold exposure, has cardiovascular concerns, or is pregnant — cold immersion isn't appropriate for everyone, and it's worth being honest about that before wrapping it up.",
+        "new": "A portable cold plunge tub is a bigger, more committed gift than anything else in this guide, and it's best reserved for someone who has already expressed real interest in cold exposure — a cold shower habit, curiosity about cryotherapy, or a training routine where soreness is a recurring complaint. Cold water immersion involves submerging most of the body in cold water for a few minutes at a time, and some research on the practice suggests it may help with next-day soreness and perceived recovery, though findings are mixed and the effect varies between individuals. A budget-friendly, collapsible option like the Polar Monkeys Portable Cold Plunge is a reasonable way to gift the category without the cost or permanence of a chiller-equipped tub. If the recipient is trying to decide between this and a heat-based option instead, our comparison of [cold plunges vs. sauna blankets]({{ '/posts/cold-plunge-vs-sauna-blanket/' | url }}) walks through which one typically makes more sense to buy first. This is not a gift for someone who dislikes cold exposure, has cardiovascular concerns, or is pregnant — cold immersion isn't appropriate for everyone, and it's worth being honest about that before wrapping it up."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "For the person who already tracks their steps, their workouts, and probably their sleep in some app or another, a smart ring or recovery band tends to be one of the most popular gift requests we see in this category. Oura Ring and WHOOP both track sleep stages, heart rate variability, and a daily readiness or recovery score, though they package the experience differently — Oura leans on a low-profile ring form factor with a longer battery life, while WHOOP centers more on daytime strain and exertion tracking alongside sleep. Both require an ongoing membership to unlock full functionality, which is worth mentioning to the recipient (or budgeting for) since it's a real ongoing cost beyond the initial gift. Neither device is a diagnostic tool — they're wellness trackers, not medical equipment, and shouldn't be treated as a replacement for a sleep study or a doctor's evaluation if someone has ongoing sleep problems. For the full breakdown of how the two compare on cost, features, and who each one fits best, see {{ '/posts/oura-ring-vs-whoop-sleep-tracking/' | url }}.",
+        "new": "For the person who already tracks their steps, their workouts, and probably their sleep in some app or another, a smart ring or recovery band tends to be one of the most popular gift requests we see in this category. Oura Ring and WHOOP both track sleep stages, heart rate variability, and a daily readiness or recovery score, though they package the experience differently — Oura leans on a low-profile ring form factor with a longer battery life, while WHOOP centers more on daytime strain and exertion tracking alongside sleep. Both require an ongoing membership to unlock full functionality, which is worth mentioning to the recipient (or budgeting for) since it's a real ongoing cost beyond the initial gift. Neither device is a diagnostic tool — they're wellness trackers, not medical equipment, and shouldn't be treated as a replacement for a sleep study or a doctor's evaluation if someone has ongoing sleep problems. For the full breakdown of how the two compare on cost, features, and who each one fits best, see [our Oura Ring vs. WHOOP comparison]({{ '/posts/oura-ring-vs-whoop-sleep-tracking/' | url }})."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "- **Deciding between a sauna blanket and a full home sauna?** {{ '/posts/sauna-blanket-vs-home-sauna/' | url }} walks through cost, space, and who each one actually fits.",
+        "new": "- **Deciding between a sauna blanket and a full home sauna?** [Our sauna blanket vs. home sauna comparison]({{ '/posts/sauna-blanket-vs-home-sauna/' | url }}) walks through cost, space, and who each one actually fits."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "- **Weighing heat versus cold as the next recovery purchase?** {{ '/posts/cold-plunge-vs-sauna-blanket/' | url }} breaks down which one makes sense to buy first based on space, budget, and goals.",
+        "new": "- **Weighing heat versus cold as the next recovery purchase?** [Our cold plunge vs. sauna blanket comparison]({{ '/posts/cold-plunge-vs-sauna-blanket/' | url }}) breaks down which one makes sense to buy first based on space, budget, and goals."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "- **Choosing between a massage gun and compression boots?** {{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }} compares targeted percussion therapy against full-leg pneumatic compression.",
+        "new": "- **Choosing between a massage gun and compression boots?** [Our massage gun vs. compression boots guide]({{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }}) compares targeted percussion therapy against full-leg pneumatic compression."
+      },
+      {
+        "file": "src/posts/best-recovery-and-sleep-gifts-2026.md",
+        "old": "- **Trying to decide between Oura Ring and WHOOP?** {{ '/posts/oura-ring-vs-whoop-sleep-tracking/' | url }} compares the membership costs, tracking focus, and battery life of each.",
+        "new": "- **Trying to decide between Oura Ring and WHOOP?** [Our Oura Ring vs. WHOOP guide]({{ '/posts/oura-ring-vs-whoop-sleep-tracking/' | url }}) compares the membership costs, tracking focus, and battery life of each."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-24-L2",
+    "slug": "massage-gun-vs-compression-boots-recovery",
+    "query": "(不具合修正: 内部リンク)",
+    "reason": "本文の内部リンク 3 箇所が [文字](URL) の形になっておらず、本番で /posts/... という文字がそのまま表示され、リンクとして機能していない(2026-10-24 に本番ページで確認)。リンク文言を足してリンクにする。タイトル・説明文・URLは変えない",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": 18.7,
+      "impressions": 13,
+      "clicks": 0,
+      "period_end": "2026-10-21"
+    },
+    "changes": [
+      {
+        "file": "src/posts/massage-gun-vs-compression-boots-recovery.md",
+        "old": "For readers who are also weighing thermal recovery tools against these two, our companion piece on {{ '/posts/cold-plunge-vs-sauna-blanket/' | url }} covers that comparison in more detail.",
+        "new": "For readers who are also weighing thermal recovery tools against these two, our companion piece on [cold plunges vs. sauna blankets]({{ '/posts/cold-plunge-vs-sauna-blanket/' | url }}) covers that comparison in more detail."
+      },
+      {
+        "file": "src/posts/massage-gun-vs-compression-boots-recovery.md",
+        "old": "If you're building out a broader recovery toolkit rather than picking a single device, our guide to {{ '/posts/red-light-therapy-devices-for-home/' | url }} covers another commonly paired option worth considering.",
+        "new": "If you're building out a broader recovery toolkit rather than picking a single device, our guide to [red light therapy devices for home]({{ '/posts/red-light-therapy-devices-for-home/' | url }}) covers another commonly paired option worth considering."
+      },
+      {
+        "file": "src/posts/massage-gun-vs-compression-boots-recovery.md",
+        "old": "If your soreness is scattered across upper and lower body and you want fast, targeted relief, start with a massage gun. If your legs are consistently the sore spot after long runs or heavy squat days and you don't mind a slower, hands-free session, compression boots are the more purpose-built tool. And if you're comparing this decision against other home recovery categories entirely, {{ '/posts/cold-plunge-vs-sauna-blanket/' | url }} is a useful next read before you commit.",
+        "new": "If your soreness is scattered across upper and lower body and you want fast, targeted relief, start with a massage gun. If your legs are consistently the sore spot after long runs or heavy squat days and you don't mind a slower, hands-free session, compression boots are the more purpose-built tool. And if you're comparing this decision against other home recovery categories entirely, [our cold plunge vs. sauna blanket comparison]({{ '/posts/cold-plunge-vs-sauna-blanket/' | url }}) is a useful next read before you commit."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-24-L3",
+    "slug": "best-cooling-pillow-for-menopause-night-sweats",
+    "query": "(不具合修正: 内部リンク)",
+    "reason": "本文の内部リンク 2 箇所が [文字](URL) の形になっておらず、本番で /posts/... という文字がそのまま表示され、リンクとして機能していない(2026-10-24 に本番ページで確認)。リンク文言を足してリンクにする。タイトル・説明文・URLは変えない",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": 32.0,
+      "impressions": 51,
+      "clicks": 0,
+      "period_end": "2026-10-21"
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-cooling-pillow-for-menopause-night-sweats.md",
+        "old": "If your main struggle at night is a racing mind or anxiety rather than heat, our guide to {{ '/posts/weighted-blankets-sleep-anxiety/' | url }} covers a different approach to a calmer night's sleep.",
+        "new": "If your main struggle at night is a racing mind or anxiety rather than heat, our guide to [weighted blankets for sleep and anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) covers a different approach to a calmer night's sleep."
+      },
+      {
+        "file": "src/posts/best-cooling-pillow-for-menopause-night-sweats.md",
+        "old": "If you're trying to improve your whole sleep environment — not just the bedding — our roundup of {{ '/posts/best-quiet-bedroom-humidifiers-for-fall/' | url }} looks at air quality and humidity as another piece of the puzzle.",
+        "new": "If you're trying to improve your whole sleep environment — not just the bedding — our roundup of [quiet bedroom humidifiers]({{ '/posts/best-quiet-bedroom-humidifiers-for-fall/' | url }}) looks at air quality and humidity as another piece of the puzzle."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-24-1",
+    "slug": "no-drill-blackout-for-renters",
+    "query": "blackout curtains for renters no drill",
+    "reason": "遮光記事(伸ばす候補・8.3位・表示43)は賃貸向けの穴を開けない方法を1段落で触れるだけで商品が無い。この段落から、今回の新記事(穴を開けない遮光3種の比較)へ案内して周辺を厚くする。新記事の公開後に表示される(whenPublished)",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/blackout-curtains-sleep-masks-for-day-sleepers.md",
+        "old": "For renters or anyone who wants a no-hardware option, portable blackout window covers (sometimes sold as travel blinds) that suction or Velcro directly onto the window frame are worth a look, though they generally cost more per window and don't look like a normal curtain during the day.",
+        "new": "For renters or anyone who wants a no-hardware option, portable blackout window covers (sometimes sold as travel blinds) that suction or Velcro directly onto the window frame are worth a look, though they generally cost more per window and don't look like a normal curtain during the day. {% whenPublished \"no-drill-blackout-for-renters\" %}We compare three no-drill options in [our guide to blackout curtains for renters, no drill required]({{ '/posts/no-drill-blackout-for-renters/' | url }}).{% endwhenPublished %}"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-24-2",
+    "slug": "what-to-buy-on-sale-recovery-sleep",
+    "query": "black friday sleep gadgets",
+    "reason": "相手別ギフト記事(掲載済み・6.4位・他記事からのリンク0本)は、自分用に買う読者の行き先が無い。今回のセール時期の判断記事へ案内する(新記事からもこの記事へリンク済みで相互リンクになる)。新記事の公開後に表示される(whenPublished)",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "This guide is organized by recipient, not by price, so you can jump straight to the section that matches the person you're shopping for. If you'd rather browse by how much you want to spend, we also have [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}) that sorts picks from stocking stuffers to splurge-worthy. And one note up front: nothing here is medical advice — these are gift suggestions based on general product research, not a recommendation for any specific health condition.",
+        "new": "This guide is organized by recipient, not by price, so you can jump straight to the section that matches the person you're shopping for. If you'd rather browse by how much you want to spend, we also have [our budget-based 2026 gift guide]({{ '/posts/best-recovery-and-sleep-gifts-2026/' | url }}) that sorts picks from stocking stuffers to splurge-worthy. And one note up front: nothing here is medical advice — these are gift suggestions based on general product research, not a recommendation for any specific health condition. {% whenPublished \"what-to-buy-on-sale-recovery-sleep\" %}Shopping for yourself during sale season instead? See [what to buy on sale for recovery and sleep, and what to wait on]({{ '/posts/what-to-buy-on-sale-recovery-sleep/' | url }}).{% endwhenPublished %}"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-24-3",
+    "slug": "cooling-mattress-pad-for-hot-flashes",
+    "query": "cooling mattress pad for hot flashes",
+    "reason": "片側だけ冷やすカップル記事は「ベッド全体を冷やすと相手側に問題が移る」と書くが、一人で寝ていてベッド面全体を冷やしたい読者の行き先が無い。今回の冷感マットレスパッド記事へ案内して役割を分ける。新記事の公開後に表示される(whenPublished)",
+    "applied_at": "2026-10-25",
+    "before": {
+      "position": null,
+      "impressions": 0,
+      "clicks": 0,
+      "period_end": null
+    },
+    "changes": [
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "When one person sleeps hot, the first instinct is to cool the whole bed or room. For couples, that tends to move the problem to the other side of the bed.",
+        "new": "When one person sleeps hot, the first instinct is to cool the whole bed or room. For couples, that tends to move the problem to the other side of the bed. {% whenPublished \"cooling-mattress-pad-for-hot-flashes\" %}If you sleep alone and want to cool the whole mattress surface, see [our guide to cooling mattress pads for hot flashes and night sweats]({{ '/posts/cooling-mattress-pad-for-hot-flashes/' | url }}).{% endwhenPublished %}"
+      }
+    ]
   }
 ]

@@ -5,6 +5,7 @@ description: "Night sweats and hot flashes keeping you up? Compare cooling pillo
 date: 2026-09-12
 tags: post
 category: Sleep
+updated: 2026-10-25
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -138,6 +139,6 @@ Everything in this article is general information about bedding products, not me
 
 ## Related Reads
 
-If your main struggle at night is a racing mind or anxiety rather than heat, our guide to {{ '/posts/weighted-blankets-sleep-anxiety/' | url }} covers a different approach to a calmer night's sleep.
+If your main struggle at night is a racing mind or anxiety rather than heat, our guide to [weighted blankets for sleep and anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) covers a different approach to a calmer night's sleep.
 
-If you're trying to improve your whole sleep environment — not just the bedding — our roundup of {{ '/posts/best-quiet-bedroom-humidifiers-for-fall/' | url }} looks at air quality and humidity as another piece of the puzzle.
+If you're trying to improve your whole sleep environment — not just the bedding — our roundup of [quiet bedroom humidifiers]({{ '/posts/best-quiet-bedroom-humidifiers-for-fall/' | url }}) looks at air quality and humidity as another piece of the puzzle.

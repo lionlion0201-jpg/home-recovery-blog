@@ -6,7 +6,7 @@ date: 2026-10-18
 tags: post
 publishAt: "2026-10-18T09:00:00+09:00"
 category: Sleep
-updated: 2026-10-17
+updated: 2026-10-25
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -21,7 +21,7 @@ A note on method: we haven't run our own trials of these products. This buyer's 
 
 ## Why Shared Cooling Fixes Often Backfire for Couples
 
-When one person sleeps hot, the first instinct is to cool the whole bed or room. For couples, that tends to move the problem to the other side of the bed.
+When one person sleeps hot, the first instinct is to cool the whole bed or room. For couples, that tends to move the problem to the other side of the bed. {% whenPublished "cooling-mattress-pad-for-hot-flashes" %}If you sleep alone and want to cool the whole mattress surface, see [our guide to cooling mattress pads for hot flashes and night sweats]({{ '/posts/cooling-mattress-pad-for-hot-flashes/' | url }}).{% endwhenPublished %}
 
 ### Cooling Sheets and Lower Thermostats Cool Both Sides
 
