@@ -4,55 +4,55 @@
     "source": "pinterest.com",
     "affiliate_clicks": 0,
     "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   },
   {
     "article": "/",
     "source": "(direct)",
     "affiliate_clicks": 0,
-    "sessions": 68,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
-  },
-  {
-    "article": "/",
-    "source": "gopher.com",
-    "affiliate_clicks": 0,
-    "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "sessions": 59,
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   },
   {
     "article": "/category/recovery/",
     "source": "(direct)",
     "affiliate_clicks": 0,
     "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
+  },
+  {
+    "article": "/posts/best-cooling-pillow-for-menopause-night-sweats/",
+    "source": "pinterest.com",
+    "affiliate_clicks": 0,
+    "sessions": 1,
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   },
   {
     "article": "/posts/couples-different-sleep-temperatures-dual-zone-bed/",
     "source": "(direct)",
     "affiliate_clicks": 0,
-    "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "sessions": 2,
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   },
   {
     "article": "/posts/magnesium-glycinate-sleep-shift-workers/",
     "source": "google",
     "affiliate_clicks": 0,
     "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   },
   {
     "article": "/posts/sleep-earbuds-vs-earplugs-snoring-partner/",
     "source": "(direct)",
     "affiliate_clicks": 0,
     "sessions": 1,
-    "period_start": "2026-09-25",
-    "period_end": "2026-10-25"
+    "period_start": "2026-09-26",
+    "period_end": "2026-10-26"
   }
 ]
