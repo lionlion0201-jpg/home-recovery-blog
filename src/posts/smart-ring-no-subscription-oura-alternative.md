@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Smart Ring, No Subscription: Oura Ring Alternatives Compared"
 description: "Looking for a smart ring with no subscription? We compare Oura Ring alternatives without subscription: what's free, phone compatibility, battery claims and sizing, plus who should still pick Oura."
-date: 2026-11-01
+date: 2026-11-04
 tags: post
+publishAt: "2026-11-04T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

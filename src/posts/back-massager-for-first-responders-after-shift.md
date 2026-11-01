@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Back Massager for First Responders: 3 After-Shift Options"
 description: "Shopping for a back massager for first responders? We compare a heated wrap, a long-handle percussion massager, and a lumbar shiatsu pillow for after-shift use at home."
-date: 2026-11-01
+date: 2026-11-02
 tags: post
+publishAt: "2026-11-02T09:00:00+09:00"
 category: Recovery
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*

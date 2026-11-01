@@ -2,12 +2,10 @@
 layout: post.njk
 title: "White Noise Machine Without Light: 3 Sound Machines With No Glow or a Display You Can Switch Off"
 description: "Looking for a white noise machine without light? We compare sound machines with no lights at all and one with a display you can switch off, plus how to dim the glow safely."
-date: 2026-10-31
+date: 2026-11-06
 tags: post
+publishAt: "2026-11-06T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
