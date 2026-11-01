@@ -7,7 +7,7 @@ tags: post
 category: Sleep
 ---
 
-Weighted blankets are one of the few sleep-wellness products that graduated from "trendy" to "normal household item" without fading out — a good sign for a product's staying power, and for anyone writing about it long-term.
+Weighted blankets are one of the few sleep-wellness products that graduated from "trendy" to "normal household item" without fading out — which usually means people keep using them after the novelty wears off.
 
 ## What the research actually shows
 

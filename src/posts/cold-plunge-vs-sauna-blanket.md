@@ -91,7 +91,6 @@ Among sauna blankets commonly recommended in recovery and wellness circles, the 
 <div class="cta-box">
 <p><strong>HigherDOSE Sauna Blanket</strong> — a popular indoor infrared option for heat-based recovery and relaxation, with no plumbing or dedicated space required.</p>
 <a href="https://www.amazon.com/s?k=HigherDOSE+Sauna+Blanket&tag=quietrecover-20" rel="nofollow sponsored" target="_blank">Check Current Listings on Amazon</a>
-<p><em>(Also available via the brand's official affiliate program once approved.)</em></p>
 </div>
 
 ## Can You Eventually Own Both? Building a Contrast Therapy Routine Over Time

@@ -8,7 +8,7 @@ category: Recovery
 updated: 2026-10-17
 ---
 
-Sweat-based recovery has quietly become one of the more consistent categories in home wellness — not as loud as cold plunge, but with steadier long-term demand. If you're deciding between an infrared sauna blanket and a standalone home sauna, the right choice mostly comes down to space, budget, and how you'll actually use it.
+Heat-based recovery at home has become a steady habit for many people — less talked about than cold plunge, but easier to keep up. If you're deciding between an infrared sauna blanket and a standalone home sauna, the right choice mostly comes down to space, budget, and how you'll actually use it.
 
 ## The core tradeoff
 

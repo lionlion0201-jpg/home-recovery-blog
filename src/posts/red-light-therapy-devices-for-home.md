@@ -8,7 +8,7 @@ category: Recovery
 updated: 2026-10-17
 ---
 
-Red light therapy (also called photobiomodulation) has moved from sports-medicine clinics into home wellness routines over the last few years. Search interest has grown steadily rather than spiking and crashing like a fad, which is part of why it's a good category to write about honestly: the audience is genuinely trying to make a buying decision, not chasing a trend that will be gone in six months.
+Red light therapy (also called photobiomodulation) has moved from sports-medicine clinics into home wellness routines over the last few years. Interest has grown steadily rather than spiking and crashing like a fad, and most people looking into it now are trying to make a practical buying decision: which type of device fits their routine, space, and budget.
 
 This guide breaks down the main categories of home devices, what actually matters when comparing them, and who each type is realistically for.
 
