@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-10-31-1",
+    "slug": "back-massager-for-first-responders-after-shift",
+    "query": "back massager for first responders",
+    "reason": "デスクワーク向けの背中マッサージ記事は「向いていない人」に立ち仕事・足の記事への案内はあるが、勤務明けに腰がつらい現場職(救急・消防・警察)の行き先が無い。今回の新記事へ案内して背中マッサージの周辺を厚くする。新記事の公開後に表示される(whenPublished)",
+    "changes": [
+      {
+        "file": "src/posts/shiatsu-back-massager-office-chair-desk-workers.md",
+        "old": "- **Your main problem is tired feet from standing all day.** That's a different category. See [our guide to heated foot massagers for nurses and on-your-feet workers]({{ '/posts/heated-foot-massagers-nurses-standing-workers/' | url }}).",
+        "new": "- **Your main problem is tired feet from standing all day.** That's a different category. See [our guide to heated foot massagers for nurses and on-your-feet workers]({{ '/posts/heated-foot-massagers-nurses-standing-workers/' | url }}).{% whenPublished \"back-massager-for-first-responders-after-shift\" %}\n- **Your back gets sore from a physical shift, not from sitting.** If you work in EMS, fire, or law enforcement, see [our guide to back massagers for first responders after a shift]({{ '/posts/back-massager-for-first-responders-after-shift/' | url }}).{% endwhenPublished %}"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-2",
+    "slug": "back-massager-for-first-responders-after-shift",
+    "query": "back massager for first responders",
+    "reason": "看護師・立ち仕事向けのフットマッサージ記事は勤務明けのくつろぎ方を書いているが、足ではなく腰・背中がつらい交代勤務の読者の行き先が無い。今回の新記事へ案内する。新記事の公開後に表示される(whenPublished)",
+    "changes": [
+      {
+        "file": "src/posts/heated-foot-massagers-nurses-standing-workers.md",
+        "old": "It isn't doing anything magical. It's a cue that the shift is over and a few minutes of comfort before the next thing.",
+        "new": "It isn't doing anything magical. It's a cue that the shift is over and a few minutes of comfort before the next thing.{% whenPublished \"back-massager-for-first-responders-after-shift\" %} If your lower back is what aches after a shift, [our guide to back massagers for first responders]({{ '/posts/back-massager-for-first-responders-after-shift/' | url }}) compares heated wraps, percussion massagers, and chair cushions.{% endwhenPublished %}"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-3",
+    "slug": "oura-ring-vs-whoop-sleep-tracking",
+    "query": "(事実の訂正+内部リンク) oura ring alternative without subscription",
+    "reason": "54行目の「メンバーシップなしでは Sleep Score・Readiness Score が見られない」は Oura 公式サポートと食い違う(公式: 無料でも毎日の3つのスコアは見られる。https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership 、2026-11-01 にアーキテクトとファクトチェッカーが確認)。新記事と内容がぶつかるため訂正を優先して反映してほしい。あわせて同じ段落の「月額なしの道具を選ぶ人もいる」の後に新記事への案内を足す(新記事の公開後に表示される whenPublished)。タイトル・説明文・URLは変えない",
+    "changes": [
+      {
+        "file": "src/posts/oura-ring-vs-whoop-sleep-tracking.md",
+        "old": "Without an active Oura membership, the ring still tracks activity and basic sleep timing, but most of the metrics that make Oura useful — Sleep Score, Readiness Score, detailed HRV trends, and stage-by-stage breakdowns — are gated behind the subscription. Whoop takes this further: without a membership, the strap essentially doesn't function as a health tracker at all, since Whoop's model bundles the hardware access into the subscription itself. If you're the type of buyer who wants to own a device outright and use it however you like indefinitely, that's a meaningful difference to weigh, and it's part of why some readers decide neither ecosystem is the right fit and opt for a simpler, subscription-free tracker instead.",
+        "new": "Without an active Oura membership, Oura's support page says you can still see your three daily Oura scores (Readiness, Activity, and Sleep), but the deeper detail behind them, such as the full sleep analysis and 24/7 heart rate, is part of the paid membership. Whoop takes this further: without a membership, the strap essentially doesn't function as a health tracker at all, since Whoop's model bundles the hardware access into the subscription itself. If you're the type of buyer who wants to own a device outright and use it however you like indefinitely, that's a meaningful difference to weigh, and it's part of why some readers decide neither ecosystem is the right fit and opt for a simpler, subscription-free tracker instead. {% whenPublished \"smart-ring-no-subscription-oura-alternative\" %}We compare ring options in [our guide to smart rings with no subscription]({{ '/posts/smart-ring-no-subscription-oura-alternative/' | url }}).{% endwhenPublished %}"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-4",
+    "slug": "apple-watch-vs-oura-ring-sleep-tracking",
+    "query": "smart ring no subscription",
+    "reason": "Oura の月額を説明する段落で終わっていて、月額を払いたくない読者の行き先が無い。新記事(月額不要のスマートリング比較)へ案内する。新記事の公開後に表示される(whenPublished)",
+    "changes": [
+      {
+        "file": "src/posts/apple-watch-vs-oura-ring-sleep-tracking.md",
+        "old": "Either way, this is a subscription decision to make with your wallet in mind, separate from which hardware you choose to buy.",
+        "new": "Either way, this is a subscription decision to make with your wallet in mind, separate from which hardware you choose to buy.{% whenPublished \"smart-ring-no-subscription-oura-alternative\" %} If you'd rather not pay a monthly fee at all, see [our guide to smart rings with no subscription]({{ '/posts/smart-ring-no-subscription-oura-alternative/' | url }}).{% endwhenPublished %}"
+      }
+    ]
+  }
+]
