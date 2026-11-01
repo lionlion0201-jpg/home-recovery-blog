@@ -27,7 +27,8 @@ Layout styles (2026-11-01):
   Pinterest favours "fresh" pins (new images), and with every pin sharing one
   template the account looked repetitive. A pin can set "style" in its manifest;
   otherwise one is picked deterministically from the title (overlay 50%,
-  card 25%, bold 25%), so regenerating a pin keeps its look.
+  card 25%, bold 25%), so regenerating a pin keeps its look. A pin can also set
+  "background" to a file name in the pool so the photo matches the article.
 
 Usage:
   python3 generate_pin_image.py \
@@ -140,9 +141,14 @@ def _load_photo(bg_path, width, height):
     return _cover(Image.open(bg_path).convert("RGB"), width, height)
 
 
-def generate(title, subtitle, brand, out_path, cta="Read the full guide", style=None):
+def generate(title, subtitle, brand, out_path, cta="Read the full guide", style=None,
+             background=None):
     style = style if style in STYLES else _pick_style(title)
-    bg_path = _pick_background(title)
+    # A pin may name a photo from the pool ("background": "pexels-123.jpg") so the
+    # scene matches the article (e.g. a sauna photo on a sauna pin). Otherwise the
+    # photo is picked from the title as before.
+    named = os.path.join(BACKGROUND_DIR, background) if background else None
+    bg_path = named if named and os.path.exists(named) else _pick_background(title)
     if style == "card":
         img = _render_card(title, subtitle, brand, cta, bg_path)
     elif style == "bold":
@@ -304,6 +310,9 @@ if __name__ == "__main__":
     parser.add_argument("--cta", default="Read the full guide")
     parser.add_argument("--style", choices=STYLES, default=None,
                         help="Layout (default: picked from the title)")
+    parser.add_argument("--background", default=None,
+                        help="File name in assets/pin-backgrounds/ (default: picked from the title)")
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
-    generate(args.title, args.subtitle, args.brand, args.out, args.cta, args.style)
+    generate(args.title, args.subtitle, args.brand, args.out, args.cta, args.style,
+             args.background)

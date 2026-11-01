@@ -17,6 +17,8 @@
 
 マニフェストの形は通常と同じ。各ピンに "style": "overlay" | "card" | "bold" を付けて、
 同じ記事のピンが同じ見た目に偏らないようにする(generate_pin_image.py の説明を参照)。
+"background" には `pin_refresh.py backgrounds` の一覧から記事の場面に合う写真のファイル名を入れる
+(指定しないとタイトルから機械的に選ばれ、サプリの記事にサウナの写真が付くことがあった)。
 """
 import glob
 import json
@@ -34,6 +36,7 @@ POSTS_DIR = os.path.join(ROOT, "src", "posts")
 CYCLES_DIR = os.path.join(ROOT, "docs", "cycles")
 LEDGER = os.path.join(ROOT, "docs", "metrics", "posted_assets.json")
 SITE = "https://quietrecover.com"
+BG_DIR = os.path.join(ROOT, "assets", "pin-backgrounds")
 
 PRICE = re.compile(r"\$\s?[0-9]")
 OFF = re.compile(r"[0-9]+\s*%\s*off", re.I)
@@ -83,6 +86,17 @@ def cmd_candidates(limit=8):
             print(f"    既存: {t}")
 
 
+def cmd_backgrounds():
+    """背景写真プールを、撮影テーマ(credits.json の query)ごとに一覧する。"""
+    credits = json.load(open(os.path.join(BG_DIR, "credits.json"), encoding="utf-8"))
+    groups = {}
+    for name, c in sorted(credits.items()):
+        if os.path.exists(os.path.join(BG_DIR, name)):
+            groups.setdefault(c.get("query", "?"), []).append(name)
+    for q, names in sorted(groups.items()):
+        print(f"{q}: {', '.join(names)}")
+
+
 def cmd_check():
     errors = warns = 0
     paths = sorted(glob.glob(os.path.join(CYCLES_DIR, "cycle_manifest_*_refresh_*.json")))
@@ -111,6 +125,10 @@ def cmd_check():
                 problems.append(("error", "title が空か100文字を超えている"))
             if len(p.get("description", "")) > 500:
                 problems.append(("error", "description が500文字を超えている"))
+            if p.get("background") and not os.path.exists(os.path.join(BG_DIR, p["background"])):
+                problems.append(("error", f"background {p['background']} が assets/pin-backgrounds/ に無い"))
+            elif not p.get("background"):
+                problems.append(("warn", "background が無い(写真がタイトルから自動で選ばれ、記事と合わないことがある)"))
             if p.get("style") not in STYLES:
                 problems.append(("warn", f"style が {'/'.join(STYLES)} のどれでもない(タイトルから自動で選ばれる)"))
             if p.get("title", "").strip().lower() in existing:
@@ -128,7 +146,9 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "candidates":
         cmd_candidates(int(sys.argv[2]) if len(sys.argv) > 2 else 8)
+    elif cmd == "backgrounds":
+        cmd_backgrounds()
     elif cmd == "check":
         cmd_check()
     else:
-        sys.exit("使い方: pin_refresh.py candidates [件数] | check")
+        sys.exit("使い方: pin_refresh.py candidates [件数] | backgrounds | check")

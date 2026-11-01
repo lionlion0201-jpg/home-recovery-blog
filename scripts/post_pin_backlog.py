@@ -114,6 +114,7 @@ def main():
                 out_path=image_path,
                 cta=pin.get("cta", "Read the full guide"),
                 style=pin.get("style"),
+                background=pin.get("background"),
             )
         except Exception as e:
             print(f"[{key}] image generation failed: {e}", file=sys.stderr)
