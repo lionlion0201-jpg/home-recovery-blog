@@ -6,7 +6,7 @@ date: 2026-10-22
 tags: post
 publishAt: "2026-10-22T09:00:00+09:00"
 category: Recovery
-updated: 2026-10-17
+updated: 2026-11-01
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -225,7 +225,8 @@ A chair-mounted massager can be a nice addition to a desk setup, but it isn't fo
 
 - **Your back pain is strong or has lasted a while.** That's worth raising with a doctor before you look at any device.
 - **Your chair is small, has a short backrest, or you work at a standing desk.** Full-back and neck-to-back cushions need a chair that can hold them, and none of these designs help much if you spend most of the day on your feet.
-- **Your main problem is tired feet from standing all day.** That's a different category. See [our guide to heated foot massagers for nurses and on-your-feet workers]({{ '/posts/heated-foot-massagers-nurses-standing-workers/' | url }}).
+- **Your main problem is tired feet from standing all day.** That's a different category. See [our guide to heated foot massagers for nurses and on-your-feet workers]({{ '/posts/heated-foot-massagers-nurses-standing-workers/' | url }}).{% whenPublished "back-massager-for-first-responders-after-shift" %}
+- **Your back gets sore from a physical shift, not from sitting.** If you work in EMS, fire, or law enforcement, see [our guide to back massagers for first responders after a shift]({{ '/posts/back-massager-for-first-responders-after-shift/' | url }}).{% endwhenPublished %}
 - **You mainly want to feel warmer.** If the cold room is what bothers you most, a heater may solve that more directly. Our guide to [quiet space heaters for light sleepers]({{ '/posts/quiet-space-heaters-bedroom-light-sleepers/' | url }}) covers options that stay quiet in a small room.
 - **You're looking for leg recovery after workouts.** That's a different set of tools, covered in [our massage gun vs. compression boots comparison]({{ '/posts/massage-gun-vs-compression-boots-recovery/' | url }}).
 

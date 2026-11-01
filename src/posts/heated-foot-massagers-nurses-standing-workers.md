@@ -6,7 +6,7 @@ date: 2026-10-11
 tags: post
 publishAt: "2026-10-11T09:00:00+09:00"
 category: Recovery
-updated: 2026-10-17
+updated: 2026-11-01
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -193,7 +193,7 @@ A heated foot massager is a nice thing to have, but it isn't for everyone. It ma
 
 ## Fitting It Into a Post-Shift Wind-Down
 
-For many shift workers, the hardest part of the day comes right after it ends. You're home, you're tired, but you're still wired from being on the go. A foot massager can be one small part of a routine that helps you shift gears: shoes off, something warm to drink, feet in the massager for a session, then on toward rest. It isn't doing anything magical. It's a cue that the shift is over and a few minutes of comfort before the next thing.
+For many shift workers, the hardest part of the day comes right after it ends. You're home, you're tired, but you're still wired from being on the go. A foot massager can be one small part of a routine that helps you shift gears: shoes off, something warm to drink, feet in the massager for a session, then on toward rest. It isn't doing anything magical. It's a cue that the shift is over and a few minutes of comfort before the next thing.{% whenPublished "back-massager-for-first-responders-after-shift" %} If your lower back is what aches after a shift, [our guide to back massagers for first responders]({{ '/posts/back-massager-for-first-responders-after-shift/' | url }}) compares heated wraps, percussion massagers, and chair cushions.{% endwhenPublished %}
 
 If you work nights and sleep during the day, the rest of that routine matters too. Light is one of the most common obstacles to daytime sleep. Our comparison of [blackout curtains vs. sleep masks for day sleepers]({{ '/posts/blackout-curtains-sleep-masks-for-day-sleepers/' | url }}) covers the options for a darker room.
 
