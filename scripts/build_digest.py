@@ -66,6 +66,7 @@ def parse_dt(s):
 
 
 def load_articles():
+    cats = load_categories()
     arts = {}
     for path in glob.glob(os.path.join(ROOT, "src", "posts", "*.md")):
         slug = os.path.splitext(os.path.basename(path))[0]
@@ -78,8 +79,34 @@ def load_articles():
                 k, _, v = line.partition(":")
                 fm[k.strip()] = v.strip().strip('"').strip("'")
         pub = (fm.get("publishAt") or fm.get("date") or "")[:10]
-        arts[slug] = {"title": fm.get("title", slug), "date": pub, "category": fm.get("category") or "未設定"}
+        arts[slug] = {"title": fm.get("title", slug), "date": pub,
+                      "category": resolve_category(cats, slug, fm.get("category"))}
     return arts
+
+
+def load_categories():
+    path = os.path.join(ROOT, "src", "_data", "categories.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def resolve_category(cats, slug, front_category):
+    """記事のテーマ名を返す。lib/categories.js の resolveCategory と同じ決め方
+    (categories.json の posts → フロントマターの category を slug・表示名・aliases と照合)。"""
+    if not cats:
+        return front_category or "未設定"
+    themes = cats.get("categories", [])
+    theme_slug = cats.get("posts", {}).get(slug)
+    if not theme_slug and front_category:
+        key = str(front_category).strip().lower()
+        for c in themes:
+            if key in [str(v).lower() for v in [c["slug"], c["name"], *c.get("aliases", [])]]:
+                theme_slug = c["slug"]
+                break
+    hit = next((c for c in themes if c["slug"] == theme_slug), None)
+    return hit["name"] if hit else "テーマなし"
 
 
 def latest_by(records, key):
@@ -389,7 +416,7 @@ def build(today):
         L.append("JP記事のフロントマターには `category` が無い。商品カテゴリはGA4の `link_target`(検索キーワード)で見る想定で、"
                  "GA4連携までは記事単位の表で代替する。")
     else:
-        L += group_table(posts, lambda p: arts.get(p["article"], {}).get("category", "未設定"), "カテゴリ")
+        L += group_table(posts, lambda p: arts.get(p["article"], {}).get("category", "未設定"), "テーマ")
     L.append("")
     L.append("### 投稿の型別")
     L.append("")
