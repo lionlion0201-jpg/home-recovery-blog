@@ -1,0 +1,15 @@
+[
+  {
+    "id": "2026-11-07-1",
+    "slug": "white-noise-machine-without-light",
+    "query": "white noise machine for apartment noise(リンク先の狙う検索語)",
+    "reason": "新記事 white-noise-machine-for-apartment-noise への内部リンク。without-light は公開11/06で Google 未登録・他記事からのリンク0本(孤立)。28日以内の改善記録が無い唯一の関連記事。リンク先が公開前のため whenPublished で包む。検索語にもとづく順位改善の候補(4〜20位・表示2回以上)は、該当記事がすべて28日以内に改善済み(10/17 のタイトル短縮を含む)のため今週は0件",
+    "changes": [
+      {
+        "file": "src/posts/white-noise-machine-without-light.md",
+        "old": "- **People bothered more by sound than by light.** If the real problem is the machine's sound, or noise it isn't covering, the light is a side issue. Our [noise machine comparison]({{ '/posts/white-noise-machines-vs-sound-machines-light-sleepers/' | url }}) is the better place to start.",
+        "new": "- **People bothered more by sound than by light.** If the real problem is the machine's sound, or noise it isn't covering, the light is a side issue. Our [noise machine comparison]({{ '/posts/white-noise-machines-vs-sound-machines-light-sleepers/' | url }}) is the better place to start. {% whenPublished \"white-noise-machine-for-apartment-noise\" %}If the noise you're trying to cover comes from neighbors, traffic, or the floor above, our guide to [white noise machines for apartment noise]({{ '/posts/white-noise-machine-for-apartment-noise/' | url }}) sorts it by type of sound.{% endwhenPublished %}"
+      }
+    ]
+  }
+]
