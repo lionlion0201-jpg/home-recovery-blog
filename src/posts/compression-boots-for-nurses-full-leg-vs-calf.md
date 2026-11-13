@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Compression Boots for Nurses: Full-Leg Boots vs. Calf Sleeves After a Long Shift"
 description: "Legs heavy after a long shift? Compare full-leg compression boots and calf sleeves on coverage, hoses, setup, and who should skip them. Not medical advice."
-date: 2026-11-08
+date: 2026-11-15
 tags: post
+publishAt: "2026-11-15T09:00:00+09:00"
 category: Recovery
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. Not medical advice: this article is for general informational purposes only and is not a substitute for advice from a doctor. Our picks are based on manufacturer websites, manuals, and published product information. We have not used these products ourselves. Your device's manual and safety warnings take priority over anything in this article.*

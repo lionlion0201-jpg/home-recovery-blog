@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Foot Warmer for Bed: Under-Sheet Warmer, Foot Pad, or Heated Socks?"
 description: "Cold feet in bed? Compare an under-sheet warmer, a button-up foot pad, and heated socks: what each maker says about sleep, shut-off, washing, and who should skip them."
-date: 2026-11-07
+date: 2026-11-17
 tags: post
+publishAt: "2026-11-17T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. Not medical advice: this article is for general informational purposes only and is not a substitute for advice from a doctor. Our picks are based on manufacturer websites, manuals, and published product information. We have not used these products ourselves. Your device's manual and safety warnings take priority over anything in this article.*

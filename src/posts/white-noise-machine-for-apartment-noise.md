@@ -2,12 +2,10 @@
 layout: post.njk
 title: "White Noise Machine for Apartment Noise: Voices, Traffic, or Footsteps?"
 description: "Can a white noise machine cover apartment noise? We sort voices, traffic, and footsteps, compare three options, and explain where machines fall short."
-date: 2026-11-07
+date: 2026-11-19
 tags: post
+publishAt: "2026-11-19T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. Not medical advice: this article is for general informational purposes only and is not a substitute for advice from a doctor. Our picks are based on manufacturer specifications and published product information. We have not used these products ourselves.*
