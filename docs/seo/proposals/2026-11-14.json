@@ -1,0 +1,56 @@
+[
+  {
+    "id": "2026-11-14-1",
+    "slug": "white-noise-machines-vs-sound-machines-light-sleepers",
+    "query": "how to choose the right white-noise or sound-sleep machine for heavy sleepers and light-sensitivity issues / noise machine for light sleepers",
+    "reason": "伸ばす候補で表示が最多(ページ全体 17.4位・表示91、28日)。最後の改善は10/16で28日以上経過。光が気になる人向けの選び方を問う検索語が 6.8位・表示4回だが、本文に光に弱い人向けの答えがない。リンク0本で未掲載の without-light を支える。『光が問題なら』の段落が光と関係ないマグネシウム記事に飛んでいたため遮光記事に直す。apartment-noise は11/19公開のため whenPublished で包む。表示100回未満のため効果は断定しない",
+    "changes": [
+      {
+        "file": "src/posts/white-noise-machines-vs-sound-machines-light-sleepers.md",
+        "old": "- **Struggling with the wake-up as much as the falling-asleep:** Hatch Restore's light-and-sound combination addresses both.",
+        "new": "- **Struggling with the wake-up as much as the falling-asleep:** Hatch Restore's light-and-sound combination addresses both.\n- **Sensitive to light as well as sound:** a glowing display or night light can undo the point of a dark bedroom. Our guide to [white noise machines without light]({{ '/posts/white-noise-machine-without-light/' | url }}) compares two fan machines the manufacturer describes as having no screen and one clock-style machine whose display can be switched off.\n{% whenPublished \"white-noise-machine-for-apartment-noise\" %}- **Noise from neighbors, traffic, or the floor above:** our guide to [white noise machines for apartment noise]({{ '/posts/white-noise-machine-for-apartment-noise/' | url }}) sorts the problem by type of sound and explains when earplugs are the better tool.\n{% endwhenPublished %}"
+      },
+      {
+        "file": "src/posts/white-noise-machines-vs-sound-machines-light-sleepers.md",
+        "old": "If light is as much of a problem as noise for you, it's worth tackling both at once — our guide to [magnesium glycinate for shift worker sleep]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) covers a non-environmental option some readers pair with a sound machine, and [our look at weighted blankets and sleep anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) is another low-effort addition if racing thoughts are part of what's waking you up.",
+        "new": "If light coming into the room is as much of a problem as noise, it's worth tackling both at once — our comparison of [blackout curtains and sleep masks]({{ '/posts/blackout-curtains-sleep-masks-for-day-sleepers/' | url }}) covers the light side. Beyond the bedroom itself, our guide to [magnesium glycinate for shift worker sleep]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) covers a non-environmental option some readers pair with a sound machine, and [our look at weighted blankets and sleep anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) is another low-effort addition if racing thoughts are part of what's waking you up."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-14-2",
+    "slug": "portable-white-noise-machine-athletes-hotel",
+    "query": "best white noise machine for athletes",
+    "reason": "best white noise machine for athletes 5.7位・表示10、best noise machine for athletes 5.8位・表示6(28日)。タイトルに best が無い。前回の改善は10/17(28日経過)。本文は既にこの語に答えているのでタイトルだけ",
+    "changes": [
+      {
+        "file": "src/posts/portable-white-noise-machine-athletes-hotel.md",
+        "old": "title: \"White Noise Machine for Athletes: 3 Portable Hotel Picks\"",
+        "new": "title: \"Best White Noise Machine for Athletes: 3 Portable Hotel Picks\""
+      }
+    ]
+  },
+  {
+    "id": "2026-11-14-3",
+    "slug": "2026-recovery-sleep-gift-guide-by-recipient",
+    "query": "(検索語は非表示のため推定)recovery gift for athlete",
+    "reason": "事実の訂正が主目的。ページ全体 7.3位・表示7(28日)、前回の改善は10/17。Normatec Go を compression boots と呼んでいるが、Go はふくらはぎ用(11/07 のアーキテクトが Hyperice 公式で確認、compression-boots-for-nurses 記事に記載)。ギフト需要の時期に入るため優先。全脚用との比較記事 compression-boots-for-nurses(11/15公開予定)へのリンクは whenPublished で包んだ。Amazon リンクのURLは変えていない",
+    "changes": [
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "## For the Athlete in Your Life: Normatec Go Compression Boots",
+        "new": "## For the Athlete in Your Life: Normatec Go Calf Compression"
+      },
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "rel=\"nofollow sponsored\" target=\"_blank\">Normatec Go compression boots</a> land differently than most recovery gifts.",
+        "new": "rel=\"nofollow sponsored\" target=\"_blank\">the Normatec Go</a> lands differently than most recovery gifts. One thing to know before buying: the Go is a pair of calf wraps, not full-leg boots, so it doesn't cover the feet or thighs. {% whenPublished \"compression-boots-for-nurses-full-leg-vs-calf\" %}If your athlete wants full-leg coverage, our guide to [full-leg boots vs. calf devices]({{ '/posts/compression-boots-for-nurses-full-leg-vs-calf/' | url }}) compares both shapes.{% endwhenPublished %}"
+      },
+      {
+        "file": "src/posts/2026-recovery-sleep-gift-guide-by-recipient.md",
+        "old": "An athlete deep in a training cycle will make Normatec Go boots part of their routine",
+        "new": "An athlete deep in a training cycle will make the Normatec Go part of their routine"
+      }
+    ]
+  }
+]
