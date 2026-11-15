@@ -2,12 +2,10 @@
 layout: post.njk
 title: "Sleep Mask for Side Sleepers: Slipping, Light Leaks, or Ear Pressure? 3 Picks by Problem"
 description: "Does your sleep mask slide off, leak light, or press on your ear when you lie on your side? We compare 3 sleep masks for side sleepers by the problem they're built to fix."
-date: 2026-11-14
+date: 2026-11-23
 tags: post
+publishAt: "2026-11-23T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. Not medical advice: this article is for general informational purposes only and is not a substitute for advice from a doctor. Our picks are based on manufacturer specifications and published product information. We have not used these products ourselves.*

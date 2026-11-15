@@ -2,12 +2,10 @@
 layout: post.njk
 title: "White Noise Machine for Day Sleepers: Schedules, Adaptive Volume, or a Wake-Up Light?"
 description: "Sleeping after a night shift? We compare white noise machines for day sleepers by schedules, volume that adjusts to daytime noise, and waking up in a dark room."
-date: 2026-11-14
+date: 2026-11-25
 tags: post
+publishAt: "2026-11-25T09:00:00+09:00"
 category: Sleep
-published: false
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. Not medical advice: this article is for general informational purposes only and is not a substitute for advice from a doctor. Our picks are based on manufacturer specifications and published product information. We have not used these products ourselves.*
