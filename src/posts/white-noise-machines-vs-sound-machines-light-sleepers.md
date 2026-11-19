@@ -6,6 +6,7 @@ date: 2026-09-27
 tags: post
 publishAt: "2026-09-27T09:00:00+09:00"
 category: Sleep
+updated: 2026-11-19
 ---
 
 *Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*
@@ -80,8 +81,11 @@ Sound machines mask noise; they don't address sleep disruption caused by pain, a
 - **Sensitive to looping or digital artifacts:** Marpac Dohm's real fan sound is the safest choice.
 - **Want variety and a lower price than a smart machine:** LectroFan covers more ground for less money.
 - **Struggling with the wake-up as much as the falling-asleep:** Hatch Restore's light-and-sound combination addresses both.
+- **Sensitive to light as well as sound:** a glowing display or night light can undo the point of a dark bedroom. Our guide to [white noise machines without light]({{ '/posts/white-noise-machine-without-light/' | url }}) compares two fan machines the manufacturer describes as having no screen and one clock-style machine whose display can be switched off.
+{% whenPublished "white-noise-machine-for-apartment-noise" %}- **Noise from neighbors, traffic, or the floor above:** our guide to [white noise machines for apartment noise]({{ '/posts/white-noise-machine-for-apartment-noise/' | url }}) sorts the problem by type of sound and explains when earplugs are the better tool.
+{% endwhenPublished %}
 
-If light is as much of a problem as noise for you, it's worth tackling both at once — our guide to [magnesium glycinate for shift worker sleep]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) covers a non-environmental option some readers pair with a sound machine, and [our look at weighted blankets and sleep anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) is another low-effort addition if racing thoughts are part of what's waking you up.
+If light coming into the room is as much of a problem as noise, it's worth tackling both at once — our comparison of [blackout curtains and sleep masks]({{ '/posts/blackout-curtains-sleep-masks-for-day-sleepers/' | url }}) covers the light side. Beyond the bedroom itself, our guide to [magnesium glycinate for shift worker sleep]({{ '/posts/magnesium-glycinate-sleep-shift-workers/' | url }}) covers a non-environmental option some readers pair with a sound machine, and [our look at weighted blankets and sleep anxiety]({{ '/posts/weighted-blankets-sleep-anxiety/' | url }}) is another low-effort addition if racing thoughts are part of what's waking you up.
 
 <div class="cta-box">
 <p><strong>Compare all three side by side</strong> before deciding — the right pick depends more on which extra features you actually need than on which machine is "best."</p>
