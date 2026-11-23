@@ -1,0 +1,79 @@
+[
+  {
+    "id": "2026-11-21-1",
+    "slug": "shiatsu-back-massager-office-chair-desk-workers",
+    "query": "what back massage cushion works well on an office chair? / seated back massager / best back massagers for employee wellness",
+    "reason": "『what back massage cushion works well on an office chair?』9.5位・表示13(+『in 2026』9位・表示1)、seated back massager 18.2位・表示4、best back massagers for employee wellness 13.5位・表示4。ページ全体 27.5位・表示93(10/23〜11/20)。最後の改善は10/17で28日以上経過。タイトルに『cushion』が無く、本文にも質問への短い答えが無いため、タイトル・説明文に検索語を入れ、チェック項目の前に2〜4文の答えを足す。答えの中身は本文の既存記述(ストラップの固定、背もたれの高さ、ZMA-13 のチェア用ストラップ)だけ。提案された first-responders へのリンクは既に本文にある(公開済み、whenPublished は残っていても表示に支障なし)ため、新しいリンクは足さない。表示100回未満のため効果は断定しない",
+    "changes": [
+      {
+        "file": "src/posts/shiatsu-back-massager-office-chair-desk-workers.md",
+        "old": "title: \"Shiatsu Back Massager for Office Chairs: 3 Heated Types\"",
+        "new": "title: \"Back Massage Cushion for Office Chairs: 3 Shiatsu Picks\""
+      },
+      {
+        "file": "src/posts/shiatsu-back-massager-office-chair-desk-workers.md",
+        "old": "description: \"Shopping for a shiatsu back massager for office chair use? We compare 3 heated designs (Snailax SL-233, SL-256, Zyllion ZMA-13) and how to check chair fit.\"",
+        "new": "description: \"Which back massage cushion works on an office chair? We compare 3 heated shiatsu designs (Snailax SL-233, SL-256, Zyllion ZMA-13) and how to check chair fit.\""
+      },
+      {
+        "file": "src/posts/shiatsu-back-massager-office-chair-desk-workers.md",
+        "old": "Fit often matters more than features, so look at the chair you'll actually use first.",
+        "new": "Fit often matters more than features, so look at the chair you'll actually use first.\n\nSo which back massage cushion works well on an office chair? It depends mostly on the chair. A seated back massager that covers the whole backrest, like the full-back and neck-to-back cushions below, needs a backrest tall and firm enough for its straps to hold it upright. A lumbar pillow with a chair strap, such as the Zyllion ZMA-13, is the most forgiving fit. If you're choosing for a shared office or an employee wellness setup where one massager may move between chairs, run the checks below on each chair it will be used on."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-21-2",
+    "slug": "weighted-blankets-sleep-anxiety",
+    "query": "(検索語は非表示のため推定)do weighted blankets help with anxiety / weighted blanket for sleep and anxiety",
+    "reason": "ページ全体 12.2位・表示5(10/23〜11/20)。検索語は非表示のため推定。改善記録なし。タイトルは主要語(weighted blankets・sleep・anxiety)を含むので変えない。説明文に anxiety と sleep が無いので足す。あわせて規約対応: アフィリエイトリンクがあるのに冒頭の開示文が無い(FTC開示義務)ため他記事と同じ開示文を足す。『the single most common reason people abandon weighted blankets』は根拠のない断定のため言い換える。慣らし方は、公開済み what-to-buy-on-sale-recovery-sleep に記載の Bearaby 公式ガイダンス(体重で重さを選ぶ、最初の数日は短時間から)の範囲で足し、同記事へリンク。暑がり向けは公開済み cooling-mattress-pad-for-hot-flashes へリンク。表示が少なく効果は断定しない",
+    "changes": [
+      {
+        "file": "src/posts/weighted-blankets-sleep-anxiety.md",
+        "old": "description: \"What the research says about weighted blankets, how to pick the right weight, and where they realistically help most.\"",
+        "new": "description: \"Do weighted blankets help with sleep and anxiety? What the research says, how to pick the right weight, how to get used to one, and who should skip it.\""
+      },
+      {
+        "file": "src/posts/weighted-blankets-sleep-anxiety.md",
+        "old": "Weighted blankets are one of the few sleep-wellness products that graduated from \"trendy\" to \"normal household item\" without fading out — which usually means people keep using them after the novelty wears off.",
+        "new": "*Disclosure: This post contains affiliate links. If you purchase through one of them, we may earn a commission at no extra cost to you. This article is for general informational purposes only and is not a substitute for medical advice.*\n\nWeighted blankets are one of the few sleep-wellness products that graduated from \"trendy\" to \"normal household item\" without fading out — which usually means people keep using them after the novelty wears off."
+      },
+      {
+        "file": "src/posts/weighted-blankets-sleep-anxiety.md",
+        "old": "Couples sharing a bed usually either size for the lighter partner or buy two individual blankets rather than one oversized one — a single heavy blanket sized for two people gets uncomfortably hot and hard to move under.",
+        "new": "Couples sharing a bed usually either size for the lighter partner or buy two individual blankets rather than one oversized one — a single heavy blanket sized for two people gets uncomfortably hot and hard to move under.\n\nA new blanket can feel heavier than expected for the first few nights. Bearaby, one weighted blanket maker, suggests choosing the weight based on your body weight and starting with shorter periods for the first few days while you get used to it. If you're shopping during a sale, our guide to [what to buy on sale for recovery and sleep]({{ '/posts/what-to-buy-on-sale-recovery-sleep/' | url }}) explains why it's worth working out your weight before prices change."
+      },
+      {
+        "file": "src/posts/weighted-blankets-sleep-anxiety.md",
+        "old": "If you're a hot sleeper, get the cooling-weave version or you'll likely stop using it within a month — that's the single most common reason people abandon weighted blankets, more than the weight itself.",
+        "new": "If you're a hot sleeper, consider the cooling-weave version: heavier blankets can hold more heat, and a blanket that leaves you too warm is easy to stop using. If heat from the mattress is part of the problem, our guide to [cooling mattress pads for hot flashes]({{ '/posts/cooling-mattress-pad-for-hot-flashes/' | url }}) compares options for what's under you."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-21-3",
+    "slug": "quiet-space-heaters-bedroom-light-sleepers",
+    "query": "foot warmer for bed(リンク先の狙う検索語)",
+    "reason": "前回から持ち越しの内部リンク。リンク先 foot-warmer-for-bed は11/17公開済み(リンク先からこの記事へのリンクは既にある)。元記事の最後の改善は10/17で28日以上経過。『向いていない人』に、冷えるのが足だけの場合の1項目を足す",
+    "changes": [
+      {
+        "file": "src/posts/quiet-space-heaters-bedroom-light-sleepers.md",
+        "old": "- **Only your side of the bed feels cold.** If you run cold and your partner runs warm, heating the whole room may make one of you uncomfortable. A dual-control heated mattress pad or other split-temperature setup may make more sense. See our guide to [dual-zone bed options for couples, including dual-control heated pads]({{ '/posts/couples-different-sleep-temperatures-dual-zone-bed/' | url }}).",
+        "new": "- **Only your side of the bed feels cold.** If you run cold and your partner runs warm, heating the whole room may make one of you uncomfortable. A dual-control heated mattress pad or other split-temperature setup may make more sense. See our guide to [dual-zone bed options for couples, including dual-control heated pads]({{ '/posts/couples-different-sleep-temperatures-dual-zone-bed/' | url }}).\n- **It's mainly your feet that feel cold in bed.** Heating the whole room may be more than you need. Our guide to [foot warmers for bed]({{ '/posts/foot-warmer-for-bed/' | url }}) compares an under-sheet warmer, a foot pad, and heated socks, including what each maker says about use during sleep."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-21-4",
+    "slug": "sleep-earbuds-vs-earplugs-snoring-partner",
+    "query": "white noise machine for apartment noise(リンク先の狙う検索語)",
+    "reason": "前回から持ち越しの内部リンク。リンク先 white-noise-machine-for-apartment-noise は11/19公開済み。元記事は8.0位・表示3(10/23〜11/20)、最後の改善は10/17で28日以上経過。『向いていない人』に、悩みがいびきではなく近所や道路の音の場合の1項目を足す",
+    "changes": [
+      {
+        "file": "src/posts/sleep-earbuds-vs-earplugs-snoring-partner.md",
+        "old": "- **Snoring isn't the only thing keeping you both up.** If you and your partner also disagree about how warm the bed should be, see [our guide for couples with different sleep temperatures]({{ '/posts/couples-different-sleep-temperatures-dual-zone-bed/' | url }}).",
+        "new": "- **Snoring isn't the only thing keeping you both up.** If you and your partner also disagree about how warm the bed should be, see [our guide for couples with different sleep temperatures]({{ '/posts/couples-different-sleep-temperatures-dual-zone-bed/' | url }}).\n- **The noise comes from neighbors or the street, not your partner.** Voices through a wall, traffic, and footsteps from upstairs behave differently from snoring. Our guide to [white noise machines for apartment noise]({{ '/posts/white-noise-machine-for-apartment-noise/' | url }}) sorts them by type of sound and explains when earplugs are the better tool."
+      }
+    ]
+  }
+]

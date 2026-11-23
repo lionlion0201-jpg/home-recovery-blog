@@ -1,0 +1,23 @@
+{
+  "pins": [
+    {
+      "title": "Apple Watch Dead by Bedtime? Battery Life vs Oura Ring for Overnight Sleep Tracking",
+      "subtitle": "Your charging habit decides what you wear to bed",
+      "style": "overlay",
+      "cta": "Compare battery life",
+      "description": "If your Apple Watch is regularly low by bedtime, tracking sleep means moving your charge to shower time or your morning routine. Oura Ring is designed for all-night wear, with a charging cadence measured in days rather than a daily top-up. Apple Watch Ultra 3 holds up better overnight if you want to stay with one wrist device. Neither is a medical device. Not medical advice. #applewatch #ouraring #sleeptracking #wearables #sleeptracker",
+      "link": "https://quietrecover.com/posts/apple-watch-vs-oura-ring-sleep-tracking/",
+      "background": "pexels-6962851.jpg"
+    },
+    {
+      "title": "Why Apple Watch and Oura Ring Show Different Deep Sleep Numbers",
+      "subtitle": "Both are estimates. Watch the trend.",
+      "style": "bold",
+      "cta": "See why they differ",
+      "description": "Same night, two different deep sleep totals? Deep sleep is short, happens mostly in the first half of the night, and each algorithm reads heart-rate variability and movement differently. The wrist is also a noisier sensor spot than the base of a finger. Neither number is exact; the trend over weeks matters more than one night. Both are wellness estimates, not diagnostic tools. Not medical advice. #applewatch #ouraring #deepsleep #sleeptracker",
+      "link": "https://quietrecover.com/posts/apple-watch-vs-oura-ring-sleep-tracking/",
+      "background": "pexels-13207111.jpg"
+    }
+  ],
+  "tweets": []
+}
