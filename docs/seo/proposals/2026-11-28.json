@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2026-11-28-1",
+    "slug": "best-bedding-couples-different-temperatures-hot-sleeper",
+    "query": "cooling topper for couples who sleep at different temperatures",
+    "reason": "ページ全体 22.4位・表示14(10/28〜11/25)。『best cooling topper to buy for a couple who sleep at different temperatures』10.5位・表示2、『what is the best cooling mattress pad for couples who sleep at different temperatures?』12位・表示1、『best mattress pad for dual heating and cooling』25.3位・表示6、『best heating pad for couples』5位・表示2。前回改善は10/17で28日以上経過。dual-zone 記事と検索語を取り合っているため、この記事は『片側だけ冷やす層(トッパー・パッド)』に寄せる: タイトルを dual-zone 記事と重なる『Bedding for Couples』から『Cooling Topper for Couples…』に変え、説明文も topper・half-size pad を先に出す。FAQ の先頭に『どのトッパーが良いか』への答えを足す(中身は本文の既存記述: Twin XL 38インチ幅、king 76・queen 60インチ、ViscoSoft は Queen・King サイズもある点、Chilipad の Half Queen)。左右で冷やす・温めるを別々に設定したい場合は dual-zone 記事へ橋渡し(既に冒頭と Option 1 にリンクあり。FAQ 内の1文は役割分けの念押し)。heating pad の質問は本文に根拠が無いため答えは足さない(冒頭の dual-zone へのリンク文で dual-control heated pads に触れている)。関連記事として公開済み foot-warmer-for-bed へのリンクを暖房の節に1項目足す(foot-warmer 側からこの記事へのリンクは無いが内容は適合)。表示100回未満のため効果は断定しない",
+    "changes": [
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "title: \"Best Bedding for Couples With Different Temperatures\"",
+        "new": "title: \"Cooling Topper for Couples Who Sleep at Different Temperatures\""
+      },
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "description: \"The best bedding for couples with different temperatures cools only the hot sleeper's side. Compare a cooling blanket, Twin XL topper, and half-size Chilipad.\"",
+        "new": "description: \"Looking for a cooling topper for couples who sleep at different temperatures? Compare a Twin XL topper, a half-size Chilipad, and a one-side cooling blanket.\""
+      },
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "## FAQ\n\n### What Bedding Keeps Both Partners Comfortable If One Sleeps Hot?",
+        "new": "## FAQ\n\n### What's the Best Cooling Topper for a Couple Who Sleep at Different Temperatures?\n\nIt depends mostly on your mattress size. On a king or split king, a Twin XL cooling topper like the ViscoSoft Active Cooling can sit on the hot sleeper's half without crossing onto the other side. On a queen, a Twin XL topper extends past the middle, so a half-size active cooling pad such as a Half Queen Sleepme Chilipad is designed to stay on one side. A topper sized for the whole bed covers your partner's side too. If one of you wants cooling and the other wants warming, with separate settings for each side, our [dual-zone bed guide for couples]({{ '/posts/couples-different-sleep-temperatures-dual-zone-bed/' | url }}) compares setups built for that.\n\n### What Bedding Keeps Both Partners Comfortable If One Sleeps Hot?"
+      },
+      {
+        "file": "src/posts/best-bedding-couples-different-temperatures-hot-sleeper.md",
+        "old": "- **Place the heater on your partner's side** and angle it toward them, not across the bed.",
+        "new": "- **Place the heater on your partner's side** and angle it toward them, not across the bed.\n- **If it's mostly your partner's feet that feel cold,** heating the whole room may be more than they need. Our guide to [foot warmers for bed]({{ '/posts/foot-warmer-for-bed/' | url }}) compares an under-sheet warmer, a foot pad, and heated socks."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-28-2",
+    "slug": "couples-different-sleep-temperatures-dual-zone-bed",
+    "query": "dual zone bedding for couples(検索語はほぼ非表示のため推定。タイトル主要語)",
+    "reason": "ページ全体 18.6位・表示9・クリック1(10/28〜11/25)。検索語はほぼ非表示で、出ているのは『dual zone comforter』37位・表示1のみ。前回改善は10/17で28日以上経過。best-bedding 記事と検索語を取り合っているため、この記事は『左右で温度を別々に設定できる仕組み』に寄せる: タイトルから best-bedding と重なる『When One Sleeps Hot』を外し『Dual-Zone Bedding for Couples: Separate Settings for Each Side』に、説明文も左右別設定を先に出す。4つの方式の比較表の前に『dual-zone とは何か』の答え(4〜5文)を足す。中身は本文の既存記述のみ(2枚の comforter、2ゾーン・2コントローラーの heated pad、BedJet は片側1台、水循環パッドは左右独立がモデル次第)。dual zone comforter の検索に対しては『2枚の comforter が最も簡単な形』と答える。best-bedding への橋渡しは FAQ 末尾に既にある(公開済みのため whenPublished でも表示される)ので新しくは足さない。関連記事として公開済み foot-warmer-for-bed へのリンクを『向いていない人』に1項目足す(foot-warmer 側からこの記事へのリンクは既にあり、逆向きが無い)。表示100回未満のため効果は断定しない",
+    "changes": [
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "title: \"Bedding for Couples When One Sleeps Hot: Dual-Zone Options\"",
+        "new": "title: \"Dual-Zone Bedding for Couples: Separate Settings for Each Side\""
+      },
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "description: \"One of you runs hot and the other cold? Compare two comforters, dual-control heated pads, and BedJet to find a setup for your bed.\"",
+        "new": "description: \"Dual-zone bedding for couples lets each side of the bed set its own warmth. Compare two comforters, dual-control heated pads, and BedJet with one unit per side.\""
+      },
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "If no-cost adjustments don't fully solve it, these are the four main categories of dual-zone bed cooling and heating options. They differ a lot in what they can do, how much setup they take, and how much they cost.",
+        "new": "If no-cost adjustments don't fully solve it, these are the four main categories of dual-zone bed cooling and heating options. They differ a lot in what they can do, how much setup they take, and how much they cost.\n\nWhat makes bedding \"dual-zone\" is that each side of the bed gets its own setting. The simplest version, and the closest thing to a dual-zone comforter, is two separate comforters in different weights: nothing is heated or cooled, but each side chooses its own warmth. A dual-control heated pad has two heating zones and usually two controllers, so each partner sets their own side, though it only warms. BedJet works with one unit per side and can warm or move room-temperature air, while water-circulating pads can do both on many systems, with independent sides depending on the model."
+      },
+      {
+        "file": "src/posts/couples-different-sleep-temperatures-dual-zone-bed.md",
+        "old": "- **You don't have room beside or under the bed.** BedJet needs floor space and hose clearance. Tight bedrooms or low bed frames can make placement difficult.",
+        "new": "- **You don't have room beside or under the bed.** BedJet needs floor space and hose clearance. Tight bedrooms or low bed frames can make placement difficult.\n- **It's mainly the colder partner's feet that feel cold.** A heated pad across their whole side may be more than they need. Our guide to [foot warmers for bed]({{ '/posts/foot-warmer-for-bed/' | url }}) compares an under-sheet warmer, a foot pad, and heated socks, including what each maker says about use during sleep."
+      }
+    ]
+  }
+]
